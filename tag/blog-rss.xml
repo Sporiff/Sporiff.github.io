@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Life Inside a Computer</title> <link>https://Sporiff.github.io</link> <atom:link href="https://Sporiff.github.io/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Fri, 26 Feb 2021 15:00:30 +0000</pubDate> <item> <title>Burnout</title> <link>https://Sporiff.github.io/posts/Burnout.html</link> <pubDate>2020-07-20 08:41:21</pubDate> <author>Ciarán Ainsworth</author> <guid isPermaLink="true">https://Sporiff.github.io/posts/Burnout.html</guid> <category><![CDATA[ personal ]]></category><category><![CDATA[ blog ]]></category><category><![CDATA[ health ]]></category><category><![CDATA[ mental health ]]></category> <description><![CDATA[ <p>In December 2019, I was given a new role at work. This was with the understanding that there would need to be a transition period while I trained my replacement (I work with a very big, poorly documented product, which means that training is a very big task), but that I could expect to be out of my current role within 6 months.</p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"> <channel> <title>Life Inside a Computer</title> <link>https://sporiff.github.io</link> <atom:link href="https://sporiff.github.io/rss.xml" rel="self" type="application/rss+xml" /> <language>en-us</language> <pubDate>Fri, 26 Feb 2021 15:31:41 +0000</pubDate> <item> <title>Burnout</title> <link>https://sporiff.github.io/posts/Burnout.html</link> <pubDate>2020-07-20 08:41:21</pubDate> <author>Ciarán Ainsworth</author> <guid isPermaLink="true">https://sporiff.github.io/posts/Burnout.html</guid> <category><![CDATA[ personal ]]></category><category><![CDATA[ blog ]]></category><category><![CDATA[ health ]]></category><category><![CDATA[ mental health ]]></category> <description><![CDATA[ <p>In December 2019, I was given a new role at work. This was with the understanding that there would need to be a transition period while I trained my replacement (I work with a very big, poorly documented product, which means that training is a very big task), but that I could expect to be out of my current role within 6 months.</p>
 
 <p>7 months later, we have not even appointed somebody to the new role.</p>
 
@@ -21,7 +21,7 @@
 <li>I've fixed an annoying bug with this site where code boxes didn't render properly on smaller devices using Chrome. Every other browser worked fine, just Chromium-based browsers took issue with the <code>pre-wrap: whitespace</code> setting so I had to do some fiddling to find a solution that worked on all browsers. Long story short: stop using Chromium. It's absolute dogshit</li>
 <li>I've fixed a couple of minor issues on Funkwhale, namely <a href="https://dev.funkwhale.audio/funkwhale/funkwhale/-/merge_requests/1167" >an issue with the playbar rendering on landscape tablet devices</a>, <a href="https://dev.funkwhale.audio/funkwhale/funkwhale/-/merge_requests/1166" >an issue with artist embedding not working properly</a>, and <a href="https://dev.funkwhale.audio/funkwhale/funkwhale/-/merge_requests/1168" >support for unauthenticated users hitting the logout page directly</a>. Just a few small things, but it feels good to get something done</li>
 </ul>
- ]]></description> </item><item> <title>Site Speed Increases</title> <link>https://Sporiff.github.io/posts/Site-Speed-Increases.html</link> <pubDate>2020-04-23</pubDate> <author>Ciarán Ainsworth</author> <guid isPermaLink="true">https://Sporiff.github.io/posts/Site-Speed-Increases.html</guid> <category><![CDATA[ tech ]]></category><category><![CDATA[ blog ]]></category><category><![CDATA[ hosting ]]></category><category><![CDATA[ technology ]]></category><category><![CDATA[ website ]]></category> <description><![CDATA[ <p><img src="https://assets.rootkey.co.uk/static/images/Rocket.png" alt="A rocket ship! Zoom!" /></p>
+ ]]></description> </item><item> <title>Site Speed Increases</title> <link>https://sporiff.github.io/posts/Site-Speed-Increases.html</link> <pubDate>2020-04-23</pubDate> <author>Ciarán Ainsworth</author> <guid isPermaLink="true">https://sporiff.github.io/posts/Site-Speed-Increases.html</guid> <category><![CDATA[ tech ]]></category><category><![CDATA[ blog ]]></category><category><![CDATA[ hosting ]]></category><category><![CDATA[ technology ]]></category><category><![CDATA[ website ]]></category> <description><![CDATA[ <p><img src="https://assets.rootkey.co.uk/static/images/Rocket.png" alt="A rocket ship! Zoom!" /></p>
 
 <p>I got poking around at this site and was doing some thinking. Mainly along the lines
 of speed and security. By default, the dark-hyde theme provided by the good folks over
@@ -58,7 +58,7 @@ hook should allow me to stick that in to the files.</p>
 
 <p>Oh, it's hacky. But it works. I'm not really in the mood to go diving through Lisp code
 to do this in Coleslaw...</p>
- ]]></description> </item><item> <title>Coleslaw Migration</title> <link>https://Sporiff.github.io/posts/Coleslaw-Migration.html</link> <pubDate>2019-11-03</pubDate> <author>Ciarán Ainsworth</author> <guid isPermaLink="true">https://Sporiff.github.io/posts/Coleslaw-Migration.html</guid> <category><![CDATA[ blog ]]></category><category><![CDATA[ website ]]></category><category><![CDATA[ lisp ]]></category><category><![CDATA[ emacs ]]></category> <description><![CDATA[ <p><img src="https://assets.rootkey.co.uk/static/images/coleslaw.jpg" alt="The Coleslaw logo" /></p>
+ ]]></description> </item><item> <title>Coleslaw Migration</title> <link>https://sporiff.github.io/posts/Coleslaw-Migration.html</link> <pubDate>2019-11-03</pubDate> <author>Ciarán Ainsworth</author> <guid isPermaLink="true">https://sporiff.github.io/posts/Coleslaw-Migration.html</guid> <category><![CDATA[ blog ]]></category><category><![CDATA[ website ]]></category><category><![CDATA[ lisp ]]></category><category><![CDATA[ emacs ]]></category> <description><![CDATA[ <p><img src="https://assets.rootkey.co.uk/static/images/coleslaw.jpg" alt="The Coleslaw logo" /></p>
 
 <p>This marks my third(?) migration to a new site format! 🎉</p>
 
@@ -83,7 +83,7 @@ for easy reference!) but once you've got even the most basic commands down and
 some essential extensions installed you never want to leave it. It's just so
 damn fun to learn. I'm going to see how it goes as my everyday IDE. It's already
 got me to uninstall Riot, Telegram, and Thunderbird from my machine...</p>
- ]]></description> </item><item> <title>Into the Void</title> <link>https://Sporiff.github.io/posts/Into-the-Void.html</link> <pubDate>2019-06-09</pubDate> <author>Ciarán Ainsworth</author> <guid isPermaLink="true">https://Sporiff.github.io/posts/Into-the-Void.html</guid> <category><![CDATA[ blog ]]></category><category><![CDATA[ tech ]]></category><category><![CDATA[ linux ]]></category><category><![CDATA[ computer ]]></category> <description><![CDATA[ <p>Ever heard of <a href="https://voidlinux.org" >Void Linux</a>? Me neither
+ ]]></description> </item><item> <title>Into the Void</title> <link>https://sporiff.github.io/posts/Into-the-Void.html</link> <pubDate>2019-06-09</pubDate> <author>Ciarán Ainsworth</author> <guid isPermaLink="true">https://sporiff.github.io/posts/Into-the-Void.html</guid> <category><![CDATA[ blog ]]></category><category><![CDATA[ tech ]]></category><category><![CDATA[ linux ]]></category><category><![CDATA[ computer ]]></category> <description><![CDATA[ <p>Ever heard of <a href="https://voidlinux.org" >Void Linux</a>? Me neither
 until a little while ago. My friend had orginally introduced me
 to Void when I was looking at going back to Arch Linux a few years
 ago, stating that it was (in many ways) a vastly superior system.
@@ -226,7 +226,7 @@ feel (largely achieved through dwm I'm sure), the simplicity of the init
 system, and the surprising robustness of the package manager makes this
 a distro I'm really glad to have tried. I'll probably stick with it for
 a little while and see how it treats my little Librebox.</p>
- ]]></description> </item><item> <title>Moving To Sphinx</title> <link>https://Sporiff.github.io/posts/Moving-To-Sphinx.html</link> <pubDate>2019-05-09</pubDate> <author>Ciarán Ainsworth</author> <guid isPermaLink="true">https://Sporiff.github.io/posts/Moving-To-Sphinx.html</guid> <category><![CDATA[ blog ]]></category><category><![CDATA[ site ]]></category><category><![CDATA[ website ]]></category><category><![CDATA[ sphinx ]]></category> <description><![CDATA[ <p>I've made a few changes to this website. Well, not really a few changes,
+ ]]></description> </item><item> <title>Moving To Sphinx</title> <link>https://sporiff.github.io/posts/Moving-To-Sphinx.html</link> <pubDate>2019-05-09</pubDate> <author>Ciarán Ainsworth</author> <guid isPermaLink="true">https://sporiff.github.io/posts/Moving-To-Sphinx.html</guid> <category><![CDATA[ blog ]]></category><category><![CDATA[ site ]]></category><category><![CDATA[ website ]]></category><category><![CDATA[ sphinx ]]></category> <description><![CDATA[ <p>I've made a few changes to this website. Well, not really a few changes,
 more like a complete overhaul. I was getting a bit bored of using Hugo/Markdown
 and decided to challenge myself to the following:</p>
 
@@ -253,7 +253,7 @@ I've therefore decided to retire Gitsune and move operations to Gitlab
 for now. Eventually I'll probably resurrect Gitsune as a Gitlab instance
 but looking at the spec for it I'll probably hold off until I have
 a bit more of an income...</p>
- ]]></description> </item><item> <title>New Developments</title> <link>https://Sporiff.github.io/posts/New-Developments.html</link> <pubDate>2019-04-18</pubDate> <author>Ciarán Ainsworth</author> <guid isPermaLink="true">https://Sporiff.github.io/posts/New-Developments.html</guid> <category><![CDATA[ funkwhale ]]></category><category><![CDATA[ blog ]]></category><category><![CDATA[ personal ]]></category> <description><![CDATA[ <h2>It's Been a Little While</h2>
+ ]]></description> </item><item> <title>New Developments</title> <link>https://sporiff.github.io/posts/New-Developments.html</link> <pubDate>2019-04-18</pubDate> <author>Ciarán Ainsworth</author> <guid isPermaLink="true">https://sporiff.github.io/posts/New-Developments.html</guid> <category><![CDATA[ funkwhale ]]></category><category><![CDATA[ blog ]]></category><category><![CDATA[ personal ]]></category> <description><![CDATA[ <h2>It's Been a Little While</h2>
 
 <p>Every time I have a blog I am always really bad at posting to it consistently. 
 Actually, a lot has changed in recent months so I thought I'd do a little brain dump.</p>
@@ -289,7 +289,7 @@ used across the board. It's been a bit of a fight, but it's been really good to 
 benefits a project is going to bring them.</p>
 
 <p>That's really it for now. It's been a crazy busy month this month (not least with our insane political atmosphere at the moment), but hopefully something really good will come of it eventually.</p>
- ]]></description> </item><item> <title>Progress</title> <link>https://Sporiff.github.io/posts/Progress.html</link> <pubDate>2019-02-12</pubDate> <author>Ciarán Ainsworth</author> <guid isPermaLink="true">https://Sporiff.github.io/posts/Progress.html</guid> <category><![CDATA[ funkwhale ]]></category><category><![CDATA[ blog ]]></category><category><![CDATA[ personal ]]></category> <description><![CDATA[ <h2>Making a difference</h2>
+ ]]></description> </item><item> <title>Progress</title> <link>https://sporiff.github.io/posts/Progress.html</link> <pubDate>2019-02-12</pubDate> <author>Ciarán Ainsworth</author> <guid isPermaLink="true">https://sporiff.github.io/posts/Progress.html</guid> <category><![CDATA[ funkwhale ]]></category><category><![CDATA[ blog ]]></category><category><![CDATA[ personal ]]></category> <description><![CDATA[ <h2>Making a difference</h2>
 
 <hr/>
 
@@ -385,7 +385,7 @@ effects:</p>
 </ol>
 
 <p>Here's hoping!</p>
- ]]></description> </item><item> <title>Bring Back My Internet</title> <link>https://Sporiff.github.io/posts/Bring-Back-My-Internet.html</link> <pubDate>2019-02-07</pubDate> <author>Ciarán Ainsworth</author> <guid isPermaLink="true">https://Sporiff.github.io/posts/Bring-Back-My-Internet.html</guid> <category><![CDATA[ funkwhale ]]></category><category><![CDATA[ blog ]]></category><category><![CDATA[ personal ]]></category><category><![CDATA[ rant ]]></category><category><![CDATA[ internet ]]></category><category><![CDATA[ federation ]]></category> <description><![CDATA[ <h2>Mixed Messages</h2>
+ ]]></description> </item><item> <title>Bring Back My Internet</title> <link>https://sporiff.github.io/posts/Bring-Back-My-Internet.html</link> <pubDate>2019-02-07</pubDate> <author>Ciarán Ainsworth</author> <guid isPermaLink="true">https://sporiff.github.io/posts/Bring-Back-My-Internet.html</guid> <category><![CDATA[ funkwhale ]]></category><category><![CDATA[ blog ]]></category><category><![CDATA[ personal ]]></category><category><![CDATA[ rant ]]></category><category><![CDATA[ internet ]]></category><category><![CDATA[ federation ]]></category> <description><![CDATA[ <h2>Mixed Messages</h2>
 
 <p>Okay, so I'm slightly reneging on my <a href="https://rootkey.co.uk/posts/More-Writing.html" >earlier post</a> by writing
 about computers again, but trust me when I say this one is as
@@ -463,7 +463,7 @@ not to be involved in things because you <em>refuse</em> to just give in and
 join [insert social network here]. Well, ain't that just shit?</p>
 
 <p>Anyhow. Just a rant. As you were.</p>
- ]]></description> </item><item> <title>More Writing</title> <link>https://Sporiff.github.io/posts/More-Writing.html</link> <pubDate>2019-02-04</pubDate> <author>Ciarán Ainsworth</author> <guid isPermaLink="true">https://Sporiff.github.io/posts/More-Writing.html</guid> <category><![CDATA[ funkwhale ]]></category><category><![CDATA[ blog ]]></category><category><![CDATA[ personal ]]></category><category><![CDATA[ website ]]></category> <description><![CDATA[ <h2>And Now For Something Completely Different</h2>
+ ]]></description> </item><item> <title>More Writing</title> <link>https://sporiff.github.io/posts/More-Writing.html</link> <pubDate>2019-02-04</pubDate> <author>Ciarán Ainsworth</author> <guid isPermaLink="true">https://sporiff.github.io/posts/More-Writing.html</guid> <category><![CDATA[ funkwhale ]]></category><category><![CDATA[ blog ]]></category><category><![CDATA[ personal ]]></category><category><![CDATA[ website ]]></category> <description><![CDATA[ <h2>And Now For Something Completely Different</h2>
 
 <p>I've been writing posts on this website for a little while
 now, mostly relating to my technological exploits and sysadmin
@@ -508,7 +508,7 @@ I used to very much enjoy having a blog. I should probably try to
 enjoy it again.</p>
 
 <p>I'll be making changes to this site over the next few days.</p>
- ]]></description> </item><item> <title>New Site</title> <link>https://Sporiff.github.io/posts/New-Site.html</link> <pubDate>2018-10-01</pubDate> <author>Ciarán Ainsworth</author> <guid isPermaLink="true">https://Sporiff.github.io/posts/New-Site.html</guid> <category><![CDATA[ tech ]]></category><category><![CDATA[ blog ]]></category><category><![CDATA[ markdown ]]></category><category><![CDATA[ fun ]]></category> <description><![CDATA[ <p>As the astute among you may have noticed, this site has undergone some changes
+ ]]></description> </item><item> <title>New Site</title> <link>https://sporiff.github.io/posts/New-Site.html</link> <pubDate>2018-10-01</pubDate> <author>Ciarán Ainsworth</author> <guid isPermaLink="true">https://sporiff.github.io/posts/New-Site.html</guid> <category><![CDATA[ tech ]]></category><category><![CDATA[ blog ]]></category><category><![CDATA[ markdown ]]></category><category><![CDATA[ fun ]]></category> <description><![CDATA[ <p>As the astute among you may have noticed, this site has undergone some changes
 over the last couple of days. That's because I've now completely moved away
 from Wordpress and destroyed my old server in favour of a different provider.</p>
 
