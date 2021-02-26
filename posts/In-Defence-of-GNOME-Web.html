@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en"> <head> <title>Life Inside a Computer</title> <meta http-equiv="content-type" content="text/html;" charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1"> <link href="https://Sporiff.github.io/css/style.min.css" rel="stylesheet" type="text/css" /> <link rel="alternate" href="https://Sporiff.github.io/rss.xml" type="application/rss+xml" /> <link rel="icon" type="image/png" href="https://Sporiff.github.io/css/favicon.png" />  </head> <body> <nav class="navigation"> <a href="https://Sporiff.github.io">Home</a> | <a href="mailto:ciaranainsworth@outlook.com">Email</a>  | <a href="https://github.com/Sporiff">Code</a>  | <a href="https://paypal.me/CiaranAinsworth">Support me</a>  | <a href="https://assets.rootkey.co.uk/static/resume.pdf">Resumé</a>  | <a href="https://rootkey.co.uk/atom.xml">RSS</a>  </nav> <main id="content"> <section class="article-meta">
+<h1 class="title">In Defence of GNOME Web</h1>
+<details open> <summary>Article Information</summary> <section class="tags">
+Tagged as <a href="https://Sporiff.github.io/tag/epiphany.html">epiphany</a>, <a href="https://Sporiff.github.io/tag/gnome.html">gnome</a>, <a href="https://Sporiff.github.io/tag/tech.html">tech</a>, <a href="https://Sporiff.github.io/tag/mozilla.html">mozilla</a>, <a href="https://Sporiff.github.io/tag/firefox.html">firefox</a>, <a href="https://Sporiff.github.io/tag/internet.html">internet</a>, <a href="https://Sporiff.github.io/tag/browser.html">browser</a> </section>
+<section class="date">
+Written on <time datetime="2020-08-15">2020-08-15</time> </section>
+</section>
+<article class="article-content">
+<p>So you probably already know that <a href="https://www.theregister.com/2020/08/11/mozilla_staff_layoffs_products_revenue/" >Mozilla recently went bang</a> and fired 25% of its workforce before announcing that whoops lol actually we are <a href="https://www.theregister.com/2020/08/14/mozilla_google_search/" >still going to be able to feed the hungry fox this year</a>. Among the teams affected were the servo developers, a lot of the threat response team, and (I believe) the entirety of the team behind MDN: the <a href="https://developer.mozilla.org/" >only good resource for web development don't @ me</a>. As you can imagine this has led to quite the tizzy as people have puzzled about what exactly this means for the Firefox browser, Mozilla as an organisation, and the future of browsing and, indeed, the web as a whole.</p>
+
+<p>While nothing is likely to change in the immediate future, it seems clear that Mozilla is trying to consolidate its efforts into fewer projects to try and increase short-term stability while sacrificing experimentation. We've been assured that Firefox is still under active development, and that while Servo is kicking the bucket they are going to continue building new features in Rust for Gecko. But the whole affair has woken the community up to something they've largely been ignoring for quite a while: Mozilla is effectively the only thing standing between us and a totally Google-dominated web.</p>
+
+<blockquote>
+<p>Cue horrific memories of Internet Explorer.</p>
+</blockquote>
+
+<p>Of course, Apple's Safari still <em>technically</em> holds its ground and is unlikely to make any moves towards Google since mummy and daddy are in a bit of a standoff over how the web should work, but since Safari is no longer cross-platform its impact is limited, and since it's proprietary it isn't filling Firefox's shoes any time soon. What are we left with then? Vivaldi? Chromium-based. Opera? Chromium-based. Brave? Chromium-based. Microsoft Edge? Chromium-based. Chromium? I don't know about that one. I'll have to check.</p>
+
+<p>Why does any of this matter, though? Surely having a shared engine between all browsers is a positive thing? Well, as somebody who develops for the web I can confirm this would indeed be a hell of a lot easier, but it's also a monopolistic nightmare. Blink, the rendering engine used in Chromium and its offshoot browsers is developed in-house by Google. In consortium with other browser engine developers such as the Gecko team at Mozilla and the Webkit team, they are responsible for interpreting and proposing new specifications relating to how the web works. If Mozilla were to go away one day, it would leave Chromium-based browsers even <a href="https://news.softpedia.com/news/chromium-browsers-running-on-at-least-77-of-all-desktop-computers-529886.shtml" >less challenged than they currently are</a>, giving them undisputed control over how the web is intepreted for its users.</p>
+
+<p>Mozilla's role as a non-profit and the producer of the world's second most popular browser engine is a very important one. Its mission statement is to protect the privacy and rights of users online, and it uses its position of relative strength to fight for these rights in the decision-making process. Without it, we will basically have Apple and Google shouting at one another about how to align a <code>div</code>. Fucking nightmare.</p>
+
+<p>These are all bigger-picture problems, though. Let's think about the other ramification of Firefox disappearing: we will be down the most popular free and open source browser available for free desktop users. All browsers based on Chromium - even the open source ones - have the issue of being based on a browser which has <a href="https://libreplanet.org/wiki/List_of_software_that_does_not_respect_the_Free_System_Distribution_Guidelines#chromium-browser" >unclear licensing according to the FSF</a> and code that includes calls home to el goog. While many browser projects attempt to remove these, it's a herculian effort and ultimately you're still left with a homogeny problem in the browser space.</p>
+
+<p>But wait a second. There's a browser that's been sat under our gnoses for quite a while now. While some people may not gnow it, we've had a perfectly suitable, free software browser to call gnome (I'll stop this immediately). That's right: the venerable GNOME Web.</p>
+
+<blockquote>
+<p>Crickets</p>
+</blockquote>
+
+<p>Fine, I guess I'll explain.</p>
+
+<p>Unless you're a user of Elementary OS or Bodhi Linux, or are just the world's biggest GNOME fan, you've probably not encountered GNOME Web before. Also known by its codename <em>Epiphany</em>, GNOME Web is a simple, GTK-based web browser based on WebkitGTK (an implementation of Webkit, which was originally developed as a collaboration between Apple and the KHTML team and also powers Safari). It's a nice little browser which has good integration with GTK-based interfaces such as GNOME, Pantheon, and XFCE (and has decent integration with KDE because KDE and GNOME have worked pretty well together for quite a while now). It may lack a few of the nicer features that come with mature browsers like Chrome and Firefox, but it does the essentials pretty well:</p>
+
+<ul>
+<li>Website installation: not to be confused with PWAs (which only Chromium <em>properly</em> supports), GNOME Web allows you to install sites to your computer as sandboxed apps</li>
+<li>Ad blocking: this is built in to the application itself, although it's not enabled by default (I think it is in the latest versions on Flathub). It doesn't work as well as uBlock Origin. For example, it sometimes fails to block in-video ads on YouTube, but you should really be using youtube-dl at this point anyway because YouTube is just awful</li>
+<li>General website rendering and support is pretty good. Ironically, <a href="https://elementary.io" >elementary's website</a> doesn't work in the latest version. It just crashes. Whoops. But apart from that I've had no issues</li>
+</ul>
+
+<p>The biggest ommission I've come across is the lack of extension support, which apparently they would like to support through the <a href="https://wiki.gnome.org/Apps/Web/Docs/FrequentlyAskedQuestions" >WebExtensions API</a>. This is a pretty glaring hole for some people, I'm sure, but this brings me to my first point:</p>
+
+<h2>Why Should I Bother?</h2>
+
+<ol>
+<li><strong>For the good of the software</strong>: Software without users is just a bunch of code. If there is genuinely no desire for it to exist, it will soon cease to exist. There is no point in an individual or group of individuals pouring effort and time into maintaing a project if nobody uses it. If more people use GNOME Web, it will demonstrate a need for it, introduce more developers and testers to the project, and also (maybe) convince some web devs to clean up their designs</li>
+<li><strong>For a more consistent experience</strong>: Particularly if you're a GTK user, you might be surprised at how nice it is to use a browser that's actually integrated into your system. Firefox does okay with GTK, Chromium looks like utter shit, and GNOME Web is completely integrated, exactly as nature intended</li>
+<li><strong>Because it's in our hands</strong>: GNOME Web, much like GNOME itself, is a project that is entirely in the hands of the free software community. We get to decide how it's shaped and what direction it takes</li>
+<li><strong>Because it will soon be in our pockets</strong>: With the introduction of <code>phosh</code> and <code>phoc</code>, GNOME is coming to the Librem 5 and PinePhone, and with it we will be getting GNOME Web (by default on the Librem I presume). More users testing and prodding this could make it a really nice smartphone experience, since you've all been complaining for years that &quot;GNOME looks like a tablet&quot;</li>
+</ol>
+
+<h2>Okay. But Does It Work?</h2>
+
+<p>Yes. For the most part, GNOME Web functions absolutely fine. It plays video, it plays music, it has a nice reader mode. What won't it do? Some important stuff like video conferencing on Jitsi and all of that stuff we probably shouldn't be doing anyway.</p>
+
+<p>One thing that GNOME Web does not have is support for DRM. That means no Spotify, no Netflix, no... Hulu? I don't know. I'm out of touch on all of this. Some people may see this as a bad thing, but I can categorically say this is actually the correct way to work with the web. Web content should not contain DRM in the first place, and browsers that support it are actively harming users by supporting it.</p>
+
+<p>Do I believe that these services should be inaccessible? No. But I do believe the default browser on an operating system like GNU/Linux should be as free as possible, and that if users really <em>really</em> want to watch Netflix/listen to Spotify on their machine it should be a conscious decision to go and download another browser to do so. As mentioned above, most distros of Linux include Firefox/Chromium as their default browser, with shockingly few even coming with GNOME Web installed or other free browsers like Midori. On the one hand, this is great for users coming from Windows/macOS as it means they get the same experience they're already used to. But on the other hand, it means free software is betraying its mission. Do users care? Probably not. But I care, damnit.</p>
+
+<p>I've been using GNOME Web for a while now alongside Firefox and have started using it more following this news. It's not perfect, it lacks some things I really liked about Firefox, but I do like the fact that my computer now doesn't make the sound of a poorly maintained Boeing 747 during my daily visit to <a href="https://hamster.dance/hamsterdance/" >the hamster dance website</a>.</p>
+ </article>
+<nav class="relative-nav">
+<a href="https://Sporiff.github.io/posts/Burnout.html">Previous</a><br>
+<a href="https://Sporiff.github.io/posts/Finally-Change.html">Next</a><br>
+</nav>
+ </main>  <footer class="fineprint"> Unless otherwise credited all material <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"> CC BY-SA 4.0 </a> by Ciarán Ainsworth <a href="https://my.fsf.org/join?referrer=2278905"><img src="https://Sporiff.github.io/css/fsf.png" style="max-height: 1.5rem" /></a> </footer> </body> </html>

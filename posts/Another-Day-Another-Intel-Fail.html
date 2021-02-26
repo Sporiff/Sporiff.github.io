@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"> <head> <title>Life Inside a Computer</title> <meta http-equiv="content-type" content="text/html;" charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1"> <link href="https://Sporiff.github.io/css/style.min.css" rel="stylesheet" type="text/css" /> <link rel="alternate" href="https://Sporiff.github.io/rss.xml" type="application/rss+xml" /> <link rel="icon" type="image/png" href="https://Sporiff.github.io/css/favicon.png" />  </head> <body> <nav class="navigation"> <a href="https://Sporiff.github.io">Home</a> | <a href="mailto:ciaranainsworth@outlook.com">Email</a>  | <a href="https://github.com/Sporiff">Code</a>  | <a href="https://paypal.me/CiaranAinsworth">Support me</a>  | <a href="https://assets.rootkey.co.uk/static/resume.pdf">Resumé</a>  | <a href="https://rootkey.co.uk/atom.xml">RSS</a>  </nav> <main id="content"> <section class="article-meta">
+<h1 class="title">Another Day Another Intel Fail</h1>
+<details open> <summary>Article Information</summary> <section class="tags">
+Tagged as <a href="https://Sporiff.github.io/tag/tech.html">tech</a>, <a href="https://Sporiff.github.io/tag/intel.html">intel</a>, <a href="https://Sporiff.github.io/tag/security.html">security</a>, <a href="https://Sporiff.github.io/tag/meltdown.html">meltdown</a>, <a href="https://Sporiff.github.io/tag/spectre.html">spectre</a> </section>
+<section class="date">
+Written on <time datetime="2018-05-09">2018-05-09</time> </section>
+</section>
+<article class="article-content">
+<p>A few years ago, I'd have been shocked to see the sort of vulnerabilities I see announced these days 
+once a year, let alone once a month. But the rise of cybersecurity as a respected industry has led to the 
+big companies such as Microsoft, Apple, Canonical, etc. pulling up their socks and crushing vulnerabilities 
+in a timely manner. This is all great, except for those of us whose job it is to deploy these fixes.</p>
+
+<p>The big news out of this week's Patch Tuesday was undoubtedly the announcement of <a href="https://www.theregister.co.uk/2018/05/09/intel_amd_kernel_privilege_escalation_flaws/" >yet another flaw with 
+Intel's x86 architecture</a>. 
+Following on from the disastrous <a href="https://meltdownattack.com/" >Meltdown and Spectre</a>, the latest vulnerability 
+allows applications to hijack code and read memory due to a mistake in the implementation of kernel-level code. 
+<em>Nota bene</em>, I am not a programmer or a chip expert, this is just what I've gleaned from El Reg's far better 
+explanation of the issue. What is more interesting to me is that this is not a flaw with x86 <em>per se</em>, but rather 
+&quot;the error appears to be due to developer interpretation of existing documentation.&quot;</p>
+
+<h2>Bad Documentation is Bad</h2>
+
+<p>If an individual reads a set of instructions and manages stumble along the way, that's understandable and 
+usually rectifiable. However, if everybody reading the instructions fails in the same way, the instructions 
+are bad. End of story. This cannot be passed off as being developer error if the documentation was misleading or 
+unclear. It can be presumed that Microsoft, Google, Apple, and companies/communities working on *BSD and Linux 
+are pretty smart cookies indeed. I feel it is unlikely that all of them could have failed in the same way without 
+being misled.</p>
+
+<p>So what does this mean? I would personally be taking a good long look at Intel after the disastrous year they've 
+been having and wondering whether or not we had made a huge mistake entrusting our standards and architectures to a 
+company so driven by quick wins and marketing that they will happily sacrifice security and the long-term health 
+of the industry. As their recent &quot;meltdown&quot; has shown us, they have been a company obssessed with being able to 
+claim the fastest and bestest at the cost of sane design. And let's face it: <a href="https://www.cnet.com/news/intel-kaby-lake-7th-gen-7700-7600-7350/" >these chips aren't really getting 
+that much better</a>.</p>
+
+<p>It seems that <a href="https://www.bloomberg.com/news/articles/2018-04-02/apple-is-said-to-plan-move-from-intel-to-own-mac-chips-from-2020" >Apple's recent decision to move away from Intel architecture</a>
+may not be such a crazy idea. Certainly, Intel is faster <em>now</em>, but it is only a matter of time and investment 
+before others surpass them. Certainly, they've not made themselves many friends this year. This month's vuln 
+is naught more than another eye-roll for sysadmins and users at this point, a fault for which developers are 
+being unfairly blamed.</p>
+
+<h2>Anything Else?</h2>
+
+<p>Flash Player, of course, has <a href="https://helpx.adobe.com/security/products/flash-player/apsb18-16.html" >yet another high vulnerability announcement</a>. 
+Time to get your Adobe hat on and grumble all the way to deployment on this one. Or better yet, get rid of it 
+entirely and see how many people actually complain. Most of the rest of the serious stuff (17/21 critical) 
+seems to be browser vulnerabilities. Par for the course...</p>
+ </article>
+<nav class="relative-nav">
+<a href="https://Sporiff.github.io/posts/Deploying-Sophos-in-a-Production-Environment.html">Previous</a><br>
+<a href="https://Sporiff.github.io/posts/Acclimitising-to-New-Tech.html">Next</a><br>
+</nav>
+ </main>  <footer class="fineprint"> Unless otherwise credited all material <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"> CC BY-SA 4.0 </a> by Ciarán Ainsworth <a href="https://my.fsf.org/join?referrer=2278905"><img src="https://Sporiff.github.io/css/fsf.png" style="max-height: 1.5rem" /></a> </footer> </body> </html>

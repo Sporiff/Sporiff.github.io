@@ -1,0 +1,547 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Life Inside a Computer</title> <link href="https://Sporiff.github.io"/> <link type="application/atom+xml" rel="self" href="https://Sporiff.github.io/atom.xml"/> <updated>Fri, 26 Feb 2021 15:00:30 +0000</updated> <author> <name>Ciarán Ainsworth</name> </author> <entry> <link type="text/html" rel="alternate" href="https://Sporiff.github.io/posts/Burnout.html"/> <title>Burnout</title> <published>2020-07-20 08:41:21</published> <updated>2020-07-20 08:41:21</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://Sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;In December 2019, I was given a new role at work. This was with the understanding that there would need to be a transition period while I trained my replacement (I work with a very big, poorly documented product, which means that training is a very big task), but that I could expect to be out of my current role within 6 months.&lt;/p&gt;
+
+&lt;p&gt;7 months later, we have not even appointed somebody to the new role.&lt;/p&gt;
+
+&lt;p&gt;Now, of course the COVID pandemic has had a big role to play in this as the business has had to scramble to work out how it functions as a remote workplace and the hiring market is unsurprisingly much sparser than previously. However, my expectations had been structured and I expected the business to make good on this with a slight delay.&lt;/p&gt;
+
+&lt;p&gt;Following a series of interviews we had found some very promising candidates and were looking forward to hiring one in particular, who unfortunately had to turn the role down due to moving away. This was a great shame, but I had been assured that in this circumstance we would hire our second choice so that we could get the ball rolling on the training and my transfer. This didn&#039;t happen, however, and we are now back to the drawing board.&lt;/p&gt;
+
+&lt;p&gt;All the while, I have had more work piled on top of me. I am already closing down 2/3 of the business&#039; total support tickets by myself, as well as being responsible for the design and upkeep of our help centre platform and filling in the role of the business&#039; technical writer (I currently have a project to document our dozens of API endpoints, all without access to the code. Fun.). But now, on top of this, I am being given work to do which relates to my new role including customer calls, project scoping and quoting, and more bespoke technical writing.&lt;/p&gt;
+
+&lt;p&gt;As a result, I have almost completely shut down over the last month or so. I&#039;ve not communicated much with anyone outside of a few interactions within the Funkwhale community. I have been able to achieve very little in terms of my own personal projects, and have made basically no progress in my personal or professional development. I have developed an odd sensation whenever I close my eyes that I am falling, which means I now only get about 3-4 hours of sleep a night due to not being able to fall asleep until I am so exhausted I can no longer function. This is also making it harder to work the next day so I&#039;m falling behind.&lt;/p&gt;
+
+&lt;p&gt;Anyhow. This is just me venting really. I&#039;m annoyed at myself for letting my work have this great an impact on my life, and for not being able to keep fighting through it with vim and vigour, but that is how it is.&lt;/p&gt;
+
+&lt;p&gt;Some of the small things I have been able to achieve lately:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I&#039;ve implemented a dark theme on this site which should follow your device&#039;s colour scheme preference&lt;/li&gt;
+&lt;li&gt;I&#039;ve added a Funkwhale feature to my Matrix chatbot which allows you to search for &lt;code&gt;%track&lt;/code&gt;s, &lt;code&gt;%album&lt;/code&gt;s, and &lt;code&gt;%artist&lt;/code&gt;s from within a chatroom by supplying your Funkwhale endpoint. At some point I&#039;ll look at implementing Oauth and potentially make it more generically useful so I can split it off as its own Matrix bot&lt;/li&gt;
+&lt;li&gt;I&#039;ve fixed an annoying bug with this site where code boxes didn&#039;t render properly on smaller devices using Chrome. Every other browser worked fine, just Chromium-based browsers took issue with the &lt;code&gt;pre-wrap: whitespace&lt;/code&gt; setting so I had to do some fiddling to find a solution that worked on all browsers. Long story short: stop using Chromium. It&#039;s absolute dogshit&lt;/li&gt;
+&lt;li&gt;I&#039;ve fixed a couple of minor issues on Funkwhale, namely &lt;a href=&quot;https://dev.funkwhale.audio/funkwhale/funkwhale/-/merge_requests/1167&quot; &gt;an issue with the playbar rendering on landscape tablet devices&lt;/a&gt;, &lt;a href=&quot;https://dev.funkwhale.audio/funkwhale/funkwhale/-/merge_requests/1166&quot; &gt;an issue with artist embedding not working properly&lt;/a&gt;, and &lt;a href=&quot;https://dev.funkwhale.audio/funkwhale/funkwhale/-/merge_requests/1168&quot; &gt;support for unauthenticated users hitting the logout page directly&lt;/a&gt;. Just a few small things, but it feels good to get something done&lt;/li&gt;
+&lt;/ul&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://Sporiff.github.io/posts/Site-Speed-Increases.html"/> <title>Site Speed Increases</title> <published>2020-04-23</published> <updated>2020-04-23</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://Sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;&lt;img src=&quot;https://assets.rootkey.co.uk/static/images/Rocket.png&quot; alt=&quot;A rocket ship! Zoom!&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I got poking around at this site and was doing some thinking. Mainly along the lines
+of speed and security. By default, the dark-hyde theme provided by the good folks over
+at &lt;a href=&quot;https://github.com/coleslaw-org/coleslaw&quot; &gt;Coleslaw&lt;/a&gt; uses Google&#039;s CDN for font
+delivery. This is all well and good, however I&#039;m really not a big fan of Google at all
+and like to avoid them where possible. With that in mind, I started thinking about how
+I could go about replacing them.&lt;/p&gt;
+
+&lt;p&gt;The major thing that Google provides on a lot of websites, even those who are privacy-conscious
+enough not to use abominations like Google analytics, is the serving of fonts and Javascript.
+Hosting these things through their CDN makes it very straightforward to plug a font or script
+in without having to worry about hosting the files locally or anything like that. However,
+it also means that people&#039;s browsers are constantly calling out to Google, thereby increasing
+the web&#039;s reliance on them.&lt;/p&gt;
+
+&lt;p&gt;To that I say: eff off.&lt;/p&gt;
+
+&lt;p&gt;Replacing these fonts was reasonably straightforward thanks to the magical combination of
+&lt;a href=&quot;https://digitalocean.com&quot; &gt;Digital Ocean&#039;s&lt;/a&gt; CDN and the &lt;a href=&quot;https://google-webfonts-helper.herokuapp.com/fonts&quot; &gt;google-webfonts-helper&lt;/a&gt;,
+which made grabbing the relative files and CSS a breeze. Pointing all parts of my theme
+file to the newly cached CSS files and migrating all images etc. should speed things up
+at least a little bit, and best of all: no Google! All fonts should have a backup in case
+DO is a little slow. It&#039;s been known to happen.&lt;/p&gt;
+
+&lt;p&gt;The other little hacky thing I did was relates to &lt;a href=&quot;https://rootkey.co.uk/posts/Building-Smarter.html&quot; &gt;my earlier post&lt;/a&gt;
+about using a git-based workflow to manage the deployment of this site. I&#039;m a fan of the
+idea of using lazy loading for images since they&#039;re not particularly important for this
+site&#039;s content and I&#039;d rather let them just load in their own time. However, Coleslaw only
+produces raw images from Markdown, with no option to add the &lt;code&gt;loading&lt;/code&gt; tag. Oh well. This
+site runs on FreeBSD, baby! Anything is possible. A simple one-liner added to the deployment
+hook should allow me to stick that in to the files.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;find . -type f -name &quot;*.html&quot; -print0 | xargs -0 sed -i &#039;&#039; -e &#039;s/&amp;lt;img /&amp;lt;img loading=&quot;lazy&quot; /g&#039;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Oh, it&#039;s hacky. But it works. I&#039;m not really in the mood to go diving through Lisp code
+to do this in Coleslaw...&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://Sporiff.github.io/posts/Coleslaw-Migration.html"/> <title>Coleslaw Migration</title> <published>2019-11-03</published> <updated>2019-11-03</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://Sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;&lt;img src=&quot;https://assets.rootkey.co.uk/static/images/coleslaw.jpg&quot; alt=&quot;The Coleslaw logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This marks my third(?) migration to a new site format! 🎉&lt;/p&gt;
+
+&lt;p&gt;I&#039;ve recently started learning to use Emacs after leaving the Emacs manual
+lying around for the better part of a year. Since I&#039;ve decided to try my
+hand at some common lisp I figured it would be a good time to start learning,
+and my goodness I wish I&#039;d started this sooner.&lt;/p&gt;
+
+&lt;p&gt;As part of this new experience I started looking into ways I could use Lisp
+in my everyday life. I quickly came across &lt;a href=&quot;https://github.com/coleslaw-org/coleslaw&quot; &gt;Coleslaw&lt;/a&gt;
+as a recommended static site generator and decided to give it a go. There&#039;s a
+bit of a learning curve to it, and it doesn&#039;t really have the simplicity and
+wider appeal of alternatives such as Hugo and Pelican, but for the sort of thing
+I&#039;m doing it works wonderfully. The config is a joy to write (reminds me a lot
+of configuring my Guix system settings) and everything can be easily chopped
+and changed without too much worry. I can highly recommend it.&lt;/p&gt;
+
+&lt;p&gt;After years of Vim and VSCodium usage, I&#039;ve finally taken the plunge into Emacs
+and... I completely get it. This program is nothing short of magical. Again, lots
+of configuration and learning required (I have a 500 page manual sat on my desk
+for easy reference!) but once you&#039;ve got even the most basic commands down and
+some essential extensions installed you never want to leave it. It&#039;s just so
+damn fun to learn. I&#039;m going to see how it goes as my everyday IDE. It&#039;s already
+got me to uninstall Riot, Telegram, and Thunderbird from my machine...&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://Sporiff.github.io/posts/Into-the-Void.html"/> <title>Into the Void</title> <published>2019-06-09</published> <updated>2019-06-09</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://Sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;Ever heard of &lt;a href=&quot;https://voidlinux.org&quot; &gt;Void Linux&lt;/a&gt;? Me neither
+until a little while ago. My friend had orginally introduced me
+to Void when I was looking at going back to Arch Linux a few years
+ago, stating that it was (in many ways) a vastly superior system.
+I was intrigued, but I ultimately ended up sticking with Arch
+as I was familiar with it and was unwilling to give up on using
+the AUR at that point.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Fast forward to a few years later and I&#039;m back in the market for
+a new distro to try out. My Librebooted X200s was running Debian
+testing happily, but I was unhappy with the sheer amount of resource
+the system was taking to run given the machine&#039;s relatively limited
+capabilities. This was largely due to running GNOME, a DE which I
+used to have a very low opinion of until recent releases made it
+a much more pleasant experience. So I decided to give a tiling
+WM a try once more.&lt;/p&gt;
+
+&lt;p&gt;Initially I was going to go straight back to Parabola running
+&lt;a href=&quot;https://larbs.xyz&quot; &gt;LARBS&lt;/a&gt; (which, as I&#039;ve previously stated,
+is my favourite computing experience thus far), but since the
+creator of LARBS had recently been testing a new ricing script
+for Void I decided it was a good opportunity to give the distro a
+try.&lt;/p&gt;
+
+&lt;h2&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;The installation of Void Linux is surprisingly simple. I was using
+a terminal-based installation, but the wizard is still easy enough
+for a relatively inexperienced user to follow. As with most
+installations of this type, disk partitioning is the most difficult
+bit to nail. Once you get this, however, the system boots without
+complaint and remembers everything you had set up, which is still
+something I find pretty neat. YMMV as I&#039;m sure the myriad GUI
+installs are even easier, but suffice to say this was not as
+difficult an install as some.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;xbps&lt;/code&gt; is Void&#039;s homegrown package manager. It functions somewhat
+similarly to &lt;code&gt;pacman&lt;/code&gt;, with the distinction of using multiple
+commands rather than just using flags.&lt;/p&gt;
+
+&lt;h3&gt;Updating the system&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;# Pacman
+sudo pacman -Su
+# xbps
+sudo xbps-install -Su&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;Installing a package&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;# Pacman
+sudo pacman -S &amp;lt;package-name&amp;gt;
+# xbps
+sudo xbps-install -S &amp;lt;package-name&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;Removing a package&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;# Pacman
+sudo pacman -R &amp;lt;package-name&amp;gt;
+# xbps
+sudo xbps-remove &amp;lt;package-name&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As you can see, the two are syntactially very similar, but &lt;code&gt;xbps&lt;/code&gt;
+is not actually a valid command, which takes some getting used to.
+In addition, you have to make sure to run &lt;code&gt;xbps-install -Su&lt;/code&gt;
+multiple times after the system is first installed in order to get
+everything synced properly.&lt;/p&gt;
+
+&lt;p&gt;Setting up the rest of the machine was largely achieved using LARBS,
+so there wasn&#039;t much to get wrong. Just download and run the script
+and the defaults should take over. Again, YMMV depending on what
+setup you&#039;re going for. The installer will take care of the DE and
+other general programs, but for the sake of minimalism I decided
+not to go with that.&lt;/p&gt;
+
+&lt;h2&gt;Performance&lt;/h2&gt;
+
+&lt;p&gt;Void is pretty quick. It boots a lot faster than Parabola/Arch in
+my limited experience with it, taking about 6 seconds from initial
+boot to login screen, and DWM is capable of running pretty
+much everything I need with very little resource. To this point,
+the highest I&#039;ve managed to push the memory is around about 500MB
+with 10 surf windows, Weechat, and various other terminal programs
+running. Mostly it hovers around 200MB, which is crazy impressive.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://assets.rootkey.co.uk/static/images/void.png&quot; alt=&quot;Void running on my laptop&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Managing services with Runit is also really straightforward. Programs with
+daemon capabilities get added to a directory and enabling them as
+a service is a simple matter of symlinking the daemon programs to
+the Runit directory. This means it&#039;s incredibly easy to make your
+own services with just a few scripts. Is it any easier than systemd?
+Not really. It&#039;s definitely lighter, but it remains to be seen if
+it is as robust in day-to-day usage. I can honestly say I haven&#039;t
+missed any of systemd&#039;s 900 billion features at this point, so in
+terms of a laptop setup systemd is proving to be largely overkill.&lt;/p&gt;
+
+&lt;h2&gt;Packages&lt;/h2&gt;
+
+&lt;p&gt;As is possibly expected, Void&#039;s package selection is limited. Many
+distros with established package managers can get away with a
+limited first-party repository as the rest of the packages will be
+provided elsewhere, but with Void being the only distro (that I
+know of) using &lt;code&gt;xbps&lt;/code&gt;, it&#039;s really up to them to provide
+packages of everything. All of the most important stuff seems to be
+accounted for, and most of the time the free software I want to
+install can be easily obtained, however there are a few notable
+ommissions which need to be obtained elsewhere. This isn&#039;t really
+a problem since you can simply install &lt;code&gt;guix&lt;/code&gt; and use it alongside
+&lt;code&gt;xbps&lt;/code&gt; for package management.&lt;/p&gt;
+
+&lt;p&gt;Other package formats such as &lt;code&gt;appimage&lt;/code&gt; seem to run perfectly fine,
+while things like &lt;code&gt;snap&lt;/code&gt; are simply not going to work due to &lt;code&gt;snapd&lt;/code&gt;&#039;s
+ludicrous hard dependency on systemd. I&#039;ve not bothered with &lt;code&gt;flatpak&lt;/code&gt;
+yet as I&#039;ve not had a need to yet, but it is included in the repos
+so it&#039;s good to know it&#039;s there as a fallback (although given that
+I&#039;m aiming for a minimal system I&#039;m going to try to avoid it).&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;xbps&lt;/code&gt; also comes with an additional option called &lt;code&gt;xbps-src&lt;/code&gt;,
+which is offered as a script in a &lt;a href=&quot;https://github.com/void-linux/void-packages&quot; &gt;git repo&lt;/a&gt;.
+While &lt;code&gt;xbps-install&lt;/code&gt; will install binary versions of software from
+Void&#039;s repos, &lt;code&gt;xbps-src&lt;/code&gt; allows the user to save the source of
+these packages and build them from source locally instead. Using
+a git repo to sync these packages feel pretty natural, and the idea
+of having the option to build from binary or source in a supported way
+is pretty neat. &lt;code&gt;xbps-src&lt;/code&gt; also gives the user the option to package
+software themselves using &lt;code&gt;xtools&lt;/code&gt; to generate templates, which
+should make it easy for developers to make their software available
+through &lt;code&gt;xbps&lt;/code&gt; in future.&lt;/p&gt;
+
+&lt;h2&gt;Final Thoughts&lt;/h2&gt;
+
+&lt;p&gt;I have to say I really, &lt;em&gt;really&lt;/em&gt; like Void Linux. I wouldn&#039;t say it&#039;s
+on par with Arch Linux for me yet, but I will say it&#039;s one of the most
+solid options out there for anybody looking for a minimal or systemd-free
+distro. It recalls for me my first experiences using the venerable
+Slackware, with many of the choices that are usually made for me being
+put back to me but in an easy-to-configure way. The system&#039;s lightweight
+feel (largely achieved through dwm I&#039;m sure), the simplicity of the init
+system, and the surprising robustness of the package manager makes this
+a distro I&#039;m really glad to have tried. I&#039;ll probably stick with it for
+a little while and see how it treats my little Librebox.&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://Sporiff.github.io/posts/Moving-To-Sphinx.html"/> <title>Moving To Sphinx</title> <published>2019-05-09</published> <updated>2019-05-09</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://Sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;I&#039;ve made a few changes to this website. Well, not really a few changes,
+more like a complete overhaul. I was getting a bit bored of using Hugo/Markdown
+and decided to challenge myself to the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Move to &lt;a href=&quot;http://sphinx-doc.org&quot; &gt;Sphinx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Enable &lt;a href=&quot;https://ablog.readthedocs.io/&quot; &gt;Ablog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Move away from Github to Gitlab&lt;/li&gt;
+&lt;li&gt;Get &lt;a href=&quot;https://netlify.com&quot; &gt;Netlify CI&lt;/a&gt; working with the new setup&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This wasn&#039;t too difficult in theory, more time consuming (what can I say?
+I get bored). It involved taking all markdown files, converting them to rST,
+setting up Sphinx and all related env variables, creating new build instructions
+and ultimately getting everything to build seamlessly from the push.&lt;/p&gt;
+
+&lt;h2&gt;Gitlab&lt;/h2&gt;
+
+&lt;p&gt;Previously I had hosted this setup on Github for ease of use, but
+recently I&#039;ve been finding myself liking it less and less. I&#039;ve had
+a Gitlab for a while and have run my own Gitea server, but it seemed
+wasteful to keep a server like that running when my personal site (the
+project I most frequently push to) isn&#039;t even pushing from there.
+I&#039;ve therefore decided to retire Gitsune and move operations to Gitlab 
+for now. Eventually I&#039;ll probably resurrect Gitsune as a Gitlab instance
+but looking at the spec for it I&#039;ll probably hold off until I have
+a bit more of an income...&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://Sporiff.github.io/posts/New-Developments.html"/> <title>New Developments</title> <published>2019-04-18</published> <updated>2019-04-18</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://Sporiff.github.io</uri> </author> <content type="html">&lt;h2&gt;It&#039;s Been a Little While&lt;/h2&gt;
+
+&lt;p&gt;Every time I have a blog I am always really bad at posting to it consistently. 
+Actually, a lot has changed in recent months so I thought I&#039;d do a little brain dump.&lt;/p&gt;
+
+&lt;h2&gt;Funkwhale&lt;/h2&gt;
+
+&lt;p&gt;Thanks to the lovely people at &lt;a href=&quot;https://funkwhale.audio&quot; &gt;Funkwhale&lt;/a&gt; I&#039;m finally getting involved 
+properly with a software project. To date I&#039;ve provided a couple of new (extremely simple) 
+features and bugfixes, as well as leading a large project to restructure the documentation and 
+provide a slew of new user guides. I&#039;ve also tried to get involved closely with the community and 
+maintain an active role even when I can&#039;t necessarily contribute anything material to the project. 
+Over the last week or so this has taken a back seat, however, due to...&lt;/p&gt;
+
+&lt;h2&gt;House Hunt&lt;/h2&gt;
+
+&lt;p&gt;My partner and I are looking at buying our first place. Currently we are renting, but renting in 
+Exeter is a painfully expensive and unrewarding experience. We&#039;ve found a flat in the centre of town 
+that we both really like, and are now going through all the fun of trying to work out what a mortgage 
+is and how we get one.&lt;/p&gt;
+
+&lt;p&gt;It&#039;s not fun.&lt;/p&gt;
+
+&lt;p&gt;We&#039;re uncertain at this point whether we&#039;ll actually be able to complete this move, but we&#039;re pretty 
+hopeful that we can move swiftly enough to grab it while it&#039;s on the market. If we can, we&#039;ll be a lot 
+closer to all of the things we&#039;re currently missing out on.&lt;/p&gt;
+
+&lt;h2&gt;Work&lt;/h2&gt;
+
+&lt;p&gt;I&#039;ve been making leaps and bounds at work recently. A lot of the projects I&#039;ve been leading have been directly
+inspired by my work with Funkwhale, and I&#039;m happy to say that the projects to manage documentation in Markdown + 
+Git as well as the process of managing mapping changes in Git have both been officially implemented and are being 
+used across the board. It&#039;s been a bit of a fight, but it&#039;s been really good to see people get excited about the 
+benefits a project is going to bring them.&lt;/p&gt;
+
+&lt;p&gt;That&#039;s really it for now. It&#039;s been a crazy busy month this month (not least with our insane political atmosphere at the moment), but hopefully something really good will come of it eventually.&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://Sporiff.github.io/posts/Progress.html"/> <title>Progress</title> <published>2019-02-12</published> <updated>2019-02-12</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://Sporiff.github.io</uri> </author> <content type="html">&lt;h2&gt;Making a difference&lt;/h2&gt;
+
+&lt;hr/&gt;
+
+&lt;p&gt;It feels good to actually have a positive impact on something.
+One of my biggest gripes about working in support is that you
+are - as a support agent - inevitably the face of disappoinment
+and/or failure at some point. The job is time and attention demanding,
+and sometimes you simply have to tell someone that things they
+want are not possible.&lt;/p&gt;
+
+&lt;p&gt;This is devastating for morale. It&#039;s something I&#039;ve seen in all
+my support jobs: the tickets keep coming and all you can do is
+try to answer them all in SLA. It&#039;s a hosepipe of negativity
+which can really get you down after a period of time. Occassionally,
+you&#039;ll get to the bottom of a particularly nasty problem and really
+make somebody&#039;s day better. For the most part, though, it&#039;s a
+thankless job with a lot of disappointment and no real goals to
+work towards.&lt;/p&gt;
+
+&lt;h2&gt;Turn it Around&lt;/h2&gt;
+
+&lt;p&gt;In my previous roles I have tried to find pragmatic and practical
+ways to lessen the negativity of the support role by using my
+unique frontline position to directly address the gripes and
+grievances of customers and coworkers alike. During my time as
+a frontline hardware repair worker/desktop support agent I spent
+all my spare time automating small tasks to try and take some of
+the pain away from the mundane, everyday jobs. I took this approach
+with me when I was promoted to systems technician, using my newfound
+access to simplify and automate many of the things which had caused
+me misery on the frontline so that it &lt;em&gt;never&lt;/em&gt; had to be that bad again.&lt;/p&gt;
+
+&lt;p&gt;My current role is slightly different. For the first time in my
+professional career I am working in a company that &lt;em&gt;makes&lt;/em&gt; something,
+which means that every decision and project has to be worth something
+to the product as a whole. No more frittering away idle hours on support
+desk trying to fix bits and pieces. The changes have to have a tangible
+impact.&lt;/p&gt;
+
+&lt;p&gt;One of the reasons I landed this job was because of my background in
+English, as well as my background as a technical writer and creator
+of documentation in my previous roles. As such, I was asked to look
+at the company&#039;s help center, which is (still) in need of some updates.
+As each day passed I started to pick up on something from the tickets:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Nobody&lt;/em&gt; read our documentation.&lt;/p&gt;
+
+&lt;p&gt;We have a lot of documents, mind you. I can&#039;t expect every client to
+read every one. But the fact that the same issues came up again and
+again said to me that something fundamentally needed to change. The
+documents were obviously not clear or were frustrating to navigate.
+Similarly, no centralised process existed to write documentation nor
+a central place to put it.&lt;/p&gt;
+
+&lt;p&gt;Since I am a big fan of markup languages like Markdown and reStructuredText,
+I decided to make use of Markdown when writing documents for my own
+ease, from which I would then copy the pure HTML to put into our document
+store to be formatted directly by CSS so that when the time came for
+a redesign, everything could be changed in one fell swoop. I started
+storing all of these markdown files with their corresponding HTML in
+a folder structure that reflected the current layout of the help centre.
+And that&#039;s when I realised how we could fix it.&lt;/p&gt;
+
+&lt;h2&gt;You Git&lt;/h2&gt;
+
+&lt;p&gt;I use Git for a lot of things. I write small projects, I contribute
+to some open-source projects, and I host this website on Github. It
+is an elegant way to control large numbers of changing parts in a
+controlled and centralised way. Given that much of what I write goes
+through Git, I started to put together a proposal for making use of
+our repository to host documentation. This way - I reasoned - we would
+have a portable document set which could easily be recovered elsewhere,
+a set which had perfect revision history and the potential to put in
+requirements for submission, and a way to work both on and offline
+with no issues.&lt;/p&gt;
+
+&lt;p&gt;The biggest bugbear we have at the moment is screenshots. Because the
+software evolves so rapidly (and will only get faster) keeping screenshots
+up-to-date is arduous. We have to open each document on Zendesk and
+manually replace the image. Rinse and repeat. To remedy this, I decided
+we should use Amazon S3 (which hosts a lot of our stuff already) and
+keep static links to files which could be swapped out whenever a new
+version was ready.&lt;/p&gt;
+
+&lt;p&gt;Having been given the go-ahead by the CTO, I am currently in the
+process of porting and rewriting our entire document store. It will
+take a long time, but I&#039;m hoping that it will have the following
+effects:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Customers will be more likely to use our nice-looking and accurate documents&lt;/li&gt;
+&lt;li&gt;Writing documents will naturally become part of our workflow regardless of what part of the company we work in&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Here&#039;s hoping!&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://Sporiff.github.io/posts/Bring-Back-My-Internet.html"/> <title>Bring Back My Internet</title> <published>2019-02-07</published> <updated>2019-02-07</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://Sporiff.github.io</uri> </author> <content type="html">&lt;h2&gt;Mixed Messages&lt;/h2&gt;
+
+&lt;p&gt;Okay, so I&#039;m slightly reneging on my &lt;a href=&quot;https://rootkey.co.uk/posts/More-Writing.html&quot; &gt;earlier post&lt;/a&gt; by writing
+about computers again, but trust me when I say this one is as
+much personal as it is technical.&lt;/p&gt;
+
+&lt;h2&gt;Back in t&#039; day&lt;/h2&gt;
+
+&lt;p&gt;It seems so bizarre to me that people are taken aback by my not
+having a Facebook account. Or a Twitter account. Or anything that
+they have bar email.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I&#039;ll add you on Facebook. How do you spell your name?&lt;/p&gt;
+
+&lt;p&gt;C-I-A-R-A-N, but I&#039;m not on Facebook&lt;/p&gt;
+
+&lt;p&gt;Why not?&lt;/p&gt;
+
+&lt;p&gt;Too many reasons&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;At this point in the conversation, I&#039;m pretty much the asshole,
+putting them out terribly by not being instantly available on the
+network of their choice in order to organise impromptu events. But
+I remember, as I&#039;m sure many do, when the world was separated by the
+internet as opposed to joined by it. I think I preferred it this way.&lt;/p&gt;
+
+&lt;h2&gt;Separated?&lt;/h2&gt;
+
+&lt;p&gt;To clarify, the Internet has always been a great communication tool,
+and it&#039;s certainly true that it has vastly simplified comms over
+distance to the point where it&#039;s unthinkable now that we once waited
+days for messages to move across geography that now takes only milliseconds
+to traverse. But the internet used to be a world unto itself, in a way.&lt;/p&gt;
+
+&lt;p&gt;When I was a child, I spent long hours browsing the web, sitting in chat
+rooms and looking at strange and interesting sites (&lt;a href=&quot;http://www.arngren.net/&quot; &gt;of which this is still the oddest&lt;/a&gt;).
+Then, when I was done on the internet, I could spend time with friends and
+family. There was a clear separation there: I know you online, I know you offline.
+You who I know online I shall never meet. You are abstract and faceless,
+yet just as human as anyone else. You who I know offline are formed and tangible,
+and I have the freedom to spend time away from you with my faceless chums should
+I want to.&lt;/p&gt;
+
+&lt;p&gt;But what do we have now? Once the barrier for entry to the web was lowered,
+we saw adoption grow rapidly. This is, in a way, a great thing. It meant
+that people who previously struggled to make use of the benefits of the
+web now had access to the same powerful tools as those used by web users in days past.
+But this also had the unintended effect of erasing the barrier between the
+online life and the offline life. The friends and family from whom I could
+escape when life became too much suddenly bled into the last fascinating,
+untouched world I held dear. As more and more people came online, so too
+did the IRC rooms empty and the strange sites give way to centralised, controlled
+sites that allowed interaction across all experiences.&lt;/p&gt;
+
+&lt;p&gt;Honestly? I &lt;em&gt;hate&lt;/em&gt; this.&lt;/p&gt;
+
+&lt;p&gt;The internet now is a shell of its former self. Sites like Facebook and
+Twitter have so centralised, standardised, and sterilised the method and means
+of online interactions that it feels like all the adventure and fun has been
+sucked out of the platform entirely. When you do find an interesting looking
+place, it&#039;s often either a ghost town or filled with ne&#039;er-do-wells who
+are more interested in subjecting you to bile and vitriol than getting to know
+you. The online space is now no more interesting than a high school, and has
+many of the same problems. Is there a solution? Well, federalised services
+give it a fair crack and IRC is still as enduringly addictive as ever.
+But the network effect is real. Once a site like Facebook takes hold of the
+popular psyche, you are being difficult if you don&#039;t use it.&lt;/p&gt;
+
+&lt;p&gt;If I&#039;m being truthful I am happy to keep my online life and my offline
+life completely separate, never interacting with anybody I know AFK
+online and keeping them in the real world where they belong. But this
+has the unwanted result of making you a &amp;quot;voluntary&amp;quot; outcast, who &lt;em&gt;chooses&lt;/em&gt;
+not to be involved in things because you &lt;em&gt;refuse&lt;/em&gt; to just give in and
+join [insert social network here]. Well, ain&#039;t that just shit?&lt;/p&gt;
+
+&lt;p&gt;Anyhow. Just a rant. As you were.&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://Sporiff.github.io/posts/More-Writing.html"/> <title>More Writing</title> <published>2019-02-04</published> <updated>2019-02-04</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://Sporiff.github.io</uri> </author> <content type="html">&lt;h2&gt;And Now For Something Completely Different&lt;/h2&gt;
+
+&lt;p&gt;I&#039;ve been writing posts on this website for a little while
+now, mostly relating to my technological exploits and sysadmin
+misadventures. While this is a big part of my life at the
+moment, it&#039;s not the only thing I do. I&#039;m going to try and
+write a bit more about non-technology things just to try to 
+encourage myself to focus on other things alongside computers.&lt;/p&gt;
+
+&lt;h2&gt;Why?&lt;/h2&gt;
+
+&lt;p&gt;Basically, computers have started to take over my life. I go 
+to work every day and work with computers, writing more SQL
+than I am comfortable with. I administer my Funkwhale and Mastodon
+servers, which - while something I very much enjoy doing - takes
+up a lot of my time and money since I am still working it out
+and am paying for it off my back. I also tend to come home and
+hop straight on a computer to do... something. There&#039;s not always
+a goal. Sometimes I just kind of mess around on 4chan or Reddit for
+a few hours every night before going to bed, achieving absolutely
+nothing in the limited amount of time I have free after spending
+far too long at work.&lt;/p&gt;
+
+&lt;p&gt;I have other interests that I&#039;m keen to get back into. Chief among
+these is music, and I&#039;m looking to get back into recording and
+posting music up on &lt;a href=&quot;https://tanukitunes.com/about&quot; &gt;Tanuki Tunes&lt;/a&gt;
+as a way of marrying up my passions. Another interest is writing.
+I&#039;ve started brainstorming ideas for a short story I&#039;d like to
+write, but I&#039;m a pretty piss-poor writer when it comes to sticking
+to an idea, so I won&#039;t hold my breath on that. The last - and
+easiest of these to achieve - is reading. As a child I was a voracious
+reader, but as time has gone on I have simply stopped reading. It&#039;s
+not that I no longer enjoy it, it&#039;s more that I find myself simply
+not bothering because it&#039;s much more quickly gratifying to waste
+time on the computer every day. This is something I guess I just
+need to balance better, as I don&#039;t want to lose interest in
+computers at all, but it can&#039;t be my only pastime.&lt;/p&gt;
+
+&lt;p&gt;I&#039;m probably going to post more ramblings here as it&#039;s an easy
+and safe way to rant about things in a more thought-out and
+constructive way than &lt;a href=&quot;https://bakusocial.com/about&quot; &gt;Mastodon&lt;/a&gt;.
+I used to very much enjoy having a blog. I should probably try to
+enjoy it again.&lt;/p&gt;
+
+&lt;p&gt;I&#039;ll be making changes to this site over the next few days.&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://Sporiff.github.io/posts/New-Site.html"/> <title>New Site</title> <published>2018-10-01</published> <updated>2018-10-01</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://Sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;As the astute among you may have noticed, this site has undergone some changes
+over the last couple of days. That&#039;s because I&#039;ve now completely moved away
+from Wordpress and destroyed my old server in favour of a different provider.&lt;/p&gt;
+
+&lt;p&gt;There are a couple of reasons for this:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The server was costing me money that I didn&#039;t have to spare&lt;/li&gt;
+&lt;li&gt;Wordpress is slow and cumbersome. Even a simple site like this was taking
+   far too long to load&lt;/li&gt;
+&lt;li&gt;I wasn&#039;t &lt;em&gt;learning&lt;/em&gt; anything by using Wordpress&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This last point is the reason I&#039;ve moved to the solution I have. I&#039;m now using
+&lt;a href=&quot;https://netlify.com&quot; &gt;Netlify&lt;/a&gt; in conjunction with &lt;a href=&quot;https://github.com&quot; &gt;GitHub&lt;/a&gt;
+to host my site and am writing everything in Markdown to be generated using
+&lt;a href=&quot;https://gohugo.io&quot; &gt;Hugo&lt;/a&gt;. Why? Well, let&#039;s take each of these points in turn.&lt;/p&gt;
+
+&lt;p&gt;Firstly, I&#039;ve been thinking about getting away from Wordpress for a while now. 
+Secondly, while I have a few repos on GitHub, I am not exactly a
+git aficionado and really need to learn more for future reference. Thirdly,
+writing posts in WYSIWYG editors is just kind of a crutch at this point. Now
+that I&#039;m spending more time getting to know Vim and LaTeX for home use, I feel
+like getting to know Markdown at the same time is a good idea. Lastly, I am
+just as guilty as many others of running a simple site with far too heavy an
+interface. There is no justification for a blog such as mine to run on WP when
+static pages will suffice.&lt;/p&gt;
+
+&lt;p&gt;I&#039;m also going to be focusing more on RSS as this is a technology I would
+dearly like to keep alive. I know not everybody likes it, but as somebody who
+is finding themselves more and more living in a terminal it is an essential
+thing for me.&lt;/p&gt;
+
+&lt;p&gt;That&#039;s all for now. Hopefully this move isn&#039;t too jarring. If you prefer light
+themes, the lightbulb in the top right will switch you over. This site is dark
+by default because it&#039;s better for your eyes, yung&#039;uns&lt;/p&gt;
+</content> </entry> </feed>

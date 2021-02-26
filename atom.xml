@@ -1,0 +1,537 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Life Inside a Computer</title> <link href="https://Sporiff.github.io"/> <link type="application/atom+xml" rel="self" href="https://Sporiff.github.io/atom.xml"/> <updated>Fri, 26 Feb 2021 15:00:30 +0000</updated> <author> <name>Ciarán Ainsworth</name> </author> <entry> <link type="text/html" rel="alternate" href="https://Sporiff.github.io/posts/Dell-XPS-13-Thoughts.html"/> <title>Dell XPS 13 Thoughts</title> <published>2021-02-24 00:28:00</published> <updated>2021-02-24 00:28:00</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://Sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;So I decided finally (finally!) that I was going to invest in a new device in preparation for my upcoming move to Germany. I&#039;ve never really been much of a hardware person, if I&#039;m honest. Hardware has always just been a means to an end to get me working with software as efficiently as possible be it productivity software, games, or media software. For this reason my computers have always been a bit off the mark; I will nearly always pick something over-specced or under-specced, something too big or something too small, etc.&lt;/p&gt;
+
+&lt;p&gt;Whatever the case, I owned my last desktop computer back in university (until its liquid cooling unit burst and flooded the motherboard &amp;#x1F643;). My experience with it was that it
+essentially anchored me to a desk, and I would always need to have a more portable device around to do anything elsewhere. So, for my next major investment I decided to plump for a decently powerful Lenovo Ideapad u410, with a dedicated Nvidia card for gaming.&lt;/p&gt;
+
+&lt;p&gt;Big mistake. One you&#039;d think I&#039;d remember. In particular, discrete graphics cards are a nightmare to manage on Linux (my primary OS at the time), so I spent a huge amount of time trying to figure out why the battery would drain in just under two hours. Predictably, the gaming performance was... well, bad. I could play certain games but never at a high quality or a good framerate. Bum gravy.&lt;/p&gt;
+
+&lt;p&gt;So next, thinks I, I&#039;ll build a laptop with a really powerful GPU and a really big chassis. That way it should be able to handle these pesky games while still being a portable device right? Well, no. Not at all. The GPU was definitely a big step up from the old machine but the laptop was too big and heavy to be carted anywhere, so for the last four years on the desk it has sat, just a poor man&#039;s replacement for a desktop computer, always charging and never discharging. Always ready to play games but never powerful enough to do so satisfactorily.&lt;/p&gt;
+
+&lt;p&gt;So something has to change.&lt;/p&gt;
+
+&lt;h1&gt;The Criteria&lt;/h1&gt;
+
+&lt;p&gt;My biggest gripe with my old computer was its shear heft.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.makeagif.com/media/2-24-2021/uH_Sn-.gif&quot; alt=&quot;My heft!&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Its enormous size and weight (not to mention the weight of the power brick it required) was simply not practical for the purposes of travel. While having a powerful machine capable of handling most anything you can throw at it is good, it is not worth the price of your back.&lt;/p&gt;
+
+&lt;p&gt;My wishlist looked a little like the following when I started out:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Lightweight&lt;/li&gt;
+&lt;li&gt;Relatively powerful (good enough to play PS2 era games since gaming stopped improving there, let&#039;s be honest)&lt;/li&gt;
+&lt;li&gt;Compact&lt;/li&gt;
+&lt;li&gt;A good battery life&lt;/li&gt;
+&lt;li&gt;No discrete GPU&lt;/li&gt;
+&lt;li&gt;Good screen, but not 4k or above (for battery reasons)&lt;/li&gt;
+&lt;li&gt;Premium feel (all of my earlier laptops had been somewhat cheap and I ended up paying for it with plastic splinters)&lt;/li&gt;
+&lt;li&gt;Not a mac&lt;/li&gt;
+&lt;li&gt;Not a 2-in-1 (the hinges &lt;strong&gt;will&lt;/strong&gt; break)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I wasn&#039;t entirely sure about my budget, but since my dad was going to be buying my old machine off me and my company had bought back most of the leave I didn&#039;t end up taking, I had a little more to play with than previously.&lt;/p&gt;
+
+&lt;h2&gt;The Competition&lt;/h2&gt;
+
+&lt;p&gt;The XPS 13 was always a contender from the start. It consistently topped the list of modern-day ultrabooks and got pretty solid reviews across the board. The new M1-powered macs came out ahead a lot of the time but quite frankly I don&#039;t believe the hype (I love ARM but let&#039;s not kid ourselves here, we&#039;re a ways off). Besides these two, a couple of others would pop their heads up occasionally such as the HP Spectre, a few Yogas, and the XPS 13&#039;s big brother, the XPS 15. The 15&amp;quot; display seemed a bit overkill for the price hike and since portability was more important to me than screen real estate I opted to focus on the 13 for the XPS line. The Yogas and Spectre both dropped to the bottom of the list due to their transforming and touchscreen nature.&lt;/p&gt;
+
+&lt;p&gt;In all honesty, the only other machine that even came close to beating out the XPS was the Microsoft Surface Pro 7. I used to use a Surface Pro for work and remember heartily enjoying its 3:2 screen and excellent peripherals. However, sitting with one is a miserable experience. They&#039;re great machines to use at a desk or as a tablet, but as a laptop they fall significantly short. Also, we&#039;re likely to see a redesign soon-ish so if I were to buy one I&#039;d hang on. Ditto for the Surface Book, which looked a better laptop but a significantly less interesting tablet.&lt;/p&gt;
+
+&lt;h1&gt;On Paper&lt;/h1&gt;
+
+&lt;p&gt;So on paper what does the XPS 13 have to work with? Well, in honesty I&#039;m not really too &lt;em&gt;au fait&lt;/em&gt; with spec sheets, so a lot of this is just numbers to me:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;16GB DDR4 RAM (honestly the bare minimum needed for any semi-serious workload these days)&lt;/li&gt;
+&lt;li&gt;11th Gen Intel Core i7 Processor 4ghz&lt;/li&gt;
+&lt;li&gt;512GB NVMe SSD&lt;/li&gt;
+&lt;li&gt;13&amp;quot; 1920x1200 screen (non-touch)&lt;/li&gt;
+&lt;li&gt;2x USB-C ports&lt;/li&gt;
+&lt;li&gt;MicroSD slot&lt;/li&gt;
+&lt;li&gt;3.5mm headphone jack&lt;/li&gt;
+&lt;li&gt;1,27kg chassis&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And that is about it. You can look up the specs in more detail online, but for the purposes of this post this is all I&#039;m really going to talk about.&lt;/p&gt;
+
+&lt;h2&gt;The Bad&lt;/h2&gt;
+
+&lt;p&gt;Okay, so let&#039;s work through this and take stock of the problems. The biggest one is the same as any bloody ultrabook on the market: repairability. If anything happens to this machine at any point I&#039;m going to have to return it to the store and get it replaced because every single part is soldered in place. This is the polar opposite of my tiny, underpowered ThinkPad x201s (God bless it) which can be repaired by anyone with a screwdriver and a go-get-em attitude. But such is the trend of the industry, and it&#039;s a price you pay for portability.&lt;/p&gt;
+
+&lt;p&gt;The same goes for the ports. This is a &lt;em&gt;dismal&lt;/em&gt; port selection, and one that has already irritated me somewhat after a day of use. Very little in this house connects to USB-C, so I need an adapter for everything. With some foresight I purchased a hub which can handle my USB-A and HDMI peripherals so I have been able to get everything up-and-running pretty easily, but what happens if I am handed a suspicious USB stick on the street? How am I supposed to infect my computer then, hmm?&lt;/p&gt;
+
+&lt;p&gt;In all honesty I can see that USB-C is the future and I will admit the fast charge is great, but to only have one port free when charging is frankly madness. I am going to endeavour not to leave the machine plugged in all the time to preserve the battery, however, so this might actually keep me on that path. I will say I&#039;m glad they kept the 3.5mm jack. Doing away with that would have been a deal breaker.&lt;/p&gt;
+
+&lt;p&gt;Apart from that, the machine is fine to me on paper. As I say I&#039;m not a hardware buff, so I know that some will scoff at that but it seemed like a reasonable trade-off. The Intel Iris integrated GPU has been reviewed as running older games pretty well, which is all I needed to hear.&lt;/p&gt;
+
+&lt;h2&gt;The Good&lt;/h2&gt;
+
+&lt;p&gt;There are a few really nice things about this laptop right off the bat:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The size: 13&amp;quot; with a bezel-less screen is a really nice combination. The machine is compact but the screen doesn&#039;t feel cramped (although I admit I prefer 125% scaling to 150%)&lt;/li&gt;
+&lt;li&gt;The weight. It&#039;s 1,27kg for crying out loud&lt;/li&gt;
+&lt;li&gt;The screen resolution is decently high quality, but not so much that it&#039;s going to massacre battery life&lt;/li&gt;
+&lt;li&gt;The 11th gen core processor is a significant step up on its predecessors (particularly for graphics, I hear)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;None of this is mind blowing in any way, but in all honesty it made the machine come across a really good, solid all-rounder. No fancy peripherals or transformations, no extravagant parts, just a sleek and simple laptop with just enough oomph to get it done.&lt;/p&gt;
+
+&lt;h1&gt;My Experience&lt;/h1&gt;
+
+&lt;h2&gt;Setup&lt;/h2&gt;
+
+&lt;p&gt;Okay, let me just get this of the way: I had a nightmare setting this machine up and it&#039;s not the machine&#039;s fault.&lt;/p&gt;
+
+&lt;p&gt;It&#039;s &lt;em&gt;Microsoft&#039;s&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;I had bought myself a Windows 10 Professional license key in anticipation of getting this machine (like nearly all others it comes with Windows 10 Home, which I refuse to use because I &lt;em&gt;will not&lt;/em&gt; be advertised to after paying a license fee). Stupidly, I&#039;d forgotten to check whether or not the key could &lt;em&gt;upgrade&lt;/em&gt; an existing edition so when it came to trying to use the key it just refused to take.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Note to self: write a post on how stupid Windows licensing is&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;quot;Never mind,&amp;quot; thinks I, &amp;quot;I&#039;ll just perform a reinstall and put the key in that way.&amp;quot; Oh what a foolish child I was. Every single time I would boot into the recovery media using a dongle-connected drive, it would tell me that the SSD could not be loaded due to a missing driver (apparently Microsoft in their infinite wisdom decided not to include it in the recovery ISO). After a bit of digging I tried exporting my device&#039;s drivers to load in the recovery media using the following Powershell cmdlet:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Export-WindowsDriver -Online -Destination E:\Drivers&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;No dice. These drivers, it complained, were unsigned. So I try downloading direct from the source and unzipping the resulting driver to the drive. Uh-uh, this won&#039;t work either.&lt;/p&gt;
+
+&lt;p&gt;To be honest with you I got so fed up I just bought an upgrade license. It won&#039;t hurt to have another activation key hanging around. But I&#039;m somewhat &lt;em&gt;absolutely furious&lt;/em&gt; because I fought this issue for over an hour. This would &lt;em&gt;never&lt;/em&gt; happen with Linux. Linux waits until you&#039;ve booted into the live system to give you bad news.&lt;/p&gt;
+
+&lt;p&gt;Anyway, once I got my licensing issue sorted out I set about removing the usual guff that gets installed. To Dell&#039;s credit not much was theirs, most was just plain old Microsoft gunk such as that Solitaire game they want me to pay a subscription fee for (lolwot). At this point I turned to &lt;a href=&quot;https://github.com/microsoft/winget-cli&quot; &gt;winget&lt;/a&gt; and started installing my normal packages. Given all my data is backed up on the cloud the actual setup of the machine at this point took only a few minutes.&lt;/p&gt;
+
+&lt;h2&gt;Peripherals&lt;/h2&gt;
+
+&lt;p&gt;The USB-C &amp;#x27A1; USB-A adapter packaged with the machine is a sham which drops connection constantly. It caused me no end of &lt;em&gt;blind fury&lt;/em&gt; when trying to burn a recovery disk because it simply kept disconnecting. Having now thrown that to the side in favour of my USB-C hub I have found the connections to be stable and reliable. HDMI works well as does the device&#039;s fast charging. They weren&#039;t lying, you really can get to 80% in an hour. Nothing else to report here really (there&#039;s only two ports after all).&lt;/p&gt;
+
+&lt;h2&gt;The Sights and the Sound&lt;/h2&gt;
+
+&lt;p&gt;I&#039;m not going to go so far as to say the XPS 13 has a gorgeous screen - it doesn&#039;t hold a candle to the likes of Apple&#039;s Retina displays - but it does have good colour quality and brightness. The image is crisp and sharp and text is easily readable, which suits me fine as somebody who works mostly in text. I do find myself missing my larger screen when I&#039;m sat away from my desk, but considering the fact that there isn&#039;t a 1.200kg behemoth spitting superheated air onto my shattered legs as I&#039;m used to I&#039;ll put up with it.&lt;/p&gt;
+
+&lt;p&gt;I am, however, shocked at how good the speakers are. I rarely if ever use speakers as I prefer to shut the world out when I&#039;m working, but these speakers are phenomenal for a device this tiny. They easily eclipse the volume and quality of any other built in speakers I&#039;ve had before, which is a great addition to the overall package.&lt;/p&gt;
+
+&lt;h2&gt;Unlimited Power?&lt;/h2&gt;
+
+&lt;p&gt;Not quite, but the battery does hold up pretty well. With a few things running and a lot of browser tabs open I can work in my editor for around 6-7 hours without needing to charge, although as mentioned I&#039;m trying not to run the battery down so I&#039;m not going all the way to 0 or all the way to 100. The battery saver mode is very frugal but the device doesn&#039;t grind to a halt as some I&#039;ve used have. It&#039;s a perfectly comfortable coasting experience.&lt;/p&gt;
+
+&lt;h2&gt;The &lt;em&gt;Heft&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;Okay, so this machine is not exactly beefy, but what can one expect in a 1,2kg machine? 16GB of RAM is plenty to get done what I usually do in a day and the CPU is barely registering load most of the time. I can play most of the games I played before including &lt;a href=&quot;http://sauerbraten.org/&quot; &gt;Sauerbraten&lt;/a&gt; (a.k.a. the only FPS that matters) at a good framerate, so I&#039;m pretty happy with that.&lt;/p&gt;
+
+&lt;p&gt;Importantly this machine runs incredibly quiet. My old laptop roared into live when you hit the button and continued to wheeze and sputter throughout the day which hindered video conferencing something rotten. Unless I&#039;m hitting the XPS pretty hard with some taxing task, it sits perfectly quiet and lets me get on with it.&lt;/p&gt;
+
+&lt;p&gt;Let&#039;s be honest, I&#039;m not putting the machine through any real benchmarks, I&#039;m not compiling code or rendering videos like I used to, but for a day-to-day workload it&#039;s more than powerful enough.&lt;/p&gt;
+
+&lt;h2&gt;The Software&lt;/h2&gt;
+
+&lt;p&gt;Okay, so this isn&#039;t really a Dell thing (although Dell has a part to play), but the software on display in Windows 10 has come on hugely since last I used it. I&#039;m normally not one for things like biometrics but given that I had a computer with a fingerprint sensor (and given that also I have a great disdain for passwords) I decided to set up Windows Hello. In addition to the fingerprint, I can use the built-in webcam to use facial recognition. This is kind of insane to me. My startup process now goes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Open laptop lid, computer boots&lt;/li&gt;
+&lt;li&gt;Sit looking at computer, Hello lets me in&lt;/li&gt;
+&lt;li&gt;Start working&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Beginning to end this takes just shy of 9 seconds.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;WHAT&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I have to be honest: in my years of computing I&#039;ve never experienced anything that smooth. That is goddamn butter coming straight from the sanded teat of an oiled Greek God smooth.&lt;/p&gt;
+
+&lt;p&gt;The introduction of &lt;code&gt;winget&lt;/code&gt; and a few other productivity tools such as the new Microsoft terminal has made using Windows much closer to using Linux (i.e. it&#039;s going the right way). I can now quite happily get on with what I want to do in a day and not have to worry about the weirdness of working on a Windows machine. Git just works, vim just works, &lt;em&gt;the entirety of Linux itself just works&lt;/em&gt;. It&#039;s astonishing how far we&#039;ve come really.&lt;/p&gt;
+
+&lt;h1&gt;Overall Thoughts&lt;/h1&gt;
+
+&lt;p&gt;The Dell XPS 13 is a peppy little machine which packs a lot into a very, very small frame. Its (lack of) port selection is very disappointing but not exactly abnormal nowadays, and if you live an always-online life you should be fine with it. It&#039;s very comfortable to type on for long periods which makes it ideal for me, and its all-round solid quality makes me think I&#039;ll be able to rely on it for a while to come.&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://Sporiff.github.io/posts/Finally-Change.html"/> <title>Finally, Change</title> <published>2021-02-23</published> <updated>2021-02-23</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://Sporiff.github.io</uri> </author> <content type="html">&lt;h2&gt;Some Big Life Changes&lt;/h2&gt;
+
+&lt;p&gt;The last time I posted anything here was August 2020. Wow. That&#039;s a pretty substantial break, but it does also coincide with the last time I had any time off work. So in a way it makes sense.&lt;/p&gt;
+
+&lt;p&gt;A lot has happened since then, but the biggest thing for me personally is that I have taken a job opportunity out in Germany. I&#039;ve been trying to get out of the UK for a while now, so to have finally managed to secure an opportunity is pretty huge for me. I&#039;m switching careers from programming to technical writing. It strikes me I&#039;ve always had more of an interest in explaining &lt;em&gt;how&lt;/em&gt; things are achieved than actually &lt;em&gt;achieving&lt;/em&gt; them myself, so it&#039;s a pretty good fit.&lt;/p&gt;
+
+&lt;p&gt;Obviously, the world is in the middle of a plague right now so my physical move isn&#039;t going to happen for a little while, but I have officially left my old position and been set up with IT accounts etc. at my new one, so it&#039;s all a go from here. I&#039;ll be starting my new job remotely on Monday, so I&#039;m pretty excited to get stuck in.&lt;/p&gt;
+
+&lt;p&gt;After a week off, of course.&lt;/p&gt;
+
+&lt;p&gt;I&#039;m incredibly excited about starting a new life in Berlin. The last year has been a particularly tough one for me personally after my relationship broke down and I am feeling the need for change very keenly. I&#039;ve also been making efforts to reconnect with old friends with whom I had stopped talking to try and keep myself in the loop. &amp;quot;Don&#039;t be the asshole&amp;quot; is my new mantra.&lt;/p&gt;
+
+&lt;h2&gt;Some Smaller Life Changes&lt;/h2&gt;
+
+&lt;p&gt;Of course, with a new life comes new hardware. Since I am switching my focus back to writing I decided it was high time I invest in a normal laptop. You know, one that&#039;s actually &lt;em&gt;portable&lt;/em&gt; and can sit on your lap. For several years I&#039;ve been using a 17&amp;quot; gaming laptop which is neither really a gaming machine nor a laptop as it has the portability and power of a poor desktop. I&#039;ve now handed this device to my dad so he has a bigger screen to watch his Chinese dramas on.&lt;/p&gt;
+
+&lt;p&gt;For my sins, I opted for an ultrabook after much debate. I&#039;ve learned my lesson about investing in cheap hardware and decided to go for a top-of-the-line Dell XPS 13. This is a lovely little device and, despite needing a lot of fiddling to get it set up the way I like, I&#039;m enjoying it as a portable workstation (however, who the &lt;em&gt;hell&lt;/em&gt; decided two USB-C ports was all a laptop needed?).&lt;/p&gt;
+
+&lt;h2&gt;Having Fun With Windows&lt;/h2&gt;
+
+&lt;p&gt;In preparation to hand my old machine to my dad, I installed Windows 10 on the device again and have been having a shufti at how the old system is going. From the looks of things, a huge amount has improved. The Windows Store continues to be a colossal waste of my time, but the new &lt;a href=&quot;https://github.com/microsoft/winget-cli&quot; &gt;package manager&lt;/a&gt; has made a huge difference (and did back &lt;a href=&quot;https://keivan.io/the-day-appget-died/&quot; &gt;Keivan Beigi originally made it&lt;/a&gt;). I&#039;ve even been contributing packages for it &lt;a href=&quot;https://github.com/microsoft/winget-pkgs&quot; &gt;on Github&lt;/a&gt; just for gits and shiggles. It&#039;s great being able to install apps on the command line just like in a proper OS.&lt;/p&gt;
+
+&lt;p&gt;Other than that, Windows continues to be a fairly stable and reliable experience. The machine runs well with it and the terminal functionality combined with WSL mean that I&#039;m able to do all of my Linux shenanigans in one place with all the comfort of the world&#039;s most widely supported OS.&lt;/p&gt;
+
+&lt;p&gt;Git for Windows still sucks, but what can you do?&lt;/p&gt;
+
+&lt;p&gt;I may write up a full review of the XPS 13 towards the end of the week once I&#039;ve had some time to get to grips with it. &lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://Sporiff.github.io/posts/In-Defence-of-GNOME-Web.html"/> <title>In Defence of GNOME Web</title> <published>2020-08-15</published> <updated>2020-08-15</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://Sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;So you probably already know that &lt;a href=&quot;https://www.theregister.com/2020/08/11/mozilla_staff_layoffs_products_revenue/&quot; &gt;Mozilla recently went bang&lt;/a&gt; and fired 25% of its workforce before announcing that whoops lol actually we are &lt;a href=&quot;https://www.theregister.com/2020/08/14/mozilla_google_search/&quot; &gt;still going to be able to feed the hungry fox this year&lt;/a&gt;. Among the teams affected were the servo developers, a lot of the threat response team, and (I believe) the entirety of the team behind MDN: the &lt;a href=&quot;https://developer.mozilla.org/&quot; &gt;only good resource for web development don&#039;t @ me&lt;/a&gt;. As you can imagine this has led to quite the tizzy as people have puzzled about what exactly this means for the Firefox browser, Mozilla as an organisation, and the future of browsing and, indeed, the web as a whole.&lt;/p&gt;
+
+&lt;p&gt;While nothing is likely to change in the immediate future, it seems clear that Mozilla is trying to consolidate its efforts into fewer projects to try and increase short-term stability while sacrificing experimentation. We&#039;ve been assured that Firefox is still under active development, and that while Servo is kicking the bucket they are going to continue building new features in Rust for Gecko. But the whole affair has woken the community up to something they&#039;ve largely been ignoring for quite a while: Mozilla is effectively the only thing standing between us and a totally Google-dominated web.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Cue horrific memories of Internet Explorer.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Of course, Apple&#039;s Safari still &lt;em&gt;technically&lt;/em&gt; holds its ground and is unlikely to make any moves towards Google since mummy and daddy are in a bit of a standoff over how the web should work, but since Safari is no longer cross-platform its impact is limited, and since it&#039;s proprietary it isn&#039;t filling Firefox&#039;s shoes any time soon. What are we left with then? Vivaldi? Chromium-based. Opera? Chromium-based. Brave? Chromium-based. Microsoft Edge? Chromium-based. Chromium? I don&#039;t know about that one. I&#039;ll have to check.&lt;/p&gt;
+
+&lt;p&gt;Why does any of this matter, though? Surely having a shared engine between all browsers is a positive thing? Well, as somebody who develops for the web I can confirm this would indeed be a hell of a lot easier, but it&#039;s also a monopolistic nightmare. Blink, the rendering engine used in Chromium and its offshoot browsers is developed in-house by Google. In consortium with other browser engine developers such as the Gecko team at Mozilla and the Webkit team, they are responsible for interpreting and proposing new specifications relating to how the web works. If Mozilla were to go away one day, it would leave Chromium-based browsers even &lt;a href=&quot;https://news.softpedia.com/news/chromium-browsers-running-on-at-least-77-of-all-desktop-computers-529886.shtml&quot; &gt;less challenged than they currently are&lt;/a&gt;, giving them undisputed control over how the web is intepreted for its users.&lt;/p&gt;
+
+&lt;p&gt;Mozilla&#039;s role as a non-profit and the producer of the world&#039;s second most popular browser engine is a very important one. Its mission statement is to protect the privacy and rights of users online, and it uses its position of relative strength to fight for these rights in the decision-making process. Without it, we will basically have Apple and Google shouting at one another about how to align a &lt;code&gt;div&lt;/code&gt;. Fucking nightmare.&lt;/p&gt;
+
+&lt;p&gt;These are all bigger-picture problems, though. Let&#039;s think about the other ramification of Firefox disappearing: we will be down the most popular free and open source browser available for free desktop users. All browsers based on Chromium - even the open source ones - have the issue of being based on a browser which has &lt;a href=&quot;https://libreplanet.org/wiki/List_of_software_that_does_not_respect_the_Free_System_Distribution_Guidelines#chromium-browser&quot; &gt;unclear licensing according to the FSF&lt;/a&gt; and code that includes calls home to el goog. While many browser projects attempt to remove these, it&#039;s a herculian effort and ultimately you&#039;re still left with a homogeny problem in the browser space.&lt;/p&gt;
+
+&lt;p&gt;But wait a second. There&#039;s a browser that&#039;s been sat under our gnoses for quite a while now. While some people may not gnow it, we&#039;ve had a perfectly suitable, free software browser to call gnome (I&#039;ll stop this immediately). That&#039;s right: the venerable GNOME Web.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Crickets&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Fine, I guess I&#039;ll explain.&lt;/p&gt;
+
+&lt;p&gt;Unless you&#039;re a user of Elementary OS or Bodhi Linux, or are just the world&#039;s biggest GNOME fan, you&#039;ve probably not encountered GNOME Web before. Also known by its codename &lt;em&gt;Epiphany&lt;/em&gt;, GNOME Web is a simple, GTK-based web browser based on WebkitGTK (an implementation of Webkit, which was originally developed as a collaboration between Apple and the KHTML team and also powers Safari). It&#039;s a nice little browser which has good integration with GTK-based interfaces such as GNOME, Pantheon, and XFCE (and has decent integration with KDE because KDE and GNOME have worked pretty well together for quite a while now). It may lack a few of the nicer features that come with mature browsers like Chrome and Firefox, but it does the essentials pretty well:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Website installation: not to be confused with PWAs (which only Chromium &lt;em&gt;properly&lt;/em&gt; supports), GNOME Web allows you to install sites to your computer as sandboxed apps&lt;/li&gt;
+&lt;li&gt;Ad blocking: this is built in to the application itself, although it&#039;s not enabled by default (I think it is in the latest versions on Flathub). It doesn&#039;t work as well as uBlock Origin. For example, it sometimes fails to block in-video ads on YouTube, but you should really be using youtube-dl at this point anyway because YouTube is just awful&lt;/li&gt;
+&lt;li&gt;General website rendering and support is pretty good. Ironically, &lt;a href=&quot;https://elementary.io&quot; &gt;elementary&#039;s website&lt;/a&gt; doesn&#039;t work in the latest version. It just crashes. Whoops. But apart from that I&#039;ve had no issues&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The biggest ommission I&#039;ve come across is the lack of extension support, which apparently they would like to support through the &lt;a href=&quot;https://wiki.gnome.org/Apps/Web/Docs/FrequentlyAskedQuestions&quot; &gt;WebExtensions API&lt;/a&gt;. This is a pretty glaring hole for some people, I&#039;m sure, but this brings me to my first point:&lt;/p&gt;
+
+&lt;h2&gt;Why Should I Bother?&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;For the good of the software&lt;/strong&gt;: Software without users is just a bunch of code. If there is genuinely no desire for it to exist, it will soon cease to exist. There is no point in an individual or group of individuals pouring effort and time into maintaing a project if nobody uses it. If more people use GNOME Web, it will demonstrate a need for it, introduce more developers and testers to the project, and also (maybe) convince some web devs to clean up their designs&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;For a more consistent experience&lt;/strong&gt;: Particularly if you&#039;re a GTK user, you might be surprised at how nice it is to use a browser that&#039;s actually integrated into your system. Firefox does okay with GTK, Chromium looks like utter shit, and GNOME Web is completely integrated, exactly as nature intended&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Because it&#039;s in our hands&lt;/strong&gt;: GNOME Web, much like GNOME itself, is a project that is entirely in the hands of the free software community. We get to decide how it&#039;s shaped and what direction it takes&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Because it will soon be in our pockets&lt;/strong&gt;: With the introduction of &lt;code&gt;phosh&lt;/code&gt; and &lt;code&gt;phoc&lt;/code&gt;, GNOME is coming to the Librem 5 and PinePhone, and with it we will be getting GNOME Web (by default on the Librem I presume). More users testing and prodding this could make it a really nice smartphone experience, since you&#039;ve all been complaining for years that &amp;quot;GNOME looks like a tablet&amp;quot;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Okay. But Does It Work?&lt;/h2&gt;
+
+&lt;p&gt;Yes. For the most part, GNOME Web functions absolutely fine. It plays video, it plays music, it has a nice reader mode. What won&#039;t it do? Some important stuff like video conferencing on Jitsi and all of that stuff we probably shouldn&#039;t be doing anyway.&lt;/p&gt;
+
+&lt;p&gt;One thing that GNOME Web does not have is support for DRM. That means no Spotify, no Netflix, no... Hulu? I don&#039;t know. I&#039;m out of touch on all of this. Some people may see this as a bad thing, but I can categorically say this is actually the correct way to work with the web. Web content should not contain DRM in the first place, and browsers that support it are actively harming users by supporting it.&lt;/p&gt;
+
+&lt;p&gt;Do I believe that these services should be inaccessible? No. But I do believe the default browser on an operating system like GNU/Linux should be as free as possible, and that if users really &lt;em&gt;really&lt;/em&gt; want to watch Netflix/listen to Spotify on their machine it should be a conscious decision to go and download another browser to do so. As mentioned above, most distros of Linux include Firefox/Chromium as their default browser, with shockingly few even coming with GNOME Web installed or other free browsers like Midori. On the one hand, this is great for users coming from Windows/macOS as it means they get the same experience they&#039;re already used to. But on the other hand, it means free software is betraying its mission. Do users care? Probably not. But I care, damnit.&lt;/p&gt;
+
+&lt;p&gt;I&#039;ve been using GNOME Web for a while now alongside Firefox and have started using it more following this news. It&#039;s not perfect, it lacks some things I really liked about Firefox, but I do like the fact that my computer now doesn&#039;t make the sound of a poorly maintained Boeing 747 during my daily visit to &lt;a href=&quot;https://hamster.dance/hamsterdance/&quot; &gt;the hamster dance website&lt;/a&gt;.&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://Sporiff.github.io/posts/Burnout.html"/> <title>Burnout</title> <published>2020-07-20 08:41:21</published> <updated>2020-07-20 08:41:21</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://Sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;In December 2019, I was given a new role at work. This was with the understanding that there would need to be a transition period while I trained my replacement (I work with a very big, poorly documented product, which means that training is a very big task), but that I could expect to be out of my current role within 6 months.&lt;/p&gt;
+
+&lt;p&gt;7 months later, we have not even appointed somebody to the new role.&lt;/p&gt;
+
+&lt;p&gt;Now, of course the COVID pandemic has had a big role to play in this as the business has had to scramble to work out how it functions as a remote workplace and the hiring market is unsurprisingly much sparser than previously. However, my expectations had been structured and I expected the business to make good on this with a slight delay.&lt;/p&gt;
+
+&lt;p&gt;Following a series of interviews we had found some very promising candidates and were looking forward to hiring one in particular, who unfortunately had to turn the role down due to moving away. This was a great shame, but I had been assured that in this circumstance we would hire our second choice so that we could get the ball rolling on the training and my transfer. This didn&#039;t happen, however, and we are now back to the drawing board.&lt;/p&gt;
+
+&lt;p&gt;All the while, I have had more work piled on top of me. I am already closing down 2/3 of the business&#039; total support tickets by myself, as well as being responsible for the design and upkeep of our help centre platform and filling in the role of the business&#039; technical writer (I currently have a project to document our dozens of API endpoints, all without access to the code. Fun.). But now, on top of this, I am being given work to do which relates to my new role including customer calls, project scoping and quoting, and more bespoke technical writing.&lt;/p&gt;
+
+&lt;p&gt;As a result, I have almost completely shut down over the last month or so. I&#039;ve not communicated much with anyone outside of a few interactions within the Funkwhale community. I have been able to achieve very little in terms of my own personal projects, and have made basically no progress in my personal or professional development. I have developed an odd sensation whenever I close my eyes that I am falling, which means I now only get about 3-4 hours of sleep a night due to not being able to fall asleep until I am so exhausted I can no longer function. This is also making it harder to work the next day so I&#039;m falling behind.&lt;/p&gt;
+
+&lt;p&gt;Anyhow. This is just me venting really. I&#039;m annoyed at myself for letting my work have this great an impact on my life, and for not being able to keep fighting through it with vim and vigour, but that is how it is.&lt;/p&gt;
+
+&lt;p&gt;Some of the small things I have been able to achieve lately:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I&#039;ve implemented a dark theme on this site which should follow your device&#039;s colour scheme preference&lt;/li&gt;
+&lt;li&gt;I&#039;ve added a Funkwhale feature to my Matrix chatbot which allows you to search for &lt;code&gt;%track&lt;/code&gt;s, &lt;code&gt;%album&lt;/code&gt;s, and &lt;code&gt;%artist&lt;/code&gt;s from within a chatroom by supplying your Funkwhale endpoint. At some point I&#039;ll look at implementing Oauth and potentially make it more generically useful so I can split it off as its own Matrix bot&lt;/li&gt;
+&lt;li&gt;I&#039;ve fixed an annoying bug with this site where code boxes didn&#039;t render properly on smaller devices using Chrome. Every other browser worked fine, just Chromium-based browsers took issue with the &lt;code&gt;pre-wrap: whitespace&lt;/code&gt; setting so I had to do some fiddling to find a solution that worked on all browsers. Long story short: stop using Chromium. It&#039;s absolute dogshit&lt;/li&gt;
+&lt;li&gt;I&#039;ve fixed a couple of minor issues on Funkwhale, namely &lt;a href=&quot;https://dev.funkwhale.audio/funkwhale/funkwhale/-/merge_requests/1167&quot; &gt;an issue with the playbar rendering on landscape tablet devices&lt;/a&gt;, &lt;a href=&quot;https://dev.funkwhale.audio/funkwhale/funkwhale/-/merge_requests/1166&quot; &gt;an issue with artist embedding not working properly&lt;/a&gt;, and &lt;a href=&quot;https://dev.funkwhale.audio/funkwhale/funkwhale/-/merge_requests/1168&quot; &gt;support for unauthenticated users hitting the logout page directly&lt;/a&gt;. Just a few small things, but it feels good to get something done&lt;/li&gt;
+&lt;/ul&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://Sporiff.github.io/posts/Roswell-for-Everyone.html"/> <title>Roswell for Everyone!</title> <published>2020-06-03</published> <updated>2020-06-03</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://Sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;This website uses &lt;a href=&quot;https://github.com/coleslaw-org/coleslaw&quot; &gt;coleslaw&lt;/a&gt; as a static site generator. Coleslaw is managed using
+&lt;a href=&quot;https://github.com/roswell/roswell&quot; &gt;Roswell&lt;/a&gt;. Some of my bots are written in lisp and packaged using Roswell. It&#039;s safe to say I like
+Roswell.&lt;/p&gt;
+
+&lt;p&gt;As mentioned a &lt;a href=&quot;https://rootkey.co.uk/posts/Playing-With-Ports.html&quot; &gt;little while ago&lt;/a&gt; I&#039;ve been teaching myself how to write
+FreeBSD ports. Since I run this site on a FreeBSD box, it is only logical that I would try to package the tools I&#039;m using. So
+back in February I managed to get a port for roswell working and submitted it for review. Yesterday I got an email from a port
+committer asking me to confirm my email address as I&#039;d recently set up my own mail server and it was now different to the
+maintainer address listed in the port. To be honest, I&#039;d pretty much forgotten I&#039;d even submitted it at this point, and decided
+to bring everything up-to-date including my email address and the most recent version of the package. By this evening, the port
+had been committed and I could install roswell direct from the ports tree \o/&lt;/p&gt;
+
+&lt;p&gt;So, yes. Long story short, if you&#039;re looking to install roswell on FreeBSD this is now possible with a simple:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd /usr/ports/devel/roswell
+$ sudo make install&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Or to run it locally (as you should)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd /usr/ports/devel/roswell
+$ sudo make PREFIX=/usr/home/&amp;lt;username&amp;gt;/.local install&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Tara!&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://Sporiff.github.io/posts/More-Speed-Improvements.html"/> <title>More Speed Improvements</title> <published>2020-05-28 03:39:15</published> <updated>2020-05-28 03:39:15</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://Sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;A little while ago I made some &lt;a href=&quot;https://rootkey.co.uk/posts/Site-Speed-Increases.html&quot; &gt;significant changes&lt;/a&gt;
+to this website&#039;s design, asset delivery, and &lt;a href=&quot;https://rootkey.co.uk/posts/Building-Smarter.html&quot; &gt;build system&lt;/a&gt;.
+Recently, however, I decided to do some benchmarking against a friend&#039;s site to see how it stacked up and I was
+surprised to see that my site was still significantly slower than it could be, and it was also failing some
+Lighthouse tests when run through Chromium. I decided to take the time to fix these recently and have made
+the following changes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The site is now served over HTTP/2 by default (I don&#039;t know how or why I missed this in the first place)&lt;/li&gt;
+&lt;li&gt;The site now uses generic fonts such as monospace and serif rather than loading custom fonts. This has the
+  added benefit of making it better for accessibility and end-user customization&lt;/li&gt;
+&lt;li&gt;The CSS has been put through the ringer to ensure that absolutely no unused rules are included, allowing me
+  to shrink the resulting minified file by about 2.5kb&lt;/li&gt;
+&lt;li&gt;The favicon, previously a multilayered &lt;code&gt;.ico&lt;/code&gt; file is now served as a much smaller single layer &lt;code&gt;.png&lt;/code&gt; (I
+  don&#039;t think there was any reason that I was keeping the multi-layered version around since it&#039;s only used
+  in the header bar)&lt;/li&gt;
+&lt;li&gt;The footer CC BY-SA 4.0 banner image has been replaced by a single link&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As a result of all these changes, the site should now load twice as fast. Obviously, images still take some time
+to load but given the changes made in the build process this should not block a page&#039;s load (I only rarely use
+images as an illustrative tool anyway, so they&#039;re not really essential).&lt;/p&gt;
+
+&lt;p&gt;One other important thing I was able to do as part of this most recent sweep of changes is ensure that the site&#039;s
+colour scheme is up-to-code with accessibility rules. Since the scheme was pretty much directly copied from Plan 9
+I didn&#039;t really doubt that this would be the case, but it&#039;s good to make sure. I&#039;ve updated the CSS to make all colours
+variables now, so should I choose to implement different themes in future it should be trivial to implement these.&lt;/p&gt;
+
+&lt;p&gt;My site still isn&#039;t as fast as my friend&#039;s (he just has a much smaller stylesheet, there&#039;s not much I can do there),
+but I do score a lot higher on accessibility. I&#039;m going to call that a win for today.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://assets.rootkey.co.uk/static/images/Lighthouse.png&quot; alt=&quot;A screenshot of a Google Lighthouse report that shows scores of 100 across the board&quot; /&gt;&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://Sporiff.github.io/posts/Python-Programming.html"/> <title>Python Programming</title> <published>2020-05-17</published> <updated>2020-05-17</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://Sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;&lt;video controls id=&quot;video&quot;&gt;
+  &lt;source src=&quot;https://assets.rootkey.co.uk/static/images/Soap%20Calculator.webm&quot; type=&quot;video/webm&quot;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;&lt;/p&gt;
+
+&lt;p&gt;I&#039;ve been having some fun learning Python recently as part of a course I&#039;m doing. One of our early
+assignments was to create a simple saponification calculator which would return the amount of lye
+and water required to make soap from some given oils.&lt;/p&gt;
+
+&lt;p&gt;My personal goal in all of this is to be able to make graphical programs, as I always seem to fall at
+that hurdle. I&#039;ve made terminal-based scripts and apps in the past, but have always given up with the
+creation of a GUI due to not understanding how on earth you get a front-end to talk to a back-end.&lt;/p&gt;
+
+&lt;p&gt;After spending some time with &lt;a href=&quot;https://glade.gnome.org/&quot; &gt;Glade&lt;/a&gt; and the excellent
+&lt;a href=&quot;https://developer.gnome.org/gtk3/stable/&quot; &gt;GTK developer documentation&lt;/a&gt; (and by time I mean I started
+this rewrite at 7PM and ended up with something workable at 7AM), I am finally getting a handle on how
+these things talk to one another and work together.&lt;/p&gt;
+
+&lt;p&gt;Something I&#039;d never really considered was just how different interacting with applications in the terminal
+and on the front-end is. With a terminal app things are fairly sequential and predictable, but when you
+start putting things into an interface it becomes a completely different process. The
+&lt;a href=&quot;https://git.sr.ht/~sporiff/soap-calculator/tree/ae2bca34dd2dbae7db4f31d7e45e44b8597b5df9/soap_calculator.py&quot; &gt;original script&lt;/a&gt;
+essentially just ran through each part in sequence:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Enter a value for olive oil&lt;/li&gt;
+&lt;li&gt;Enter a value for coconut oil&lt;/li&gt;
+&lt;li&gt;Select whether or not to use lye reduction&lt;/li&gt;
+&lt;li&gt;Calculate results&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But with a GUI application, it&#039;s possible to have all of the inputs accessible at once, and the
+expectation of the user will be to have either:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A button that performs the calculation once everything is filled in&lt;/li&gt;
+&lt;li&gt;A calculation performed whenever a value is changed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For the challenge of it, I opted for the latter, which meant that at every turn entries had to be
+sanitized and handled synchronously. What I had originally thought would be a simple case of just
+attaching a front end to a script basically left me with a completely different program with a different
+project structure and set of tools. The only thing that remained consistent was the maths.&lt;/p&gt;
+
+&lt;p&gt;I&#039;ve learned a lot about Python recently, to the point where I&#039;m starting to think about work projects
+in terms of how they could be simplified using the language. The important thing, I think, is to make
+sure I know ahead of time whether I expect to use a GUI or not, as it has a massive impact on how everything
+is set up.&lt;/p&gt;
+
+&lt;p&gt;I will say that there is a relatively small amount of documentation available for Python + Glade, and a lot
+of the documentation that is available is aging badly (Python 2.7, anyone?). However, a lot of the blanks
+can be filled in by reading documentation for Glade and other languages like C and Vala to get an idea of
+how the elements interact with the language, then simply convert that to your Python thinking.&lt;/p&gt;
+
+&lt;p&gt;Is my code good? No. It badly needs to be refactored and cleaned up. But for a 12-hour sprint with a tool
+I&#039;ve never used before I&#039;m pretty happy with it. Of course, the moment I use it on a different DE the themeing
+falls apart but oh well...&lt;/p&gt;
+
+&lt;p&gt;Next up: learning how to package this stuff.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://git.sr.ht/~sporiff/soap-calculator&quot; &gt;Source code&lt;/a&gt;&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://Sporiff.github.io/posts/Plan9-Fun.html"/> <title>Plan9 Fun</title> <published>2020-05-14</published> <updated>2020-05-14</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://Sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;Just when I was worried I would never be able to have fun with computers again, along comes Plan 9 (well,
+technically &lt;a href=&quot;http://9front.org&quot; &gt;9Front&lt;/a&gt;, but it&#039;s much of a muchness). What&#039;s Plan 9? Do you care? It&#039;s an operating system and you probably don&#039;t, but you should.&lt;/p&gt;
+
+&lt;p&gt;As you can probably tell by this website&#039;s recent theme update I was rather taken with Plan 9. It&#039;s a quaint
+little operating system with a whole bunch of interesting ideas (distributed computing, amazing interoperation
+between the UI and the system, and the most fun you&#039;ll ever have with window management). Upon installing it
+on my old X200s I was instantly warmed by its lovely colour scheme, odd and strangely intuitive manner of
+working, and the 9Front developers&#039;... &lt;em&gt;unique&lt;/em&gt; sense of humour. The whole thing just feels like a return to
+adventure with computers that I&#039;ve not experienced for a while.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, with only one ethernet port in my house and an unsupported WiFi card (the one time Intel trumps
+Atheros!) my experience with the system was shortlived. I had wanted to get myself more acquainted with the
+plumber, acme, and various other neat tools on the system but without functioning networking I was finding
+myself a bit too limited. I&#039;ll probably try to pick up another cheap ThinkPad with supported hardware at some
+point so I can have a machine dedicated to learning it. It&#039;s got some really cool things going for it.&lt;/p&gt;
+
+&lt;p&gt;The idea of running different computers with different dedicated tasks (storage, computation, interaction)
+is something that I really wish could have taken off. If we think about how &amp;quot;cloud&amp;quot; computing works these
+days, Plan 9 was well ahead of its time. The difference is that you would be in control of a Plan 9 system,
+whereas cloud computing exists only to bleed you of data and coin. It&#039;s a shame.&lt;/p&gt;
+
+&lt;p&gt;I&#039;m particularly taken by the system&#039;s default (and easily customized) colour scheme. The pastel colours
+are designed to be calming and easy to look at for long periods of time. I wonder what would have happened
+to the world if a system like this had taken off instead of the black on white shit that we got from Microsoft
+(and that we are still recovering from, with dark theming only just becoming a viable option in recent years).
+As somebody who struggles with eye strain, I find rio a lovely interface.&lt;/p&gt;
+
+&lt;p&gt;Anyway. On to Haiku next I suppose.&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://Sporiff.github.io/posts/Ditch-the-Walled-Gardens.html"/> <title>Ditch the Walled Gardens</title> <published>2020-05-08</published> <updated>2020-05-08</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://Sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;A couple of years ago, I cancelled my Spotify subscription. In fact, I completely discontinued my use of the platform. My reasoning at the time seemed petty,
+but everything I&#039;ve learned and listened to since has convinced me that this was the right way to go.&lt;/p&gt;
+
+&lt;p&gt;Back in those days, I didn&#039;t really have a problem with Spotify. I am a musician myself, so I wanted to contribute to my favourite musicians even though I lacked
+the funds to buy every new album. Spotify seemed to answer this desire with its vast catalogue and seemingly reasonable subscription fee model (as well as its
+ad-funded &amp;quot;free&amp;quot; model), so I happily paid month-to-month for access to this service and thought no more of it in the over 1 year I stayed with the service.&lt;/p&gt;
+
+&lt;p&gt;I can&#039;t remember exactly which album it was (I want to say They Might Be Giants&#039; &lt;em&gt;The Spine&lt;/em&gt;, but I wouldn&#039;t swear to it in court), but something up and disappeared
+one day with no warning. Something to which I had previously had access and something which was previously present in my playlists and radios was just... gone. My guess
+is that there was some licensing dispute or contract expiry that led to this, but it was that event that made me realise quite clearly that I meant nothing to this
+company and had no say over its operation, to the point where things would simply be removed without so much as a by-your-leave or an offer to compensate for the
+loss.&lt;/p&gt;
+
+&lt;p&gt;In many ways I am thankful for this. After all, it was this that set me free from Spotify&#039;s disgusting clammy grasp and set me on my search for a self-hosted
+alternative - a search which would lead me to &lt;a href=&quot;https://funkwhale.audio&quot; &gt;Funkwhale&lt;/a&gt;, a project with which I work and for which I have a great deal of love. In
+all honesty, I hadn&#039;t really thought about Spotify in a long time until very recently when somebody brought up the subject of podcasts in Funkwhale following
+the 0.21 release. They mentioned that a certain podcast (The Last Podcast on the Left) had gone Spotify-exclusive, and were expressing disappointment that this
+would mean they couldn&#039;t load it in to a Funkwhale channel.&lt;/p&gt;
+
+&lt;p&gt;I must have known, in the back of my head, that Spotify might do something like this. It&#039;s the kind of shitty thing that successful technology companies are wont
+to do, after all. But I was still surprised that it had actually happened. I went and did some reading up about it on various forums and was horrified by some of
+the dismayed responses of the show&#039;s fans, who expressed disappointment not only at the fact that they didn&#039;t like Spotify as a platform, but also that some people
+would simply be unable to access the content now due to the fact that Spotify does not operate in certain countries.&lt;/p&gt;
+
+&lt;h2&gt;Podcasts and the Point&lt;/h2&gt;
+
+&lt;p&gt;I will admit I&#039;m not the biggest consumer of podcasts. In fact, up until the last few years I&#039;ve listened to very few indeed. However, I&#039;ve known about them for
+about as long as they&#039;ve been around. Podcasting is an interesting idea: an asynchronous radio broadcast that can be mirrored and spread across the world using
+a set of standard tools that anybody can use and build from. This kind of open process makes the medium very disruptive and far-reaching; the concept can be applied
+with very affordable and easily-accessed tools and isn&#039;t limited by licensing. It&#039;s ideal for underground radio, sensitive ideas, and entertaining conversations of
+all kinds.&lt;/p&gt;
+
+&lt;p&gt;Why, then, are we so quick to give this up?&lt;/p&gt;
+
+&lt;p&gt;On the part of podcasters, I kind of understand it. The process of creating regular shows with research/writing/editing etc. is one that is not without expense.
+Some podcasts eventually become businesses unto themselves, and these require sponsorship or other means of funding so that the creators can continue to work on
+the project full-time. In step companies like Spotify, Apple, Google, etc. who can wave fat stacks of cash around knowing full well that they will be boosting their
+subscriptions massively by bringing these shows on board in an exclusive contract. This all makes sense. What doesn&#039;t make sense is that people actually &lt;em&gt;do&lt;/em&gt; pay.
+People are happy to switch to Spotify and either buy a subscription or listen to the ad-supported service, accepting that this is just how it is now. Why? Do we
+not see that the move made by these creators completely defeats the purpose of the medium?&lt;/p&gt;
+
+&lt;p&gt;I remember writing an article in university about how television - by its original definition - is not and can never be art. It was a contentious and sophomoric piece,
+rather less well thought out and more forceful than I am proud to admit, but the kernel of the idea still rings true to me. Art is expressive, subversive, and highly
+individual. Film can be produced out of an individual&#039;s pocket and distributed by shining a projection in a home or on the streets, painting can be achieved with a range
+of materials and shown anywhere, music can be performed live or recorded with very rudimentary equipment etc. etc. Television? No. By definition television must be produced
+by companies and is inherently stunted by this fact. To get access to the platform of contemporary television, one needs the help of a network of some description,
+or a public access channel with its own set of rules. You can make videos, of course, but these are not television until and unless they reach a television set. That
+is the meaning of television and by that meaning it can only be as subversive as it is allowed to be.&lt;/p&gt;
+
+&lt;p&gt;The point of all of this is that podcasting is not television. By definition it is not restricted by corporate interests or rules created by external parties. Just
+like other artforms it can be cheaply produced and shared without defying the meaning of the platform. To have a podcast be platform exclusive and inaccessible to
+the wider public means that it is no longer a podcast: it is corporate radio.&lt;/p&gt;
+
+&lt;h2&gt;The Technology Industry&lt;/h2&gt;
+
+&lt;p&gt;The technology industry as a whole is despicable and disgusting. Allying engineering and software development with marketing and a corporate agenda is an inherently
+dystopian idea. Technologists on the whole are generally just interested in the creation of new things and making things work in interesting new ways. But just as
+a scientist may see only fascination and intrigue in the study of subatomic particles and radiation, a military will see a weapon. So too is it with the technology
+industry. Knowing of humanity&#039;s propensity for laziness and the desire to make our terrible lives slightly easier, companies coax technologists into creating modern
+marvels and then wield them as weapons of enslavement to bleed an unsuspecting public of their life blood while simultaneously patting themselves on the back and
+wrapping an arm around you as they whisper &amp;quot;see? We &lt;em&gt;LOVE&lt;/em&gt; you&amp;quot; through a serpentine smile.&lt;/p&gt;
+
+&lt;p&gt;The technology industry is not, of course, alone in all of this. The difference between it and other industries is that the correct way of doing things, the moral
+and correct way, exists and has been a viable alternative for years. The free software movement exists for the express purpose of providing people with a way to
+use their technology without getting proverbially fisted by companies and used as a ghoulish, grinning puppet spewing dollar bills from its mouth. But marketing is
+a powerful thing and is not to be underestimated. At every turn, free software is dismissed as not shiny enough, too hippyish, too geeky. The shiny shiny is what
+I desire. Only later do people realise how bad things are getting, but by then the walls are closing in behind them and the exit is too small to see.&lt;/p&gt;
+
+&lt;p&gt;When I worked in the education sector I was always dismayed by the UK&#039;s acceptance of proprietary software as tools of teaching. Students would learn to create
+in Adobe Creative Cloud (which, as a former editor, I can assure you is just about the worst fucking tool you could ever have the displeasure of using) and would
+then be left in the cold once they left if they could no longer afford to pay the monthly fee to access it. Similarly, tools like Office365 are imprinted upon
+people from an early age as a &lt;em&gt;necessity&lt;/em&gt;, something which will always be needed. Of course, if you can&#039;t afford it you&#039;re shit out of luck and frankly not good
+enough as a human being to join the &lt;em&gt;normal&lt;/em&gt; world that the British education system paints for you. Once again, control of education and creativity being handed
+to companies who care about nought but the coin is an inherently evil idea, and the way these companies lock you in by design is an inherently evil act. &lt;/p&gt;
+
+&lt;p&gt;Art and technology are natural bedfellows, but art and the technology industry is a match made in a level of hell Dante was too afeared to even dream of devising.
+Handing art over to powerful companies with not only the hand rubbing greed of a bottomless pit wrapped in the body of a pig but also an army of intelligent and
+subservient - or worse, willing - technologists is about the worst thing we as a species can do. I know that people despise slippery slopes, but they are a very
+real thing and we are already slipping down this one. Just as television requires you cowtow yourself to a company or collective, so too does releasing art on
+walled garden platforms such as Apple, Spotify, Google, Netflix. By putting your creations on these platforms, you are announcing only that they have been deemed
+okay by those companies.&lt;/p&gt;
+
+&lt;p&gt;I understand that there is a difficult balance to be struck here. Artists need to earn money to live, as do technologists. But an artist who ceases to make art
+is no longer an artist, and a technologist who works making proprietary software to further nothing but a corporate agenda is always making the wrong decision
+and is culpable for the actions of its employer. As Drew DeVault &lt;a href=&quot;https://drewdevault.com/2020/05/05/We-are-complicit-in-our-employers-deeds.html&quot; &gt;recently said in a blog post&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Mass surveillance, contempt of the law, tax evasion, oppression of the poor, of minorities… this is what our industry is known for, and it’s our fault...
+But, maybe you would object, maybe you would have the courage to say “no” when asked to do these things. Maybe you would, but someday, a cool project will come across your
+inbox - machine learning! Big data! Cloud scale! It’s everything you were promised when you took the job, and have more fun with it for a few months than you have had in a
+long time. Your superiors are thrilled - “it’s perfect!”, they say, and it’s not until they take it and start feeding it real-world data that you realize exactly what you
+have built. Doublethink quickly steps in to protect your ego from the cognitive dissonance, and you take another little step towards becoming the person you once swore never to be.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2&gt;To Summarise&lt;/h2&gt;
+
+&lt;p&gt;This has been a long and rambling rant, and I don&#039;t promise it makes any real sense (I&#039;m not really going to bother going back to edit/proofread it too much).
+In the course of the post the point changes frequently, but the gist is something that plays on my mind a lot as a creator and a technologist.&lt;/p&gt;
+
+&lt;p&gt;To Spotify and its employees: what you do is evil, and it will always be evil no matter how you try to paint it. You exist solely to take control from creators, money
+from audiences, and dignity from yourselves. The same goes for the rest of the big companies daring to get involved with art: get your filthy tentacles away from
+us.&lt;/p&gt;
+
+&lt;p&gt;To artists: please look in to free software solutions. They exist, they are very good, and best of all the technology is not created to the specifications of
+a literal cave goblin.&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://Sporiff.github.io/posts/Site-Speed-Increases.html"/> <title>Site Speed Increases</title> <published>2020-04-23</published> <updated>2020-04-23</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://Sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;&lt;img src=&quot;https://assets.rootkey.co.uk/static/images/Rocket.png&quot; alt=&quot;A rocket ship! Zoom!&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I got poking around at this site and was doing some thinking. Mainly along the lines
+of speed and security. By default, the dark-hyde theme provided by the good folks over
+at &lt;a href=&quot;https://github.com/coleslaw-org/coleslaw&quot; &gt;Coleslaw&lt;/a&gt; uses Google&#039;s CDN for font
+delivery. This is all well and good, however I&#039;m really not a big fan of Google at all
+and like to avoid them where possible. With that in mind, I started thinking about how
+I could go about replacing them.&lt;/p&gt;
+
+&lt;p&gt;The major thing that Google provides on a lot of websites, even those who are privacy-conscious
+enough not to use abominations like Google analytics, is the serving of fonts and Javascript.
+Hosting these things through their CDN makes it very straightforward to plug a font or script
+in without having to worry about hosting the files locally or anything like that. However,
+it also means that people&#039;s browsers are constantly calling out to Google, thereby increasing
+the web&#039;s reliance on them.&lt;/p&gt;
+
+&lt;p&gt;To that I say: eff off.&lt;/p&gt;
+
+&lt;p&gt;Replacing these fonts was reasonably straightforward thanks to the magical combination of
+&lt;a href=&quot;https://digitalocean.com&quot; &gt;Digital Ocean&#039;s&lt;/a&gt; CDN and the &lt;a href=&quot;https://google-webfonts-helper.herokuapp.com/fonts&quot; &gt;google-webfonts-helper&lt;/a&gt;,
+which made grabbing the relative files and CSS a breeze. Pointing all parts of my theme
+file to the newly cached CSS files and migrating all images etc. should speed things up
+at least a little bit, and best of all: no Google! All fonts should have a backup in case
+DO is a little slow. It&#039;s been known to happen.&lt;/p&gt;
+
+&lt;p&gt;The other little hacky thing I did was relates to &lt;a href=&quot;https://rootkey.co.uk/posts/Building-Smarter.html&quot; &gt;my earlier post&lt;/a&gt;
+about using a git-based workflow to manage the deployment of this site. I&#039;m a fan of the
+idea of using lazy loading for images since they&#039;re not particularly important for this
+site&#039;s content and I&#039;d rather let them just load in their own time. However, Coleslaw only
+produces raw images from Markdown, with no option to add the &lt;code&gt;loading&lt;/code&gt; tag. Oh well. This
+site runs on FreeBSD, baby! Anything is possible. A simple one-liner added to the deployment
+hook should allow me to stick that in to the files.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;find . -type f -name &quot;*.html&quot; -print0 | xargs -0 sed -i &#039;&#039; -e &#039;s/&amp;lt;img /&amp;lt;img loading=&quot;lazy&quot; /g&#039;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Oh, it&#039;s hacky. But it works. I&#039;m not really in the mood to go diving through Lisp code
+to do this in Coleslaw...&lt;/p&gt;
+</content> </entry> </feed>

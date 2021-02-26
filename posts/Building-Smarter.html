@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"> <head> <title>Life Inside a Computer</title> <meta http-equiv="content-type" content="text/html;" charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1"> <link href="https://Sporiff.github.io/css/style.min.css" rel="stylesheet" type="text/css" /> <link rel="alternate" href="https://Sporiff.github.io/rss.xml" type="application/rss+xml" /> <link rel="icon" type="image/png" href="https://Sporiff.github.io/css/favicon.png" />  </head> <body> <nav class="navigation"> <a href="https://Sporiff.github.io">Home</a> | <a href="mailto:ciaranainsworth@outlook.com">Email</a>  | <a href="https://github.com/Sporiff">Code</a>  | <a href="https://paypal.me/CiaranAinsworth">Support me</a>  | <a href="https://assets.rootkey.co.uk/static/resume.pdf">Resumé</a>  | <a href="https://rootkey.co.uk/atom.xml">RSS</a>  </nav> <main id="content"> <section class="article-meta">
+<h1 class="title">Building Smarter</h1>
+<details open> <summary>Article Information</summary> <section class="tags">
+Tagged as <a href="https://Sporiff.github.io/tag/git.html">git</a>, <a href="https://Sporiff.github.io/tag/website.html">website</a>, <a href="https://Sporiff.github.io/tag/tech.html">tech</a>, <a href="https://Sporiff.github.io/tag/bot.html">bot</a>, <a href="https://Sporiff.github.io/tag/lisp.html">lisp</a> </section>
+<section class="date">
+Written on <time datetime="2020-04-19 02:23:40">2020-04-19 02:23:40</time> </section>
+</section>
+<article class="article-content">
+<p><img src="https://assets.rootkey.co.uk/static//images/git.png" alt="The git logo" /></p>
+
+<p>I've been meaning to improve the way I deploy this website for a little while now. Since I stopped using Netlify in favour of a more bare-bones approach, there has been a lot of manual/ugly work involved with the process of updating this website and posting from its RSS feed to my Mastodon feed.</p>
+
+<p>Initially, I simply cloned the git repository for this site to my FreeBSD box and then SSHd in to the box to pull the lates files. This, of course, is not very automatic, and it also required me hosting a lot more files in the git repository than strictly necessary since I was performing the <a href="https://github.com/coleslaw-org/coleslaw" >coleslaw</a> build on my local machine and pushing this up to replace the directory. This was always highly inefficient, but as usual I kind of just though &quot;eh, I'll get round to doing something better later&quot;.</p>
+
+<p>Then we have my bot. I was so pleased with this little thing because it was my first endeavour at writing something in common lisp. However, it too was pretty dumb. In both cases I eventually just ended up setting up cron jobs: one to perform a <code>git pull</code> every 15 minutes and another to run the <code>scbl --load</code> for the bot 5 minutes later. Yuck. Not exactly a dynamic way to do things.</p>
+
+<p>Since I had a bit of time on my hands today and have also been playing around with <a href="https://sourcehut.org" >sourcehut</a>, I figured this was a good a time as any to improve some things. I had two objectives:</p>
+
+<ul>
+<li>Run the <code>git pull</code> only when a new commit had been pushed</li>
+<li>Immediately run the RSS scraping bot after the repository had been updated so there was no delay</li>
+</ul>
+
+<p>I knew the former of these was going to be best achieved with a git hook, but since I'd never actually used one of these before I really had no idea what I was doing. Luckily, smarter people than myself have <a href="https://gist.github.com/noelboss/3fe13927025b89757f8fb12e9066f2fa" >already done this</a> and have been kind enough to write it down.</p>
+
+<p>tl;dr:</p>
+
+<ul>
+<li>The server now no longer hosts a working git repository, but instead just hosts a deployment</li>
+<li>A <code>post receive</code> hook picks up the changes and builds the pages on the server (no more pushing a full folder of web pages, hurray!)</li>
+</ul>
+
+<p>Next, we have my bot. This thing is a pretty simple common lisp web scraper that functions pretty much identically to my <a href="https://git.sr.ht/~sporiff/folklorebot-lisp" >folklore thursday bot</a>. As I said earlier, this bot was basically just powered by a cron job that tried to <code>sbcl --load</code> the file every 15 minutes or so. This, of course is pretty wasteful for a couple of reasons. Firstly, it's just bad practice to run the thing at intervals when I may not be posting for... months. Secondly, running the REPL rather than just using a binary is pretty expensive. <a href="https://github.com/roswell/roswell" >Roswell</a> to the rescue!</p>
+
+<p>Roswell is a Lisp implementation manager and one of my favourite things ever. In addition to making managing your lisp implementations a breeze, it also allows you to package your lisp scripts pretty trivially. With a few minor changes, I could simply install the bot as a binary and add it to the path of the git_daemon user. Bingo. Now, the <code>post receive</code> hook runs the bot after receiving a new post.</p>
+
+<p>This has been a fun little exercise. I should probably have got round to this sooner seeing as I've been in lockdown for a few weeks but unfortunately I'm too lazy to be lazy.</p>
+ </article>
+<nav class="relative-nav">
+<a href="https://Sporiff.github.io/posts/Playing-With-Ports.html">Previous</a><br>
+<a href="https://Sporiff.github.io/posts/Alpine.html">Next</a><br>
+</nav>
+ </main>  <footer class="fineprint"> Unless otherwise credited all material <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"> CC BY-SA 4.0 </a> by Ciarán Ainsworth <a href="https://my.fsf.org/join?referrer=2278905"><img src="https://Sporiff.github.io/css/fsf.png" style="max-height: 1.5rem" /></a> </footer> </body> </html>
