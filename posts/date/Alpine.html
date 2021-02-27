@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en"> <head> <title>Life Inside a Computer</title> <meta http-equiv="content-type" content="text/html;" charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1"> <link href="https://sporiff.github.io/css/style.min.css" rel="stylesheet" type="text/css" /> <link rel="alternate" href="https://sporiff.github.io/rss.xml" type="application/rss+xml" /> <link rel="icon" type="image/png" href="https://sporiff.github.io/css/favicon.png" /> <meta property="twitter:card" content="summary" />
+<meta property="twitter:author" content="@thatdapperbrit" />
+<meta property="twitter:title" content="Alpine" />
+<meta property="twitter:description" content="<p><img src="https://assets.rootkey.co.uk/static/images/alpine.png" alt="A neofetch screenshot of Alpine" /></p>
+
+<p>For a good long while now I've been hosting a bunch of different services across d" /> </head> <body> <nav class="navigation"> <a href="https://sporiff.github.io">Home</a> | <a href="mailto:ciaranainsworth@outlook.com">Email</a>  | <a href="https://github.com/Sporiff">Code</a>  | <a href="https://paypal.me/CiaranAinsworth">Support me</a>  | <a href="https://assets.rootkey.co.uk/static/resume.pdf">Resumé</a>  | <a href="https://sporiff.github.io/atom.xml">RSS</a>  </nav> <main id="content"> <section class="article-meta">
+<h1 class="title">Alpine</h1>
+<details open> <summary>Article Information</summary> <section class="tags">
+Tagged as <a href="https://sporiff.github.io/tag/alpine.html">alpine</a>, <a href="https://sporiff.github.io/tag/linux.html">linux</a>, <a href="https://sporiff.github.io/tag/tech.html">tech</a>, <a href="https://sporiff.github.io/tag/technology.html">technology</a> </section>
+<section class="date">
+Written on <time datetime="2020-04-22">2020-04-22</time> </section>
+</section>
+<article class="article-content">
+<p><img src="https://assets.rootkey.co.uk/static/images/alpine.png" alt="A neofetch screenshot of Alpine" /></p>
+
+<p>For a good long while now I've been hosting a bunch of different services across different servers.
+Given that I started this tradition before I was particularly proficient with GNU/Linux and *BSD,
+I have usually taken to using Ubuntu as a crutch of sorts. Now, there's nothing wrong with Ubuntu
+per se, but it nearly always has more than I need preinstalled and removing software is a bigger
+risk than adding it.</p>
+
+<p>I've used Alpine before, believe it or not. I actually use it all the time in Docker containers,
+so I'm pretty used to some bits and pieces like <code>apk</code>, the package manager, and OpenRC, the init
+system. I've made use of the latter in Gentoo and Artix so I'm fairly au fait with it. However, I've
+never used something as unusual as Alpine on a desktop. Its use of musl in place of GCC and its focus
+on biting simplicity by default make it somewhat unsuited (I believed) to powering a home machine.</p>
+
+<p>In the first instance, anyhow, I focused on migrating my existing Ubuntu servers over to Alpine.
+Having recently closed down my Mastodon and Gitea servers to new users, these were the first to
+go over. All went pretty smoothly, though to be fair the requirement were minimal given that each
+service is hosted in containers so it's really just a case of using rclone to copy information from
+one to the other then... recreating the containers. The Funkwhale migration required a small amount
+of additional warning, but all was done in under an hour. The delay was mostly in DNS propogation
+for letsencrypt to work.</p>
+
+<p>All in all, I've been able to reduce my operating costs by a not-unimpressive $20 a month by
+moving these services from one big Ubuntu box to three smaller Alpine machines. The OS is incredibly
+quick and needs very little love to keep it going, and everything appears to run a lot better
+(Docker builds are noticeably quicker across the board). This also means it is easier for me
+going forward to make changes to these services such as scaling up Funkwhale while leaving other
+services small and intact. It's neater this way and I much prefer it.</p>
+
+<h2>The Desktop</h2>
+
+<p>Ah yes, I hear you say, but what about the desktop? Well, this was a silly fancy of mine. A
+system that ran so well on my servers was enticing, to say the least, and the research revealed
+that - due to the presence of Flatpak in the Alpine repos as well as the large volume of native
+packages already present - I wouldn't miss out on too much migrating from Fedora to Alpine. Nvidia
+would probably never work properly due to its dependence on GCC, but I quite frankly never play games.
+My next machine will not have an Nvidia card, I don't think. I'll shop around for something better
+suited to Linux.</p>
+
+<p>The <a href="https://wiki.alpinelinux.org/wiki/Main_Page" >Alpine wiki</a> doesn't have a patch on the Arch
+wiki, for sure, although a lot of the information is transferable between the two. Alpine misses
+some pretty important steps in its setup instructions and expects a great deal of knowledge on
+the user's part around essentials such as daemon management. My first install attempt was
+disastrous, not least because I chickened out of a KDE install and reverted to a GNOME install,
+leaving me with a completely broken GNOME installation that would only work on X11 (weirdly the
+KDE one only worked properly on Wayland). Having learned my lesson somewhat about <em>planning</em> things
+ahead of time I mustered up the courage to try again and this time I got it right.</p>
+
+<p>Even with the full suite of software installed by the gnome and gnome-apps metapackages the system
+still makes no assumptions for you. This is one of Alpine's major appeals, so I'm not knocking it,
+but as a normal desktop user you just have to be careful about certain packages not being installed
+as dependencies because they're not explicitly required. This can mean a lot of scratching your
+head over <em>why</em> the thing you installed isn't working: installing that package works fine in
+Debian!</p>
+
+<p>Even running GNOME (beast that it is) the system is noticeably snappier than Fedora. If I were
+to start again I think I would ditch the gnome-apps metapackage and plump for installing the
+system piecemeal with more care over exactly what was needed, but for the time being I'm
+perfectly happy with it. Not a particularly difficult install, smooth running, decent community
+support. I can see it getting a lot more popular.</p>
+
+<h2>A Farewell</h2>
+
+<p>As previously mentioned <a href="https://bakusocial.com" >Baku Social</a> and <a href="gitsune.site" >Gitsune</a> have
+been put out to pasture. Both were fun experiments, but ultimately they were more effort/money
+to manage than they were worth. Both received a high volume of spam accounts that had to be
+managed and removed, and ultimately the actual interest in them was non-existent. I'm going to
+continue running Baku Social as a personal instance. I like having my own server and I think
+it's nice to keep a unique handle. Gitsune will be going offline for good, however. I've migrated
+everything off of there to <a href="https://sourcehut.org" >Sourcehut</a>, so I will be putting the hosting
+money to a service that's got a lot more promise.</p>
+
+<p>All is not doom and gloom, however. <a href="https://tanukitunes.com" >Tanuki Tunes</a> continues to increase
+in popularity as a testbed for new Funkwhale features. Stepping away from the sheer number of
+services under my control will allow me to focus more resources and time on Tanuki Tunes should
+things need to be scaled up at all. Given how well it's running even at the current load this
+hopefully should not need to happen for a while, but it leaves us with options.</p>
+
+<p>Until next time!</p>
+ </article>
+<nav class="relative-nav">
+<a href="https://sporiff.github.io/posts/date/Building-Smarter.html">Previous</a><br>
+<a href="https://sporiff.github.io/posts/date/Site-Speed-Increases.html">Next</a><br>
+</nav>
+ </main>  <footer class="fineprint"> Unless otherwise credited all material <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"> CC BY-SA 4.0 </a> by Ciarán Ainsworth <a href="https://my.fsf.org/join?referrer=2278905"><img src="https://sporiff.github.io/css/fsf.png" style="max-height: 1.5rem" /></a> </footer> </body> </html>

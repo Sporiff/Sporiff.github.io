@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en"> <head> <title>Life Inside a Computer</title> <meta http-equiv="content-type" content="text/html;" charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1"> <link href="https://sporiff.github.io/css/style.min.css" rel="stylesheet" type="text/css" /> <link rel="alternate" href="https://sporiff.github.io/rss.xml" type="application/rss+xml" /> <link rel="icon" type="image/png" href="https://sporiff.github.io/css/favicon.png" /> <meta property="twitter:card" content="summary" />
+<meta property="twitter:author" content="@thatdapperbrit" />
+<meta property="twitter:title" content="Baku Social" />
+<meta property="twitter:description" content="<p>I've been looking for a project recently to teach me some more about various technologies, 
+specifically public cloud stuff like AWS and container tech like Docker. I have been 
+looking to get int" /> </head> <body> <nav class="navigation"> <a href="https://sporiff.github.io">Home</a> | <a href="mailto:ciaranainsworth@outlook.com">Email</a>  | <a href="https://github.com/Sporiff">Code</a>  | <a href="https://paypal.me/CiaranAinsworth">Support me</a>  | <a href="https://assets.rootkey.co.uk/static/resume.pdf">Resumé</a>  | <a href="https://sporiff.github.io/atom.xml">RSS</a>  </nav> <main id="content"> <section class="article-meta">
+<h1 class="title">Baku Social</h1>
+<details open> <summary>Article Information</summary> <section class="tags">
+Tagged as <a href="https://sporiff.github.io/tag/mastodon.html">mastodon</a>, <a href="https://sporiff.github.io/tag/social.html">social</a>, <a href="https://sporiff.github.io/tag/tech.html">tech</a>, <a href="https://sporiff.github.io/tag/federation.html">federation</a> </section>
+<section class="date">
+Written on <time datetime="2018-12-22">2018-12-22</time> </section>
+</section>
+<article class="article-content">
+<p>I've been looking for a project recently to teach me some more about various technologies, 
+specifically public cloud stuff like AWS and container tech like Docker. I have been 
+looking to get into this stuff for a little while and even previously hosted on of my 
+blogs on a container OS, but that was shortlived due to too many headaches with Wordpress 
+containers. For the last few months I had also been looking for a way to replace Spotify - 
+which I had left behind due to privacy concerns, costs, and library limitations (I listen 
+to some... weird stuff). So when I heard about <a href="https://funkwhale.audio" >Funkwhale</a> I 
+decided this would be a good opportunity to give the whole Docker/Cloud thing a go.</p>
+
+<h2>A Rocky Start</h2>
+
+<p>Initially I opted to run the entire setup in AWS with an EC2 server and additional storage 
+to host media files. This went well to begin with; setting up the server, DNS, and access 
+to the service was very simple. I ran the site for a couple of days on this setup before 
+realising that costs would quickly spiral out of hand. While AWS is fantastic for large-scale 
+applications and deployments, it's not great for smaller projects with lower specs. The 
+storage and network costs would quickly grow beyond what I was comfortable spending, and 
+so I decided to call it a day with EC2 and fall back to my tried and true: Digital Ocean.</p>
+
+<p>I opted originally to run a $40/month VPS with 8GB RAM, 4 cores, and 160GB SSD. This seemed 
+logical seeing as I was going to be hosting media files on the server. At the time, I had 
+placed my entire uncompressed library on the server, so it was taking up about 100GB of space 
+just to host the files. This didn't bother me too much as the server spec included a lot 
+of bandwidth as well, so I plowed ahead. I got nginx up-and-running, set Docker up successfully, 
+and was easily able to listen to music out of the Funkwhale app. Very nice.</p>
+
+<p>But this server is... expensive. And very powerful.</p>
+
+<p>My biggest mistake in this move was picking a high-power VPS for its disk size rather than more 
+sensibly choosing a less powerful machine and attaching an additional disk to it. As such I was 
+now stuck with a whole lot of server hosting, well, my music library and nothing else. I didn't 
+really have the room to add more music in future, and the server was too powerful to just have 
+one Docker container running on it.</p>
+
+<p>My solution? Find another project of course! I have been a longtime user of <a href="https://joinmastodon.org" >Mastodon</a>, 
+having moved away from sites like Twitter and Tumblr a while back due to toxicity and privacy concerns (again). 
+While I was happy enough using <a href="https://fosstodon.org" >Fosstodon</a> and <a href="https://mastodon.technology" >Mastodon.technology</a>
+ before, I was keen to start my own instance dedicated to Japanese mythology (my first true love). With the idea in mind, 
+I looked up the guides and - after a few teething issues - had an instance running successfully.</p>
+
+<p>Around this time I decided that I probably needed to downsize everything. The server was still too 
+powerful and I had been stupid in my allocation of storage. So I decided to spin up a smaller VPS 
+with half the power and a 100GB dedicated drive, compress all of my music, and migrate the whole 
+thing over. After a brief conversation with the Funkwhale dev I was able to get the media root changed 
+and have all music switched over to the external drive. Bonza.</p>
+
+<h2>The End Result</h2>
+
+<p>The two federated instances are now successfully up-and-running. The Mastodon instance is 
+<a href="https://bakusocial.com/about" >Baku Social</a> and the Funkwhale is <a href="https://tanukitunes.com/about" >Tanuki Tunes</a>. 
+I'm still monitoring the server, S3 storage, and general performance to see if the setup I've chosen is right, 
+but so far I'm not seeing any particular issues coming up. All seems to be smooth sailing. I guess my big challenge 
+will be managing upgrades and downtime, but I'm yet to experience migrating to a new release.</p>
+
+<p>These two projects are currently being managed, hosted, and paid for entirely by me. I don't mind 
+this too much as I'm currently the only one using the services so they're basically just my personal 
+playing ground. However, I have also set up a <a href="https://patreon.com/CiaranAinsworth" >Patreon</a> and a 
+<a href="https://liberapay.com/CiaranAinsworth" >Liberapay</a> to help cover costs should other people want to 
+make use of the services.</p>
+ </article>
+<nav class="relative-nav">
+<a href="https://sporiff.github.io/posts/date/Getting-On-With-Gutenberg.html">Previous</a><br>
+<a href="https://sporiff.github.io/posts/date/Baku-Social-News.html">Next</a><br>
+</nav>
+ </main>  <footer class="fineprint"> Unless otherwise credited all material <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"> CC BY-SA 4.0 </a> by Ciarán Ainsworth <a href="https://my.fsf.org/join?referrer=2278905"><img src="https://sporiff.github.io/css/fsf.png" style="max-height: 1.5rem" /></a> </footer> </body> </html>

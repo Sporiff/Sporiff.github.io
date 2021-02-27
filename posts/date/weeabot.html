@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en"> <head> <title>Life Inside a Computer</title> <meta http-equiv="content-type" content="text/html;" charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1"> <link href="https://sporiff.github.io/css/style.min.css" rel="stylesheet" type="text/css" /> <link rel="alternate" href="https://sporiff.github.io/rss.xml" type="application/rss+xml" /> <link rel="icon" type="image/png" href="https://sporiff.github.io/css/favicon.png" /> <meta property="twitter:card" content="summary" />
+<meta property="twitter:author" content="@thatdapperbrit" />
+<meta property="twitter:title" content="weeabot" />
+<meta property="twitter:description" content="<p><img src="https://assets.rootkey.co.uk/static/images/weeabot.png" alt="Screenshot of Weeabot" /></p>
+
+<p>So I've been having some fun recently trying to
+teach myself <a href="https://rust-lang.org" /> </head> <body> <nav class="navigation"> <a href="https://sporiff.github.io">Home</a> | <a href="mailto:ciaranainsworth@outlook.com">Email</a>  | <a href="https://github.com/Sporiff">Code</a>  | <a href="https://paypal.me/CiaranAinsworth">Support me</a>  | <a href="https://assets.rootkey.co.uk/static/resume.pdf">Resumé</a>  | <a href="https://sporiff.github.io/atom.xml">RSS</a>  </nav> <main id="content"> <section class="article-meta">
+<h1 class="title">weeabot</h1>
+<details open> <summary>Article Information</summary> <section class="tags">
+Tagged as <a href="https://sporiff.github.io/tag/tech.html">tech</a>, <a href="https://sporiff.github.io/tag/chat.html">chat</a>, <a href="https://sporiff.github.io/tag/communication.html">communication</a>, <a href="https://sporiff.github.io/tag/rust.html">rust</a> </section>
+<section class="date">
+Written on <time datetime="2019-07-07">2019-07-07</time> </section>
+</section>
+<article class="article-content">
+<p><img src="https://assets.rootkey.co.uk/static/images/weeabot.png" alt="Screenshot of Weeabot" /></p>
+
+<p>So I've been having some fun recently trying to
+teach myself <a href="https://rust-lang.org" >Rust</a>. I'm not really a programmer
+by any stretch of the imagination (yet!) but was
+challenged to write a bot for a Matrix chatroom
+I frequent. Most of us have written bots already,
+so it was my time to try something.</p>
+
+<p>Originally I had planned to use Python like I had
+done previously for my Mastodon bot, <a href="https://git.sr.ht/~sporiff/tsukumogami" >tsukumogami</a>.
+However, I'd been hearing some interesting things
+about Rust and decided it would be a fun challenge
+to try and write something functional in the language.</p>
+
+<h2>Features</h2>
+
+<p>Weeabot's current features include the following:</p>
+
+<ul>
+<li>The ability to convert romaji to kana</li>
+<li>The ability to convert kana to romaji</li>
+<li>The ability to translate a string to a given
+  language using Yandex translate</li>
+<li>Various silly responses to triggers</li>
+</ul>
+
+<p>Of these the Yandex call was definitely the hardest
+to get right. I had originally hoped to use a crate
+for this, but <a href="https://crates.io/crates/ytr" >the one I found</a>
+unfortunately didn't compile due to depending on old
+crates which had an old OpenSSL version. After spending some time
+trying to write the call myself I realised it was
+easier to fix the crate and use it anyway. I've since
+<a href="https://github.com/ilunev/ytr/pull/1" >presented this fix</a>
+to the original maintainer, so hopefully it will be usable
+again soon.</p>
+
+<h2>Some Observations</h2>
+
+<p>Rust is a challenging language for a newcomer as
+it is very strict about getting things right before
+compilation. This is the right thing to do, and
+thankfully the compiler is excellent at giving
+instruction on what is wrong and possible ways to
+fix it. But unlike Python (which really is a 
+pick-up-and-play language in many ways), Rust
+really does not want you to run something that is
+broken.</p>
+
+<p>Rust is also probably the wrong language for this
+project. While there is a nice ready-made
+<a href="https://docs.rs/matrix_bot_api/0.4.0/matrix_bot_api/" >matrix_bot_api crate</a>,
+it is clear that the language is designed for
+more complex stuff than this. I would probably
+have had an easier time using a more web-oriented
+language. Originally the challenge had been to use
+<a href="https://dlang.org" >Dlang</a>, but I was much more interested in Rust.</p>
+
+<h2>Some Fun Stuff</h2>
+
+<p>So far I've learned a lot not just about Rust but
+also about Matrix, APIs, and deployment pipelines.
+As a joke, this bot (which essentially just posts
+shitposts that pastiche typical weeaboo-esque
+responses) has been set up with a fully functional
+test environment and pipeline for test, build, and
+deployment to a live server. This was an interesting
+challenge as I have previously understood bits and
+pieces about the process from my interactions with
+Netlify and Funkwhale, but have never set it up
+for myself before.</p>
+
+<p>Another fun thing has been getting to play with
+<a href="https://crates.io" >Crates</a>. Crates are amazingly helpful in giving
+you a good starting point to build from and feel
+much more convenient to me than Python libs. Most
+of this bot is just different crates stuck together,
+although I have actually pushed a fix for the yandex
+translation crate I used. So I'm not just a leech!</p>
+
+<p>Anyway, the source code for the bot can be found on
+my <a href="https://git.sr.ht/~sporiff/weeabot" >Git server</a>. There are still some features I want to
+get working, but I'm pretty happy with its performance
+thus far as a translation bot alone.</p>
+ </article>
+<nav class="relative-nav">
+<a href="https://sporiff.github.io/posts/date/Say-No-To-Slack.html">Previous</a><br>
+<a href="https://sporiff.github.io/posts/date/Coleslaw-Migration.html">Next</a><br>
+</nav>
+ </main>  <footer class="fineprint"> Unless otherwise credited all material <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"> CC BY-SA 4.0 </a> by Ciarán Ainsworth <a href="https://my.fsf.org/join?referrer=2278905"><img src="https://sporiff.github.io/css/fsf.png" style="max-height: 1.5rem" /></a> </footer> </body> </html>

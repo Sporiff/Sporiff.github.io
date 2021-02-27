@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Life Inside a Computer</title> <link href="https://sporiff.github.io"/> <link type="application/atom+xml" rel="self" href="https://sporiff.github.io/atom.xml"/> <updated>Fri, 26 Feb 2021 18:59:07 +0000</updated> <author> <name>Ciarán Ainsworth</name> </author> <entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/Burnout.html"/> <title>Burnout</title> <published>2020-07-20 08:41:21</published> <updated>2020-07-20 08:41:21</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;In December 2019, I was given a new role at work. This was with the understanding that there would need to be a transition period while I trained my replacement (I work with a very big, poorly documented product, which means that training is a very big task), but that I could expect to be out of my current role within 6 months.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Life Inside a Computer</title> <link href="https://sporiff.github.io"/> <link type="application/atom+xml" rel="self" href="https://sporiff.github.io/atom.xml"/> <updated>Sat, 27 Feb 2021 01:44:19 +0000</updated> <author> <name>Ciarán Ainsworth</name> </author> <entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/date/Burnout.html"/> <title>Burnout</title> <published>2020-07-20 08:41:21</published> <updated>2020-07-20 08:41:21</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;In December 2019, I was given a new role at work. This was with the understanding that there would need to be a transition period while I trained my replacement (I work with a very big, poorly documented product, which means that training is a very big task), but that I could expect to be out of my current role within 6 months.&lt;/p&gt;
 
 &lt;p&gt;7 months later, we have not even appointed somebody to the new role.&lt;/p&gt;
 
@@ -21,7 +21,7 @@
 &lt;li&gt;I&#039;ve fixed an annoying bug with this site where code boxes didn&#039;t render properly on smaller devices using Chrome. Every other browser worked fine, just Chromium-based browsers took issue with the &lt;code&gt;pre-wrap: whitespace&lt;/code&gt; setting so I had to do some fiddling to find a solution that worked on all browsers. Long story short: stop using Chromium. It&#039;s absolute dogshit&lt;/li&gt;
 &lt;li&gt;I&#039;ve fixed a couple of minor issues on Funkwhale, namely &lt;a href=&quot;https://dev.funkwhale.audio/funkwhale/funkwhale/-/merge_requests/1167&quot; &gt;an issue with the playbar rendering on landscape tablet devices&lt;/a&gt;, &lt;a href=&quot;https://dev.funkwhale.audio/funkwhale/funkwhale/-/merge_requests/1166&quot; &gt;an issue with artist embedding not working properly&lt;/a&gt;, and &lt;a href=&quot;https://dev.funkwhale.audio/funkwhale/funkwhale/-/merge_requests/1168&quot; &gt;support for unauthenticated users hitting the logout page directly&lt;/a&gt;. Just a few small things, but it feels good to get something done&lt;/li&gt;
 &lt;/ul&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/Site-Speed-Increases.html"/> <title>Site Speed Increases</title> <published>2020-04-23</published> <updated>2020-04-23</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;&lt;img src=&quot;https://assets.rootkey.co.uk/static/images/Rocket.png&quot; alt=&quot;A rocket ship! Zoom!&quot; /&gt;&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/date/Site-Speed-Increases.html"/> <title>Site Speed Increases</title> <published>2020-04-23</published> <updated>2020-04-23</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;&lt;img src=&quot;https://assets.rootkey.co.uk/static/images/Rocket.png&quot; alt=&quot;A rocket ship! Zoom!&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I got poking around at this site and was doing some thinking. Mainly along the lines
 of speed and security. By default, the dark-hyde theme provided by the good folks over
@@ -58,7 +58,7 @@ hook should allow me to stick that in to the files.&lt;/p&gt;
 
 &lt;p&gt;Oh, it&#039;s hacky. But it works. I&#039;m not really in the mood to go diving through Lisp code
 to do this in Coleslaw...&lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/Coleslaw-Migration.html"/> <title>Coleslaw Migration</title> <published>2019-11-03</published> <updated>2019-11-03</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;&lt;img src=&quot;https://assets.rootkey.co.uk/static/images/coleslaw.jpg&quot; alt=&quot;The Coleslaw logo&quot; /&gt;&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/date/Coleslaw-Migration.html"/> <title>Coleslaw Migration</title> <published>2019-11-03</published> <updated>2019-11-03</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;&lt;img src=&quot;https://assets.rootkey.co.uk/static/images/coleslaw.jpg&quot; alt=&quot;The Coleslaw logo&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This marks my third(?) migration to a new site format! 🎉&lt;/p&gt;
 
@@ -83,7 +83,7 @@ for easy reference!) but once you&#039;ve got even the most basic commands down 
 some essential extensions installed you never want to leave it. It&#039;s just so
 damn fun to learn. I&#039;m going to see how it goes as my everyday IDE. It&#039;s already
 got me to uninstall Riot, Telegram, and Thunderbird from my machine...&lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/Into-the-Void.html"/> <title>Into the Void</title> <published>2019-06-09</published> <updated>2019-06-09</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;Ever heard of &lt;a href=&quot;https://voidlinux.org&quot; &gt;Void Linux&lt;/a&gt;? Me neither
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/date/Into-the-Void.html"/> <title>Into the Void</title> <published>2019-06-09</published> <updated>2019-06-09</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;Ever heard of &lt;a href=&quot;https://voidlinux.org&quot; &gt;Void Linux&lt;/a&gt;? Me neither
 until a little while ago. My friend had orginally introduced me
 to Void when I was looking at going back to Arch Linux a few years
 ago, stating that it was (in many ways) a vastly superior system.
@@ -226,7 +226,7 @@ feel (largely achieved through dwm I&#039;m sure), the simplicity of the init
 system, and the surprising robustness of the package manager makes this
 a distro I&#039;m really glad to have tried. I&#039;ll probably stick with it for
 a little while and see how it treats my little Librebox.&lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/Moving-To-Sphinx.html"/> <title>Moving To Sphinx</title> <published>2019-05-09</published> <updated>2019-05-09</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;I&#039;ve made a few changes to this website. Well, not really a few changes,
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/date/Moving-To-Sphinx.html"/> <title>Moving To Sphinx</title> <published>2019-05-09</published> <updated>2019-05-09</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;I&#039;ve made a few changes to this website. Well, not really a few changes,
 more like a complete overhaul. I was getting a bit bored of using Hugo/Markdown
 and decided to challenge myself to the following:&lt;/p&gt;
 
@@ -253,7 +253,7 @@ I&#039;ve therefore decided to retire Gitsune and move operations to Gitlab
 for now. Eventually I&#039;ll probably resurrect Gitsune as a Gitlab instance
 but looking at the spec for it I&#039;ll probably hold off until I have
 a bit more of an income...&lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/New-Developments.html"/> <title>New Developments</title> <published>2019-04-18</published> <updated>2019-04-18</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;h2&gt;It&#039;s Been a Little While&lt;/h2&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/date/New-Developments.html"/> <title>New Developments</title> <published>2019-04-18</published> <updated>2019-04-18</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;h2&gt;It&#039;s Been a Little While&lt;/h2&gt;
 
 &lt;p&gt;Every time I have a blog I am always really bad at posting to it consistently. 
 Actually, a lot has changed in recent months so I thought I&#039;d do a little brain dump.&lt;/p&gt;
@@ -289,7 +289,7 @@ used across the board. It&#039;s been a bit of a fight, but it&#039;s been reall
 benefits a project is going to bring them.&lt;/p&gt;
 
 &lt;p&gt;That&#039;s really it for now. It&#039;s been a crazy busy month this month (not least with our insane political atmosphere at the moment), but hopefully something really good will come of it eventually.&lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/Progress.html"/> <title>Progress</title> <published>2019-02-12</published> <updated>2019-02-12</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;h2&gt;Making a difference&lt;/h2&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/date/Progress.html"/> <title>Progress</title> <published>2019-02-12</published> <updated>2019-02-12</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;h2&gt;Making a difference&lt;/h2&gt;
 
 &lt;hr/&gt;
 
@@ -385,7 +385,7 @@ effects:&lt;/p&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Here&#039;s hoping!&lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/Bring-Back-My-Internet.html"/> <title>Bring Back My Internet</title> <published>2019-02-07</published> <updated>2019-02-07</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;h2&gt;Mixed Messages&lt;/h2&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/date/Bring-Back-My-Internet.html"/> <title>Bring Back My Internet</title> <published>2019-02-07</published> <updated>2019-02-07</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;h2&gt;Mixed Messages&lt;/h2&gt;
 
 &lt;p&gt;Okay, so I&#039;m slightly reneging on my &lt;a href=&quot;https://rootkey.co.uk/posts/More-Writing.html&quot; &gt;earlier post&lt;/a&gt; by writing
 about computers again, but trust me when I say this one is as
@@ -463,7 +463,7 @@ not to be involved in things because you &lt;em&gt;refuse&lt;/em&gt; to just giv
 join [insert social network here]. Well, ain&#039;t that just shit?&lt;/p&gt;
 
 &lt;p&gt;Anyhow. Just a rant. As you were.&lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/More-Writing.html"/> <title>More Writing</title> <published>2019-02-04</published> <updated>2019-02-04</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;h2&gt;And Now For Something Completely Different&lt;/h2&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/date/More-Writing.html"/> <title>More Writing</title> <published>2019-02-04</published> <updated>2019-02-04</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;h2&gt;And Now For Something Completely Different&lt;/h2&gt;
 
 &lt;p&gt;I&#039;ve been writing posts on this website for a little while
 now, mostly relating to my technological exploits and sysadmin
@@ -508,7 +508,7 @@ I used to very much enjoy having a blog. I should probably try to
 enjoy it again.&lt;/p&gt;
 
 &lt;p&gt;I&#039;ll be making changes to this site over the next few days.&lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/New-Site.html"/> <title>New Site</title> <published>2018-10-01</published> <updated>2018-10-01</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;As the astute among you may have noticed, this site has undergone some changes
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/date/New-Site.html"/> <title>New Site</title> <published>2018-10-01</published> <updated>2018-10-01</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;As the astute among you may have noticed, this site has undergone some changes
 over the last couple of days. That&#039;s because I&#039;ve now completely moved away
 from Wordpress and destroyed my old server in favour of a different provider.&lt;/p&gt;
 

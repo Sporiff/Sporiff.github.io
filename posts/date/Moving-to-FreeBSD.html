@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"> <head> <title>Life Inside a Computer</title> <meta http-equiv="content-type" content="text/html;" charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1"> <link href="https://sporiff.github.io/css/style.min.css" rel="stylesheet" type="text/css" /> <link rel="alternate" href="https://sporiff.github.io/rss.xml" type="application/rss+xml" /> <link rel="icon" type="image/png" href="https://sporiff.github.io/css/favicon.png" /> <meta property="twitter:card" content="summary" />
+<meta property="twitter:author" content="@thatdapperbrit" />
+<meta property="twitter:title" content="Moving to FreeBSD" />
+<meta property="twitter:description" content="<p><img src="https://assets.rootkey.co.uk/static/images/Beastie.png" alt="The FreeBSD Beastie" /></p>
+
+<p>I've been making some changes to my current website setup. Before, this site was hosted on
+th" /> </head> <body> <nav class="navigation"> <a href="https://sporiff.github.io">Home</a> | <a href="mailto:ciaranainsworth@outlook.com">Email</a>  | <a href="https://github.com/Sporiff">Code</a>  | <a href="https://paypal.me/CiaranAinsworth">Support me</a>  | <a href="https://assets.rootkey.co.uk/static/resume.pdf">Resumé</a>  | <a href="https://sporiff.github.io/atom.xml">RSS</a>  </nav> <main id="content"> <section class="article-meta">
+<h1 class="title">Moving to FreeBSD</h1>
+<details open> <summary>Article Information</summary> <section class="tags">
+Tagged as <a href="https://sporiff.github.io/tag/freebsd.html">freebsd</a>, <a href="https://sporiff.github.io/tag/unix.html">unix</a>, <a href="https://sporiff.github.io/tag/bsd.html">bsd</a>, <a href="https://sporiff.github.io/tag/floss.html">floss</a> </section>
+<section class="date">
+Written on <time datetime="2020-02-04 22:09:06">2020-02-04 22:09:06</time> </section>
+</section>
+<article class="article-content">
+<p><img src="https://assets.rootkey.co.uk/static/images/Beastie.png" alt="The FreeBSD Beastie" /></p>
+
+<p>I've been making some changes to my current website setup. Before, this site was hosted on
+the same server that currently hosts my Mastodon instance and Funkwhale pod, as well as my
+git server. But with gitea's poor performance and the general overcrowding, mixed in with
+my recent winding down of my Streama server, I decided to make a completely new server for
+my website.</p>
+
+<p>I've been doing a lot of playing around with <a href="https://freebsd.org" >FreeBSD</a> lately as part
+of my never-ending quest to find the ideal operating system. There are some things I absolutely
+love about the system, and its minimalist setup and hardy security defaults made it the ideal
+candidate to set my website up on.</p>
+
+<p>The initial install was incredibly easy, although I made some mistakes initially with the
+installation of my SSH key. DO's FreeBSD offering is considerably more hardened than their
+Debian/Ubuntu ones as they require an SSH key be set up and do not allow the management
+of root passwords. This suits me just fine as I never use a root password if I can possibly
+avoid it. A fully featured <code>wheel</code> account is good enough for me.</p>
+
+<p>After getting everything set up nice, my next adventure came with Nginx. I'm so used now
+to setting up sites and web apps using nginx on Debian-based systems that I can do it in
+my sleep, but the difference in layout/defaults for Nginx on FreeBSD gave me pause for
+thought. Once I got into the swing of it, it made a lot of sense and felt a lot more
+suited to smaller setups, but the initial confusion was somewhat annoying. Not the
+system's fault in any way (RTFM and all that), but still a puzzler.</p>
+
+<p>Then I decided to be an idiot. See, DO supplies a default <code>FreeBSD</code> account which is
+installed with your keys. This account has full root access using <code>sudo</code> and is meant to
+be used for access and maintenance of the server. But I'm an odd fellow, so I really wanted
+to set my account up to better match my other machines. I installed <code>zsh</code> and decided to
+<code>chsh</code> my account to change my username and shell. All went well, I moved my home folder
+and then left the shell to load my new shell. Everything loaded fine, but suddently my
+site stopped working. Ah, I realised too late that of course the site is just a symlink from
+a folder in my home folder, which has now moved. Whoops. I'll just move that b-</p>
+
+<p><code>sporiff is not in the sudoers file</code></p>
+
+<p>If you change your username, make sure you also change your sudoers file. Fool.</p>
+
+<p>Anyway, it was easy enough to get everything torn down and built back up. I've now got
+the server all up-to-date and automated and I must say I'm pretty happy with its performance
+so far. It hasn't got a big job, but it's a job I'm glad I chose FreeBSD to do.</p>
+ </article>
+<nav class="relative-nav">
+<a href="https://sporiff.github.io/posts/date/A-New-Year.html">Previous</a><br>
+<a href="https://sporiff.github.io/posts/date/Going-Green.html">Next</a><br>
+</nav>
+ </main>  <footer class="fineprint"> Unless otherwise credited all material <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"> CC BY-SA 4.0 </a> by Ciarán Ainsworth <a href="https://my.fsf.org/join?referrer=2278905"><img src="https://sporiff.github.io/css/fsf.png" style="max-height: 1.5rem" /></a> </footer> </body> </html>
