@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Life Inside a Computer</title> <link href="https://sporiff.github.io"/> <link type="application/atom+xml" rel="self" href="https://sporiff.github.io/atom.xml"/> <updated>Sat, 27 Feb 2021 01:45:15 +0000</updated> <author> <name>Ciarán Ainsworth</name> </author> <entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/date/The-Hunt.html"/> <title>The Hunt</title> <published>2021-02-26</published> <updated>2021-02-26</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;I&#039;ve wanted to live abroad since I was a very young child. As a beady-eyed youngster I distinctly remember telling my parents I was going to be a vet out in Japan working at the base of mount Fuji. Obviously, at that age I had no idea the logistical challenges such a move would bring. Even if I were to study veterinary medicine and Japanese simultaneously, I very much doubt there would be any appetite for a practice opening at the base of a mountain. Bit of a flight of fancy, but the point remains I knew I wanted to get out of the UK.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Life Inside a Computer</title> <link href="https://sporiff.github.io"/> <link type="application/atom+xml" rel="self" href="https://sporiff.github.io/atom.xml"/> <updated>Sat, 27 Feb 2021 01:47:02 +0000</updated> <author> <name>Ciarán Ainsworth</name> </author> <entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/date/Another-test.html"/> <title>Another test</title> <published>2021-02-27 01:46:14</published> <updated>2021-02-27 01:46:14</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;This is just a quick test post to see if I&#039;ve fixed coleslaw&#039;s twitter plugin.&lt;/p&gt;
+</content> </entry><entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/date/The-Hunt.html"/> <title>The Hunt</title> <published>2021-02-26</published> <updated>2021-02-26</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;I&#039;ve wanted to live abroad since I was a very young child. As a beady-eyed youngster I distinctly remember telling my parents I was going to be a vet out in Japan working at the base of mount Fuji. Obviously, at that age I had no idea the logistical challenges such a move would bring. Even if I were to study veterinary medicine and Japanese simultaneously, I very much doubt there would be any appetite for a practice opening at the base of a mountain. Bit of a flight of fancy, but the point remains I knew I wanted to get out of the UK.&lt;/p&gt;
 
 &lt;p&gt;This feeling has only intensified as I&#039;ve got older. I&#039;ve travelled around and studied in Asia, and have vacationed in many places across Europe. Every time I plod my way back to the soggy, grey drear of the UK with a heavy heart and a strong desire to leave. Familiarity certainly does breed contempt, and the country&#039;s apparent need to throw away all ties to the world have only deepened my sadness at its trajectory. &lt;/p&gt;
 
@@ -429,109 +430,4 @@ to the world if a system like this had taken off instead of the black on white s
 As somebody who struggles with eye strain, I find rio a lovely interface.&lt;/p&gt;
 
 &lt;p&gt;Anyway. On to Haiku next I suppose.&lt;/p&gt;
-</content> </entry><entry> <link type="text/html" rel="alternate" href="https://sporiff.github.io/posts/date/Ditch-the-Walled-Gardens.html"/> <title>Ditch the Walled Gardens</title> <published>2020-05-08</published> <updated>2020-05-08</updated> <author> <name>Ciarán Ainsworth</name> <uri>https://sporiff.github.io</uri> </author> <content type="html">&lt;p&gt;A couple of years ago, I cancelled my Spotify subscription. In fact, I completely discontinued my use of the platform. My reasoning at the time seemed petty,
-but everything I&#039;ve learned and listened to since has convinced me that this was the right way to go.&lt;/p&gt;
-
-&lt;p&gt;Back in those days, I didn&#039;t really have a problem with Spotify. I am a musician myself, so I wanted to contribute to my favourite musicians even though I lacked
-the funds to buy every new album. Spotify seemed to answer this desire with its vast catalogue and seemingly reasonable subscription fee model (as well as its
-ad-funded &amp;quot;free&amp;quot; model), so I happily paid month-to-month for access to this service and thought no more of it in the over 1 year I stayed with the service.&lt;/p&gt;
-
-&lt;p&gt;I can&#039;t remember exactly which album it was (I want to say They Might Be Giants&#039; &lt;em&gt;The Spine&lt;/em&gt;, but I wouldn&#039;t swear to it in court), but something up and disappeared
-one day with no warning. Something to which I had previously had access and something which was previously present in my playlists and radios was just... gone. My guess
-is that there was some licensing dispute or contract expiry that led to this, but it was that event that made me realise quite clearly that I meant nothing to this
-company and had no say over its operation, to the point where things would simply be removed without so much as a by-your-leave or an offer to compensate for the
-loss.&lt;/p&gt;
-
-&lt;p&gt;In many ways I am thankful for this. After all, it was this that set me free from Spotify&#039;s disgusting clammy grasp and set me on my search for a self-hosted
-alternative - a search which would lead me to &lt;a href=&quot;https://funkwhale.audio&quot; &gt;Funkwhale&lt;/a&gt;, a project with which I work and for which I have a great deal of love. In
-all honesty, I hadn&#039;t really thought about Spotify in a long time until very recently when somebody brought up the subject of podcasts in Funkwhale following
-the 0.21 release. They mentioned that a certain podcast (The Last Podcast on the Left) had gone Spotify-exclusive, and were expressing disappointment that this
-would mean they couldn&#039;t load it in to a Funkwhale channel.&lt;/p&gt;
-
-&lt;p&gt;I must have known, in the back of my head, that Spotify might do something like this. It&#039;s the kind of shitty thing that successful technology companies are wont
-to do, after all. But I was still surprised that it had actually happened. I went and did some reading up about it on various forums and was horrified by some of
-the dismayed responses of the show&#039;s fans, who expressed disappointment not only at the fact that they didn&#039;t like Spotify as a platform, but also that some people
-would simply be unable to access the content now due to the fact that Spotify does not operate in certain countries.&lt;/p&gt;
-
-&lt;h2&gt;Podcasts and the Point&lt;/h2&gt;
-
-&lt;p&gt;I will admit I&#039;m not the biggest consumer of podcasts. In fact, up until the last few years I&#039;ve listened to very few indeed. However, I&#039;ve known about them for
-about as long as they&#039;ve been around. Podcasting is an interesting idea: an asynchronous radio broadcast that can be mirrored and spread across the world using
-a set of standard tools that anybody can use and build from. This kind of open process makes the medium very disruptive and far-reaching; the concept can be applied
-with very affordable and easily-accessed tools and isn&#039;t limited by licensing. It&#039;s ideal for underground radio, sensitive ideas, and entertaining conversations of
-all kinds.&lt;/p&gt;
-
-&lt;p&gt;Why, then, are we so quick to give this up?&lt;/p&gt;
-
-&lt;p&gt;On the part of podcasters, I kind of understand it. The process of creating regular shows with research/writing/editing etc. is one that is not without expense.
-Some podcasts eventually become businesses unto themselves, and these require sponsorship or other means of funding so that the creators can continue to work on
-the project full-time. In step companies like Spotify, Apple, Google, etc. who can wave fat stacks of cash around knowing full well that they will be boosting their
-subscriptions massively by bringing these shows on board in an exclusive contract. This all makes sense. What doesn&#039;t make sense is that people actually &lt;em&gt;do&lt;/em&gt; pay.
-People are happy to switch to Spotify and either buy a subscription or listen to the ad-supported service, accepting that this is just how it is now. Why? Do we
-not see that the move made by these creators completely defeats the purpose of the medium?&lt;/p&gt;
-
-&lt;p&gt;I remember writing an article in university about how television - by its original definition - is not and can never be art. It was a contentious and sophomoric piece,
-rather less well thought out and more forceful than I am proud to admit, but the kernel of the idea still rings true to me. Art is expressive, subversive, and highly
-individual. Film can be produced out of an individual&#039;s pocket and distributed by shining a projection in a home or on the streets, painting can be achieved with a range
-of materials and shown anywhere, music can be performed live or recorded with very rudimentary equipment etc. etc. Television? No. By definition television must be produced
-by companies and is inherently stunted by this fact. To get access to the platform of contemporary television, one needs the help of a network of some description,
-or a public access channel with its own set of rules. You can make videos, of course, but these are not television until and unless they reach a television set. That
-is the meaning of television and by that meaning it can only be as subversive as it is allowed to be.&lt;/p&gt;
-
-&lt;p&gt;The point of all of this is that podcasting is not television. By definition it is not restricted by corporate interests or rules created by external parties. Just
-like other artforms it can be cheaply produced and shared without defying the meaning of the platform. To have a podcast be platform exclusive and inaccessible to
-the wider public means that it is no longer a podcast: it is corporate radio.&lt;/p&gt;
-
-&lt;h2&gt;The Technology Industry&lt;/h2&gt;
-
-&lt;p&gt;The technology industry as a whole is despicable and disgusting. Allying engineering and software development with marketing and a corporate agenda is an inherently
-dystopian idea. Technologists on the whole are generally just interested in the creation of new things and making things work in interesting new ways. But just as
-a scientist may see only fascination and intrigue in the study of subatomic particles and radiation, a military will see a weapon. So too is it with the technology
-industry. Knowing of humanity&#039;s propensity for laziness and the desire to make our terrible lives slightly easier, companies coax technologists into creating modern
-marvels and then wield them as weapons of enslavement to bleed an unsuspecting public of their life blood while simultaneously patting themselves on the back and
-wrapping an arm around you as they whisper &amp;quot;see? We &lt;em&gt;LOVE&lt;/em&gt; you&amp;quot; through a serpentine smile.&lt;/p&gt;
-
-&lt;p&gt;The technology industry is not, of course, alone in all of this. The difference between it and other industries is that the correct way of doing things, the moral
-and correct way, exists and has been a viable alternative for years. The free software movement exists for the express purpose of providing people with a way to
-use their technology without getting proverbially fisted by companies and used as a ghoulish, grinning puppet spewing dollar bills from its mouth. But marketing is
-a powerful thing and is not to be underestimated. At every turn, free software is dismissed as not shiny enough, too hippyish, too geeky. The shiny shiny is what
-I desire. Only later do people realise how bad things are getting, but by then the walls are closing in behind them and the exit is too small to see.&lt;/p&gt;
-
-&lt;p&gt;When I worked in the education sector I was always dismayed by the UK&#039;s acceptance of proprietary software as tools of teaching. Students would learn to create
-in Adobe Creative Cloud (which, as a former editor, I can assure you is just about the worst fucking tool you could ever have the displeasure of using) and would
-then be left in the cold once they left if they could no longer afford to pay the monthly fee to access it. Similarly, tools like Office365 are imprinted upon
-people from an early age as a &lt;em&gt;necessity&lt;/em&gt;, something which will always be needed. Of course, if you can&#039;t afford it you&#039;re shit out of luck and frankly not good
-enough as a human being to join the &lt;em&gt;normal&lt;/em&gt; world that the British education system paints for you. Once again, control of education and creativity being handed
-to companies who care about nought but the coin is an inherently evil idea, and the way these companies lock you in by design is an inherently evil act. &lt;/p&gt;
-
-&lt;p&gt;Art and technology are natural bedfellows, but art and the technology industry is a match made in a level of hell Dante was too afeared to even dream of devising.
-Handing art over to powerful companies with not only the hand rubbing greed of a bottomless pit wrapped in the body of a pig but also an army of intelligent and
-subservient - or worse, willing - technologists is about the worst thing we as a species can do. I know that people despise slippery slopes, but they are a very
-real thing and we are already slipping down this one. Just as television requires you cowtow yourself to a company or collective, so too does releasing art on
-walled garden platforms such as Apple, Spotify, Google, Netflix. By putting your creations on these platforms, you are announcing only that they have been deemed
-okay by those companies.&lt;/p&gt;
-
-&lt;p&gt;I understand that there is a difficult balance to be struck here. Artists need to earn money to live, as do technologists. But an artist who ceases to make art
-is no longer an artist, and a technologist who works making proprietary software to further nothing but a corporate agenda is always making the wrong decision
-and is culpable for the actions of its employer. As Drew DeVault &lt;a href=&quot;https://drewdevault.com/2020/05/05/We-are-complicit-in-our-employers-deeds.html&quot; &gt;recently said in a blog post&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Mass surveillance, contempt of the law, tax evasion, oppression of the poor, of minorities… this is what our industry is known for, and it’s our fault...
-But, maybe you would object, maybe you would have the courage to say “no” when asked to do these things. Maybe you would, but someday, a cool project will come across your
-inbox - machine learning! Big data! Cloud scale! It’s everything you were promised when you took the job, and have more fun with it for a few months than you have had in a
-long time. Your superiors are thrilled - “it’s perfect!”, they say, and it’s not until they take it and start feeding it real-world data that you realize exactly what you
-have built. Doublethink quickly steps in to protect your ego from the cognitive dissonance, and you take another little step towards becoming the person you once swore never to be.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2&gt;To Summarise&lt;/h2&gt;
-
-&lt;p&gt;This has been a long and rambling rant, and I don&#039;t promise it makes any real sense (I&#039;m not really going to bother going back to edit/proofread it too much).
-In the course of the post the point changes frequently, but the gist is something that plays on my mind a lot as a creator and a technologist.&lt;/p&gt;
-
-&lt;p&gt;To Spotify and its employees: what you do is evil, and it will always be evil no matter how you try to paint it. You exist solely to take control from creators, money
-from audiences, and dignity from yourselves. The same goes for the rest of the big companies daring to get involved with art: get your filthy tentacles away from
-us.&lt;/p&gt;
-
-&lt;p&gt;To artists: please look in to free software solutions. They exist, they are very good, and best of all the technology is not created to the specifications of
-a literal cave goblin.&lt;/p&gt;
 </content> </entry> </feed>
