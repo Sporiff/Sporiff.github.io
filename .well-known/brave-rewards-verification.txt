@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: sporiff.github.io
-Token: cc182adcf34ae6c8ed28908b7ceb4df03bb0f0cda95409acf2db767966fa128b
