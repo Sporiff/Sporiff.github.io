@@ -1,31 +1,11 @@
-<!doctype html><html dir=ltr lang=en data-theme><head>
-<title>
-Ciarán Ainsworth
+<!doctype html><html dir=ltr lang=en data-theme><head><title>Ciarán Ainsworth
 |
-Microsoft Teams deployment headaches
-</title>
-<meta charset=utf-8><meta name=generator content="Hugo 0.92.1"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name=description content="
+Microsoft Teams deployment headaches</title><meta charset=utf-8><meta name=generator content="Hugo 0.97.2"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name=description content="
       I write about things for a living
 
 
-    ">
-<link rel=stylesheet href=/css/main.min.440a169ee4b645c09fe67c6bb076175d3eeac345e8abe5925486ca71a3e5289d.css integrity="sha256-RAoWnuS2RcCf5nxrsHYXXT7qw0Xoq+WSVIbKcaPlKJ0=" crossorigin=anonymous type=text/css>
-<link rel=stylesheet href=/css/markupHighlight.min.058b31f17db60602cc415fd63b0427e7932fbf35c70d8e341a4c39385f5f6f3e.css integrity="sha256-BYsx8X22BgLMQV/WOwQn55MvvzXHDY40Gkw5OF9fbz4=" crossorigin=anonymous type=text/css>
-<link rel=stylesheet href=/css/custom.min.ec0e83e7d616d38ef6d5b475ac380ecf1b0231c475feef0592fe0299f5ccf347.css integrity="sha256-7A6D59YW04721bR1rDgOzxsCMcR1/u8Fkv4CmfXM80c=" crossorigin=anonymous media=screen>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin=anonymous>
-<link rel="shortcut icon" href=/favicon.ico type=image/x-icon>
-<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
-<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
-<link rel=canonical href=/posts/teams-deployment-headaches/>
-<script type=text/javascript src=/js/anatole-header.min.2a2cd9614b7d007dfbb75e8da19e3a0fa872ceab53c6d000c00b7a0c89b85bfc.js integrity="sha256-KizZYUt9AH37t16NoZ46D6hyzqtTxtAAwAt6DIm4W/w=" crossorigin=anonymous></script>
-<script type=text/javascript src=/js/anatole-theme-switcher.min.7fd87181cdd7e8413aa64b6867bb32f3a8dc242e684fc7d5bbb9f600dbc2b6eb.js integrity="sha256-f9hxgc3X6EE6pktoZ7sy86jcJC5oT8fVu7n2ANvCtus=" crossorigin=anonymous></script>
-<meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="/images/Avatar.png">
-<meta name=twitter:title content="Microsoft Teams deployment headaches">
-<meta name=twitter:description content="So you want to use Microsoft Teams in your organisation, huh? Are you prepared for the pain? The lack of documentation? The feeling of utter exasperation at a company unable to properly consider the needs of enterprise customers in their new &ldquo;modern&rdquo; approach? Well, I&rsquo;m here to share my experiences with you so that hopefully you can avoid some of the pain I had to go through in getting this all ready for our upcoming rollout.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"posts","name":"Microsoft Teams deployment headaches","headline":"Microsoft Teams deployment headaches","alternativeHeadline":"","description":"
+    "><link rel=stylesheet href=/css/main.min.440a169ee4b645c09fe67c6bb076175d3eeac345e8abe5925486ca71a3e5289d.css integrity="sha256-RAoWnuS2RcCf5nxrsHYXXT7qw0Xoq+WSVIbKcaPlKJ0=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/css/markupHighlight.min.058b31f17db60602cc415fd63b0427e7932fbf35c70d8e341a4c39385f5f6f3e.css integrity="sha256-BYsx8X22BgLMQV/WOwQn55MvvzXHDY40Gkw5OF9fbz4=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/css/custom.min.ec0e83e7d616d38ef6d5b475ac380ecf1b0231c475feef0592fe0299f5ccf347.css integrity="sha256-7A6D59YW04721bR1rDgOzxsCMcR1/u8Fkv4CmfXM80c=" crossorigin=anonymous media=screen><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin=anonymous><link rel="shortcut icon" href=/favicon.ico type=image/x-icon><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=canonical href=/posts/teams-deployment-headaches/><script type=text/javascript src=/js/anatole-header.min.d0408165d31a17f17bba83038bf54e86121f85021bdf936382e636f0f77a952f.js integrity="sha256-0ECBZdMaF/F7uoMDi/VOhhIfhQIb35NjguY28Pd6lS8=" crossorigin=anonymous></script>
+<script type=text/javascript src=/js/anatole-theme-switcher.min.65e936b591bf81484a5ac438c8e4ae6454fb25516d58ce911e4888d7f230bdc5.js integrity="sha256-Zek2tZG/gUhKWsQ4yOSuZFT7JVFtWM6RHkiI1/IwvcU=" crossorigin=anonymous></script><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="/images/Avatar.png"><meta name=twitter:title content="Microsoft Teams deployment headaches"><meta name=twitter:description content="So you want to use Microsoft Teams in your organisation, huh? Are you prepared for the pain? The lack of documentation? The feeling of utter exasperation at a company unable to properly consider the needs of enterprise customers in their new &ldquo;modern&rdquo; approach? Well, I&rsquo;m here to share my experiences with you so that hopefully you can avoid some of the pain I had to go through in getting this all ready for our upcoming rollout."><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"posts","name":"Microsoft Teams deployment headaches","headline":"Microsoft Teams deployment headaches","alternativeHeadline":"","description":"
       
         So you want to use Microsoft Teams in your organisation, huh? Are you prepared for the pain? The lack of documentation? The feeling of utter exasperation at a company unable to properly consider the needs of enterprise customers in their new \u0026ldquo;modern\u0026rdquo; approach? Well, I\u0026rsquo;m here to share my experiences with you so that hopefully you can avoid some of the pain I had to go through in getting this all ready for our upcoming rollout.
 
@@ -33,146 +13,21 @@ Microsoft Teams deployment headaches
       
 
 
-    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"\/posts\/teams-deployment-headaches\/"},"author":{"@type":"Person","name":"Ciarán Ainsworth"},"creator":{"@type":"Person","name":"Ciarán Ainsworth"},"accountablePerson":{"@type":"Person","name":"Ciarán Ainsworth"},"copyrightHolder":{"@type":"Person","name":"Ciarán Ainsworth"},"copyrightYear":"2018","dateCreated":"2018-07-13T23:00:00.00Z","datePublished":"2018-07-13T23:00:00.00Z","dateModified":"2018-07-13T23:00:00.00Z","publisher":{"@type":"Organization","name":"Ciarán Ainsworth","url":"","logo":{"@type":"ImageObject","url":"favicon-32x32.png","width":"32","height":"32"}},"image":["/images/Avatar.png"],"url":"\/posts\/teams-deployment-headaches\/","wordCount":"718","genre":["blog"],"keywords":["tech","windows","teams","microsoft","intune","azure","sccm"]}</script>
-</head>
-<body>
-<header><div class="page-top
-animated fadeInDown">
-<a role=button class=navbar-burger data-target=navMenu aria-label=menu aria-expanded=false>
+    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"\/posts\/teams-deployment-headaches\/"},"author":{"@type":"Person","name":"Ciarán Ainsworth"},"creator":{"@type":"Person","name":"Ciarán Ainsworth"},"accountablePerson":{"@type":"Person","name":"Ciarán Ainsworth"},"copyrightHolder":{"@type":"Person","name":"Ciarán Ainsworth"},"copyrightYear":"2018","dateCreated":"2018-07-13T23:00:00.00Z","datePublished":"2018-07-13T23:00:00.00Z","dateModified":"2018-07-13T23:00:00.00Z","publisher":{"@type":"Organization","name":"Ciarán Ainsworth","url":"","logo":{"@type":"ImageObject","url":"favicon-32x32.png","width":"32","height":"32"}},"image":["/images/Avatar.png"],"url":"\/posts\/teams-deployment-headaches\/","wordCount":"718","genre":["blog"],"keywords":["tech","windows","teams","microsoft","intune","azure","sccm"]}</script></head><body><header><div class="page-top
+animated fadeInDown"><a role=button class=navbar-burger data-target=navMenu aria-label=menu aria-expanded=false><span aria-hidden=true></span>
 <span aria-hidden=true></span>
-<span aria-hidden=true></span>
-<span aria-hidden=true></span>
-</a>
-<nav>
-<ul class=nav__list id=navMenu>
-<div class=nav__links>
-<li>
-<a href=/ title>Home</a>
-</li>
-<li>
-<a href=/about title>About me</a>
-</li>
-<li>
-<a href=/portfolio title>Portfolio</a>
-</li>
-</div>
-<ul>
-<li>
-<a class=theme-switch title="Switch Theme">
-<i class="fas fa-adjust fa-fw" aria-hidden=true></i>
-</a>
-</li>
-</ul>
-</ul>
-</nav>
-</div>
-</header>
-<div class=wrapper>
-<aside><div class="sidebar
-animated fadeInDown">
-<div class=sidebar__content>
-<div class=logo-title>
-<div class=title>
-<img src=/images/Avatar.png alt="profile picture">
-<h3 title><a href=/>Life inside a computer</a></h3>
-<div class=description>
-<p>I write about things for a living</p>
-</div>
-</div>
-</div>
-<ul class=social-links>
-<li>
-<a href=https://twitter.com/thatdapperbrit rel=me aria-label title>
-<i class="fab fa-twitter fa-2x" aria-hidden=true></i>
-</a>
-</li>
-<li>
-<a href=https://mastodon.technology/@cda rel=me aria-label title>
-<i class="fab fa-mastodon fa-2x" aria-hidden=true></i>
-</a>
-</li>
-<li>
-<a href=mailto:ciaranainsworth@outlook.com rel=me aria-label title>
-<i class="fas fa-envelope fa-2x" aria-hidden=true></i>
-</a>
-</li>
-<li>
-<a href=https://github.com/Sporiff rel=me aria-label title>
-<i class="fab fa-github fa-2x" aria-hidden=true></i>
-</a>
-</li>
-</ul>
-</div><footer class="footer footer--sidebar">
-<div class=by_farbox>
-<ul class=footer__list>
-<li class=footer__item>
-&copy;
+<span aria-hidden=true></span></a><nav><ul class=nav__list id=navMenu><div class=nav__links><li><a href=/ title>Home</a></li><li><a href=/about title>About me</a></li><li><a href=/portfolio title>Portfolio</a></li></div><ul><li><a class=theme-switch title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></li></ul></ul></nav></div></header><div class=wrapper><aside><div class="sidebar
+animated fadeInDown"><div class=sidebar__content><div class=logo-title><div class=title><img src=/images/Avatar.png alt="profile picture"><h3 title><a href=/>Life inside a computer</a></h3><div class=description><p>I write about things for a living</p></div></div></div><ul class=social-links><li><a href=https://twitter.com/thatdapperbrit rel=me aria-label title><i class="fab fa-twitter fa-2x" aria-hidden=true></i></a></li><li><a href=https://mastodon.technology/@cda rel=me aria-label title><i class="fab fa-mastodon fa-2x" aria-hidden=true></i></a></li><li><a href=mailto:ciaranainsworth@icloud.com rel=me aria-label title><i class="fas fa-envelope fa-2x" aria-hidden=true></i></a></li><li><a href=https://github.com/Sporiff rel=me aria-label title><i class="fab fa-github fa-2x" aria-hidden=true></i></a></li></ul></div><footer class="footer footer--sidebar"><div class=by_farbox><ul class=footer__list><li class=footer__item>&copy;
 Ciarán Ainsworth
-2022
-</li>
-</ul>
-</div>
-</footer>
-<script type=text/javascript src=/js/medium-zoom.min.71100d84fab0ad794b8399a66ac810700cc78d703f715dc10af4d7ba7b761362.js integrity="sha256-cRANhPqwrXlLg5mmasgQcAzHjXA/cV3BCvTXunt2E2I=" crossorigin=anonymous></script></div>
-</aside>
-<main>
-<div class=autopagerize_page_element>
-<div class=content>
-<div class="post
-animated fadeInDown">
-<div class=post-content>
-<div class=post-title>
-<h1>Microsoft Teams deployment headaches</h1>
-<div class=info>
-<em class="fas fa-calendar-day"></em>
-<span class=date>
-Fri, Jul 13, 2018
-</span>
+2022</li></ul></div></footer><script type=text/javascript src=/js/medium-zoom.min.80b0768059c89e2a2180578a3e0e18ede16635e5fedabcccfba6479f60c40bbb.js integrity="sha256-gLB2gFnIniohgFeKPg4Y7eFmNeX+2rzM+6ZHn2DEC7s=" crossorigin=anonymous></script></div></aside><main><div class=autopagerize_page_element><div class=content><div class="post
+animated fadeInDown"><div class=post-content><div class=post-title><h1>Microsoft Teams deployment headaches</h1><div class=info><em class="fas fa-calendar-day"></em>
+<span class=date>Fri, Jul 13, 2018</span>
 <em class="fas fa-stopwatch"></em>
-<span class=reading-time>4-minute read</span>
-</div>
-</div><div class=alert>
-<div id=indicator>!</div>
-Warning: This post is over 365 days old. The information may be out of date.
-</div><p>So you want to use Microsoft Teams in your organisation, huh? Are you prepared for the pain? The lack of documentation? The feeling of utter exasperation at a company unable to properly consider the needs of enterprise customers in their new &ldquo;modern&rdquo; approach? Well, I&rsquo;m here to share my experiences with you so that hopefully you can avoid some of the pain I had to go through in getting this all ready for our upcoming rollout.</p>
-<h2 id=sccm-deployments>SCCM deployments</h2>
-<p>Like many of you, my organisation utilises Microsoft&rsquo;s powerhouse deployment tool: SCCM. Initially, when Teams was released it was only available as an executable, which is fine. A little jiggery-pokery with detection methods yielded a usable application which could easily be deployed and self-served by users. Unfortunately, deploying the <code>.exe</code> and then trying to switch to the <code>.msi</code> requires the use of a <a href=https://docs.microsoft.com/en-us/MicrosoftTeams/scripts/powershell-script-teams-deployment-clean-up>cleanup script</a> so we were lucky that Microsoft – in their infinite wisdom – decided to release
-<a href=https://docs.microsoft.com/en-us/MicrosoftTeams/msi-deployment>the .msi &ldquo;machine-wide installer&rdquo;</a> before we started deploying. Saves us a bit of work.</p>
-<p>The <code>.msi</code> installer, as you might imagine, works perfectly as an application. The only caveat is that the installer is per-user no matter what you specify in your application settings. The program installs to the users' AppData folder, so it can cause headaches in environments which make use of redirected AppData.</p>
-<h2 id=intune-deployments>Intune deployments</h2>
-<p>This is where things got a lot more complicated. Intune is at once a product with a great deal of documentation and one with absolutely no useful information. So when my co-worker and I initially uploaded the <code>.msi</code> to Intune we expected it to work. Nobody else had complained of any issues with the deployment via Intune, so we were surprised when every attempt at installation came back as having failed.</p>
-<p>So here&rsquo;s the thing: Intune <strong>hates</strong> deployments based on devices. Nearly every device configuration profile, compliance profile, and application deployment is expected to be done per-user. This does not fit our use-case, as users need to interact with many different devices in different contexts (e.g. shared user devices and personal devices). For that reason, we&rsquo;ve had a lot of problems getting policies to work and are currently trying to get M$ to fix the issue.</p>
-<p>But what about Teams? After all, the Chrome Enterprise installer worked fine targeting devices. The error message from Intune was that devices could not be targeted with user-based installers. But Teams is a &ldquo;machine-wide installer&rdquo;, right? Well, no. Not exactly. The installer basically just sets up a base downloader that is initiated by a user logging in. So how do you get Intune to recognise it as a device installer? You edit the <code>.msi</code> of course.</p>
-<p>I personally use <a href=http://www.pantaray.com/msi_super_orca.html>SuperOrca</a> to do this, but there are other tools available which can do the same job. Basically you just load up the <code>.msi</code> and add the following value to a new row. This will set the default installation target to &ldquo;machine&rdquo;, and will enable deployment of the <code>.msi</code> to device collections within Intune.</p>
-<h2 id=stopping-autostart>Stopping AutoStart</h2>
-<p>The single most annoying thing about Microsoft Teams is its inability to shut up. By default, the application is set to launch in the foreground at login. It&rsquo;s not a small app, either, so on older machines it increases load up time substantially. When you&rsquo;re trying to get non-techie users to use new tech (teachers, for example) the <strong>last</strong> thing you want to do is annoy them with clunky, slow applications.</p>
-<p>So, I started poring over the documentation looking for an enterprise kill switch for this behaviour. An ADMX template, maybe? Doesn&rsquo;t look like it. A native GPO for Teams behaviour? Nope. Hmm. Okay then. Let&rsquo;s brush off <a href=https://docs.microsoft.com/en-us/sysinternals/downloads/procmon>Procmon</a> and look at what this is doing.</p>
-<p>So it looks like when you enable/disable the autostart from within the Teams desktop application it writes and verifies a bunch of regkeys. The one we&rsquo;re interested in is this one:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>HKCU\Software\Microsoft\Windows\CurrentVersion\Run
-com.squirrel.Teams.Teams
-C:\Users\<span style=color:#66d9ef>%</span>currentuser%\AppData\Local\Microsoft\Teams\Update.exe --processStart <span style=color:#e6db74>&#34;Teams.exe&#34;</span> --process-start-args <span style=color:#e6db74>&#34;--system-initiated&#34;</span>
-</code></pre></div><p>So, by creating a login script using group policy which searches for and removes this key, we effectively wipe out the autostart behaviour. Now, we have a working Teams deployment on SCCM. As for Intune, it remains to be seen whether or not creating a CSP and installing local GPOs will consistently suppress autostart. To be tested next week.</p>
-</div>
-<div class=post-footer>
-<div class=info>
-<span class=separator><a class=category href=/categories/blog/>blog</a></span>
-<span class=separator><a class=tag href=/tags/tech/>tech</a><a class=tag href=/tags/windows/>windows</a><a class=tag href=/tags/teams/>teams</a><a class=tag href=/tags/microsoft/>microsoft</a><a class=tag href=/tags/intune/>intune</a><a class=tag href=/tags/azure/>azure</a><a class=tag href=/tags/sccm/>sccm</a></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</main>
-</div><footer class="footer footer--base">
-<div class=by_farbox>
-<ul class=footer__list>
-<li class=footer__item>
-&copy;
+<span class=reading-time>4-minute read</span></div></div><div class=alert><div id=indicator>!</div>Warning: This post is over 365 days old. The information may be out of date.</div><p>So you want to use Microsoft Teams in your organisation, huh? Are you prepared for the pain? The lack of documentation? The feeling of utter exasperation at a company unable to properly consider the needs of enterprise customers in their new &ldquo;modern&rdquo; approach? Well, I&rsquo;m here to share my experiences with you so that hopefully you can avoid some of the pain I had to go through in getting this all ready for our upcoming rollout.</p><h2 id=sccm-deployments>SCCM deployments</h2><p>Like many of you, my organisation utilises Microsoft&rsquo;s powerhouse deployment tool: SCCM. Initially, when Teams was released it was only available as an executable, which is fine. A little jiggery-pokery with detection methods yielded a usable application which could easily be deployed and self-served by users. Unfortunately, deploying the <code>.exe</code> and then trying to switch to the <code>.msi</code> requires the use of a <a href=https://docs.microsoft.com/en-us/MicrosoftTeams/scripts/powershell-script-teams-deployment-clean-up>cleanup script</a> so we were lucky that Microsoft – in their infinite wisdom – decided to release
+<a href=https://docs.microsoft.com/en-us/MicrosoftTeams/msi-deployment>the .msi &ldquo;machine-wide installer&rdquo;</a> before we started deploying. Saves us a bit of work.</p><p>The <code>.msi</code> installer, as you might imagine, works perfectly as an application. The only caveat is that the installer is per-user no matter what you specify in your application settings. The program installs to the users&rsquo; AppData folder, so it can cause headaches in environments which make use of redirected AppData.</p><h2 id=intune-deployments>Intune deployments</h2><p>This is where things got a lot more complicated. Intune is at once a product with a great deal of documentation and one with absolutely no useful information. So when my co-worker and I initially uploaded the <code>.msi</code> to Intune we expected it to work. Nobody else had complained of any issues with the deployment via Intune, so we were surprised when every attempt at installation came back as having failed.</p><p>So here&rsquo;s the thing: Intune <strong>hates</strong> deployments based on devices. Nearly every device configuration profile, compliance profile, and application deployment is expected to be done per-user. This does not fit our use-case, as users need to interact with many different devices in different contexts (e.g. shared user devices and personal devices). For that reason, we&rsquo;ve had a lot of problems getting policies to work and are currently trying to get M$ to fix the issue.</p><p>But what about Teams? After all, the Chrome Enterprise installer worked fine targeting devices. The error message from Intune was that devices could not be targeted with user-based installers. But Teams is a &ldquo;machine-wide installer&rdquo;, right? Well, no. Not exactly. The installer basically just sets up a base downloader that is initiated by a user logging in. So how do you get Intune to recognise it as a device installer? You edit the <code>.msi</code> of course.</p><p>I personally use <a href=http://www.pantaray.com/msi_super_orca.html>SuperOrca</a> to do this, but there are other tools available which can do the same job. Basically you just load up the <code>.msi</code> and add the following value to a new row. This will set the default installation target to &ldquo;machine&rdquo;, and will enable deployment of the <code>.msi</code> to device collections within Intune.</p><h2 id=stopping-autostart>Stopping AutoStart</h2><p>The single most annoying thing about Microsoft Teams is its inability to shut up. By default, the application is set to launch in the foreground at login. It&rsquo;s not a small app, either, so on older machines it increases load up time substantially. When you&rsquo;re trying to get non-techie users to use new tech (teachers, for example) the <strong>last</strong> thing you want to do is annoy them with clunky, slow applications.</p><p>So, I started poring over the documentation looking for an enterprise kill switch for this behaviour. An ADMX template, maybe? Doesn&rsquo;t look like it. A native GPO for Teams behaviour? Nope. Hmm. Okay then. Let&rsquo;s brush off <a href=https://docs.microsoft.com/en-us/sysinternals/downloads/procmon>Procmon</a> and look at what this is doing.</p><p>So it looks like when you enable/disable the autostart from within the Teams desktop application it writes and verifies a bunch of regkeys. The one we&rsquo;re interested in is this one:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span>HKCU\Software\Microsoft\Windows\CurrentVersion\Run
+</span></span><span style=display:flex><span>com.squirrel.Teams.Teams
+</span></span><span style=display:flex><span>C:\Users\<span style=color:#66d9ef>%</span>currentuser%\AppData\Local\Microsoft\Teams\Update.exe --processStart <span style=color:#e6db74>&#34;Teams.exe&#34;</span> --process-start-args <span style=color:#e6db74>&#34;--system-initiated&#34;</span>
+</span></span></code></pre></div><p>So, by creating a login script using group policy which searches for and removes this key, we effectively wipe out the autostart behaviour. Now, we have a working Teams deployment on SCCM. As for Intune, it remains to be seen whether or not creating a CSP and installing local GPOs will consistently suppress autostart. To be tested next week.</p></div><div class=post-footer><div class=info><span class=separator><a class=category href=/categories/blog/>blog</a></span>
+<span class=separator><a class=tag href=/tags/tech/>tech</a><a class=tag href=/tags/windows/>windows</a><a class=tag href=/tags/teams/>teams</a><a class=tag href=/tags/microsoft/>microsoft</a><a class=tag href=/tags/intune/>intune</a><a class=tag href=/tags/azure/>azure</a><a class=tag href=/tags/sccm/>sccm</a></span></div></div></div></div></div></main></div><footer class="footer footer--base"><div class=by_farbox><ul class=footer__list><li class=footer__item>&copy;
 Ciarán Ainsworth
-2022
-</li>
-</ul>
-</div>
-</footer>
-<script type=text/javascript src=/js/medium-zoom.min.71100d84fab0ad794b8399a66ac810700cc78d703f715dc10af4d7ba7b761362.js integrity="sha256-cRANhPqwrXlLg5mmasgQcAzHjXA/cV3BCvTXunt2E2I=" crossorigin=anonymous></script></body>
-</html>
+2022</li></ul></div></footer><script type=text/javascript src=/js/medium-zoom.min.80b0768059c89e2a2180578a3e0e18ede16635e5fedabcccfba6479f60c40bbb.js integrity="sha256-gLB2gFnIniohgFeKPg4Y7eFmNeX+2rzM+6ZHn2DEC7s=" crossorigin=anonymous></script></body></html>

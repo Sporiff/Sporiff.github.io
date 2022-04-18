@@ -1,32 +1,12 @@
-<!doctype html><html dir=ltr lang=en data-theme><head>
-<title>
-Ciarán Ainsworth
+<!doctype html><html dir=ltr lang=en data-theme><head><title>Ciarán Ainsworth
 |
-Moving to FreeBSD
-</title>
-<meta charset=utf-8><meta name=generator content="Hugo 0.92.1"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name=description content="
+Moving to FreeBSD</title><meta charset=utf-8><meta name=generator content="Hugo 0.97.2"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name=description content="
       I write about things for a living
 
 
-    ">
-<link rel=stylesheet href=/css/main.min.440a169ee4b645c09fe67c6bb076175d3eeac345e8abe5925486ca71a3e5289d.css integrity="sha256-RAoWnuS2RcCf5nxrsHYXXT7qw0Xoq+WSVIbKcaPlKJ0=" crossorigin=anonymous type=text/css>
-<link rel=stylesheet href=/css/markupHighlight.min.058b31f17db60602cc415fd63b0427e7932fbf35c70d8e341a4c39385f5f6f3e.css integrity="sha256-BYsx8X22BgLMQV/WOwQn55MvvzXHDY40Gkw5OF9fbz4=" crossorigin=anonymous type=text/css>
-<link rel=stylesheet href=/css/custom.min.ec0e83e7d616d38ef6d5b475ac380ecf1b0231c475feef0592fe0299f5ccf347.css integrity="sha256-7A6D59YW04721bR1rDgOzxsCMcR1/u8Fkv4CmfXM80c=" crossorigin=anonymous media=screen>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin=anonymous>
-<link rel="shortcut icon" href=/favicon.ico type=image/x-icon>
-<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
-<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
-<link rel=canonical href=/posts/moving-to-freebsd/>
-<script type=text/javascript src=/js/anatole-header.min.2a2cd9614b7d007dfbb75e8da19e3a0fa872ceab53c6d000c00b7a0c89b85bfc.js integrity="sha256-KizZYUt9AH37t16NoZ46D6hyzqtTxtAAwAt6DIm4W/w=" crossorigin=anonymous></script>
-<script type=text/javascript src=/js/anatole-theme-switcher.min.7fd87181cdd7e8413aa64b6867bb32f3a8dc242e684fc7d5bbb9f600dbc2b6eb.js integrity="sha256-f9hxgc3X6EE6pktoZ7sy86jcJC5oT8fVu7n2ANvCtus=" crossorigin=anonymous></script>
-<meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="/images/Avatar.png">
-<meta name=twitter:title content="Moving to FreeBSD">
-<meta name=twitter:description content="I&rsquo;ve been making some changes to my current website setup. Before, this site was hosted on the same server that currently hosts my Mastodon instance and Funkwhale pod, as well as my git server. But with gitea&rsquo;s poor performance and the general overcrowding, mixed in with my recent winding down of my Streama server, I decided to make a completely new server for my website.
-I&rsquo;ve been doing a lot of playing around with FreeBSD lately as part of my never-ending quest to find the ideal operating system.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"posts","name":"Moving to FreeBSD","headline":"Moving to FreeBSD","alternativeHeadline":"","description":"
+    "><link rel=stylesheet href=/css/main.min.440a169ee4b645c09fe67c6bb076175d3eeac345e8abe5925486ca71a3e5289d.css integrity="sha256-RAoWnuS2RcCf5nxrsHYXXT7qw0Xoq+WSVIbKcaPlKJ0=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/css/markupHighlight.min.058b31f17db60602cc415fd63b0427e7932fbf35c70d8e341a4c39385f5f6f3e.css integrity="sha256-BYsx8X22BgLMQV/WOwQn55MvvzXHDY40Gkw5OF9fbz4=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/css/custom.min.ec0e83e7d616d38ef6d5b475ac380ecf1b0231c475feef0592fe0299f5ccf347.css integrity="sha256-7A6D59YW04721bR1rDgOzxsCMcR1/u8Fkv4CmfXM80c=" crossorigin=anonymous media=screen><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin=anonymous><link rel="shortcut icon" href=/favicon.ico type=image/x-icon><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=canonical href=/posts/moving-to-freebsd/><script type=text/javascript src=/js/anatole-header.min.d0408165d31a17f17bba83038bf54e86121f85021bdf936382e636f0f77a952f.js integrity="sha256-0ECBZdMaF/F7uoMDi/VOhhIfhQIb35NjguY28Pd6lS8=" crossorigin=anonymous></script>
+<script type=text/javascript src=/js/anatole-theme-switcher.min.65e936b591bf81484a5ac438c8e4ae6454fb25516d58ce911e4888d7f230bdc5.js integrity="sha256-Zek2tZG/gUhKWsQ4yOSuZFT7JVFtWM6RHkiI1/IwvcU=" crossorigin=anonymous></script><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="/images/Avatar.png"><meta name=twitter:title content="Moving to FreeBSD"><meta name=twitter:description content="I&rsquo;ve been making some changes to my current website setup. Before, this site was hosted on the same server that currently hosts my Mastodon instance and Funkwhale pod, as well as my git server. But with gitea&rsquo;s poor performance and the general overcrowding, mixed in with my recent winding down of my Streama server, I decided to make a completely new server for my website.
+I&rsquo;ve been doing a lot of playing around with FreeBSD lately as part of my never-ending quest to find the ideal operating system."><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"posts","name":"Moving to FreeBSD","headline":"Moving to FreeBSD","alternativeHeadline":"","description":"
       
         I\u0026rsquo;ve been making some changes to my current website setup. Before, this site was hosted on the same server that currently hosts my Mastodon instance and Funkwhale pod, as well as my git server. But with gitea\u0026rsquo;s poor performance and the general overcrowding, mixed in with my recent winding down of my Streama server, I decided to make a completely new server for my website.\nI\u0026rsquo;ve been doing a lot of playing around with FreeBSD lately as part of my never-ending quest to find the ideal operating system.
 
@@ -34,139 +14,19 @@ I&rsquo;ve been doing a lot of playing around with FreeBSD lately as part of my 
       
 
 
-    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"\/posts\/moving-to-freebsd\/"},"author":{"@type":"Person","name":"Ciarán Ainsworth"},"creator":{"@type":"Person","name":"Ciarán Ainsworth"},"accountablePerson":{"@type":"Person","name":"Ciarán Ainsworth"},"copyrightHolder":{"@type":"Person","name":"Ciarán Ainsworth"},"copyrightYear":"2020","dateCreated":"2020-02-04T22:09:06.00Z","datePublished":"2020-02-04T22:09:06.00Z","dateModified":"2020-02-04T22:09:06.00Z","publisher":{"@type":"Organization","name":"Ciarán Ainsworth","url":"","logo":{"@type":"ImageObject","url":"favicon-32x32.png","width":"32","height":"32"}},"image":["/images/Avatar.png"],"url":"\/posts\/moving-to-freebsd\/","wordCount":"495","genre":["blog"],"keywords":["freebsd","unix","bsd","floss"]}</script>
-</head>
-<body>
-<header><div class="page-top
-animated fadeInDown">
-<a role=button class=navbar-burger data-target=navMenu aria-label=menu aria-expanded=false>
+    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"\/posts\/moving-to-freebsd\/"},"author":{"@type":"Person","name":"Ciarán Ainsworth"},"creator":{"@type":"Person","name":"Ciarán Ainsworth"},"accountablePerson":{"@type":"Person","name":"Ciarán Ainsworth"},"copyrightHolder":{"@type":"Person","name":"Ciarán Ainsworth"},"copyrightYear":"2020","dateCreated":"2020-02-04T22:09:06.00Z","datePublished":"2020-02-04T22:09:06.00Z","dateModified":"2020-02-04T22:09:06.00Z","publisher":{"@type":"Organization","name":"Ciarán Ainsworth","url":"","logo":{"@type":"ImageObject","url":"favicon-32x32.png","width":"32","height":"32"}},"image":["/images/Avatar.png"],"url":"\/posts\/moving-to-freebsd\/","wordCount":"495","genre":["blog"],"keywords":["freebsd","unix","bsd","floss"]}</script></head><body><header><div class="page-top
+animated fadeInDown"><a role=button class=navbar-burger data-target=navMenu aria-label=menu aria-expanded=false><span aria-hidden=true></span>
 <span aria-hidden=true></span>
-<span aria-hidden=true></span>
-<span aria-hidden=true></span>
-</a>
-<nav>
-<ul class=nav__list id=navMenu>
-<div class=nav__links>
-<li>
-<a href=/ title>Home</a>
-</li>
-<li>
-<a href=/about title>About me</a>
-</li>
-<li>
-<a href=/portfolio title>Portfolio</a>
-</li>
-</div>
-<ul>
-<li>
-<a class=theme-switch title="Switch Theme">
-<i class="fas fa-adjust fa-fw" aria-hidden=true></i>
-</a>
-</li>
-</ul>
-</ul>
-</nav>
-</div>
-</header>
-<div class=wrapper>
-<aside><div class="sidebar
-animated fadeInDown">
-<div class=sidebar__content>
-<div class=logo-title>
-<div class=title>
-<img src=/images/Avatar.png alt="profile picture">
-<h3 title><a href=/>Life inside a computer</a></h3>
-<div class=description>
-<p>I write about things for a living</p>
-</div>
-</div>
-</div>
-<ul class=social-links>
-<li>
-<a href=https://twitter.com/thatdapperbrit rel=me aria-label title>
-<i class="fab fa-twitter fa-2x" aria-hidden=true></i>
-</a>
-</li>
-<li>
-<a href=https://mastodon.technology/@cda rel=me aria-label title>
-<i class="fab fa-mastodon fa-2x" aria-hidden=true></i>
-</a>
-</li>
-<li>
-<a href=mailto:ciaranainsworth@outlook.com rel=me aria-label title>
-<i class="fas fa-envelope fa-2x" aria-hidden=true></i>
-</a>
-</li>
-<li>
-<a href=https://github.com/Sporiff rel=me aria-label title>
-<i class="fab fa-github fa-2x" aria-hidden=true></i>
-</a>
-</li>
-</ul>
-</div><footer class="footer footer--sidebar">
-<div class=by_farbox>
-<ul class=footer__list>
-<li class=footer__item>
-&copy;
+<span aria-hidden=true></span></a><nav><ul class=nav__list id=navMenu><div class=nav__links><li><a href=/ title>Home</a></li><li><a href=/about title>About me</a></li><li><a href=/portfolio title>Portfolio</a></li></div><ul><li><a class=theme-switch title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></li></ul></ul></nav></div></header><div class=wrapper><aside><div class="sidebar
+animated fadeInDown"><div class=sidebar__content><div class=logo-title><div class=title><img src=/images/Avatar.png alt="profile picture"><h3 title><a href=/>Life inside a computer</a></h3><div class=description><p>I write about things for a living</p></div></div></div><ul class=social-links><li><a href=https://twitter.com/thatdapperbrit rel=me aria-label title><i class="fab fa-twitter fa-2x" aria-hidden=true></i></a></li><li><a href=https://mastodon.technology/@cda rel=me aria-label title><i class="fab fa-mastodon fa-2x" aria-hidden=true></i></a></li><li><a href=mailto:ciaranainsworth@icloud.com rel=me aria-label title><i class="fas fa-envelope fa-2x" aria-hidden=true></i></a></li><li><a href=https://github.com/Sporiff rel=me aria-label title><i class="fab fa-github fa-2x" aria-hidden=true></i></a></li></ul></div><footer class="footer footer--sidebar"><div class=by_farbox><ul class=footer__list><li class=footer__item>&copy;
 Ciarán Ainsworth
-2022
-</li>
-</ul>
-</div>
-</footer>
-<script type=text/javascript src=/js/medium-zoom.min.71100d84fab0ad794b8399a66ac810700cc78d703f715dc10af4d7ba7b761362.js integrity="sha256-cRANhPqwrXlLg5mmasgQcAzHjXA/cV3BCvTXunt2E2I=" crossorigin=anonymous></script></div>
-</aside>
-<main>
-<div class=autopagerize_page_element>
-<div class=content>
-<div class="post
-animated fadeInDown">
-<div class=post-content>
-<div class=post-title>
-<h1>Moving to FreeBSD</h1>
-<div class=info>
-<em class="fas fa-calendar-day"></em>
-<span class=date>
-Tue, Feb 4, 2020
-</span>
+2022</li></ul></div></footer><script type=text/javascript src=/js/medium-zoom.min.80b0768059c89e2a2180578a3e0e18ede16635e5fedabcccfba6479f60c40bbb.js integrity="sha256-gLB2gFnIniohgFeKPg4Y7eFmNeX+2rzM+6ZHn2DEC7s=" crossorigin=anonymous></script></div></aside><main><div class=autopagerize_page_element><div class=content><div class="post
+animated fadeInDown"><div class=post-content><div class=post-title><h1>Moving to FreeBSD</h1><div class=info><em class="fas fa-calendar-day"></em>
+<span class=date>Tue, Feb 4, 2020</span>
 <em class="fas fa-stopwatch"></em>
-<span class=reading-time>3-minute read</span>
-</div>
-</div><div class=alert>
-<div id=indicator>!</div>
-Warning: This post is over 365 days old. The information may be out of date.
-</div><figure><img src=https://rootkey.fra1.cdn.digitaloceanspaces.com/static/images/Beastie.png alt="The FreeBSD Beastie">
-</figure>
-<p>I&rsquo;ve been making some changes to my current website setup. Before, this site was hosted on the same server that currently hosts my Mastodon instance and Funkwhale pod, as well as my git server. But with gitea&rsquo;s poor performance and the general overcrowding, mixed in with my recent winding down of my Streama server, I decided to make a completely new server for
-my website.</p>
-<p>I&rsquo;ve been doing a lot of playing around with <a href=https://freebsd.org>FreeBSD</a> lately as part of my never-ending quest to find the ideal operating system. There are some things I absolutely love about the system, and its minimalist setup and hardy security defaults made it the ideal candidate to set my website up on.</p>
-<p>The initial install was incredibly easy, although I made some mistakes initially with the installation of my SSH key. DO&rsquo;s FreeBSD offering is considerably more hardened than their Debian/Ubuntu ones as they require an SSH key be set up and do not allow the management of root passwords. This suits me just fine as I never use a root password if I can possibly avoid it. A fully featured <code>wheel</code> account is good enough for me.</p>
-<p>After getting everything set up nice, my next adventure came with Nginx. I&rsquo;m so used now to setting up sites and web apps using nginx on Debian-based systems that I can do it in my sleep, but the difference in layout/defaults for Nginx on FreeBSD gave me pause for thought. Once I got into the swing of it, it made a lot of sense and felt a lot more suited to smaller setups, but the initial confusion was somewhat annoying. Not the system&rsquo;s fault in any way (RTFM and all that), but still a puzzler.</p>
-<p>Then I decided to be an idiot. See, DO supplies a default <code>FreeBSD</code> account which is installed with your keys. This account has full root access using <code>sudo</code> and is meant to be used for access and maintenance of the server. But I&rsquo;m an odd fellow, so I really wanted to set my account up to better match my other machines. I installed <code>zsh</code> and decided to <code>chsh</code> my account to change my username and shell. All went well, I moved my home folder and then left the shell to load my new shell. Everything loaded fine, but suddenly my site stopped working. Ah, I realised too late that of course the site is just a symlink from a folder in my home folder, which has now moved. Whoops. I&rsquo;ll just move that b-</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>sporiff is not in the sudoers file
-</code></pre></div><p>If you change your username, make sure you also change your sudoers file. Fool.</p>
-<p>Anyway, it was easy enough to get everything torn down and built back up. I&rsquo;ve now got the server all up-to-date and automated and I must say I&rsquo;m pretty happy with its performance so far. It hasn&rsquo;t got a big job, but it&rsquo;s a job I&rsquo;m glad I chose FreeBSD to do.</p>
-</div>
-<div class=post-footer>
-<div class=info>
-<span class=separator><a class=category href=/categories/blog/>blog</a></span>
-<span class=separator><a class=tag href=/tags/freebsd/>freebsd</a><a class=tag href=/tags/unix/>unix</a><a class=tag href=/tags/bsd/>bsd</a><a class=tag href=/tags/floss/>floss</a></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</main>
-</div><footer class="footer footer--base">
-<div class=by_farbox>
-<ul class=footer__list>
-<li class=footer__item>
-&copy;
+<span class=reading-time>3-minute read</span></div></div><div class=alert><div id=indicator>!</div>Warning: This post is over 365 days old. The information may be out of date.</div><figure><img src=https://rootkey.fra1.cdn.digitaloceanspaces.com/static/images/Beastie.png alt="The FreeBSD Beastie"></figure><p>I&rsquo;ve been making some changes to my current website setup. Before, this site was hosted on the same server that currently hosts my Mastodon instance and Funkwhale pod, as well as my git server. But with gitea&rsquo;s poor performance and the general overcrowding, mixed in with my recent winding down of my Streama server, I decided to make a completely new server for
+my website.</p><p>I&rsquo;ve been doing a lot of playing around with <a href=https://freebsd.org>FreeBSD</a> lately as part of my never-ending quest to find the ideal operating system. There are some things I absolutely love about the system, and its minimalist setup and hardy security defaults made it the ideal candidate to set my website up on.</p><p>The initial install was incredibly easy, although I made some mistakes initially with the installation of my SSH key. DO&rsquo;s FreeBSD offering is considerably more hardened than their Debian/Ubuntu ones as they require an SSH key be set up and do not allow the management of root passwords. This suits me just fine as I never use a root password if I can possibly avoid it. A fully featured <code>wheel</code> account is good enough for me.</p><p>After getting everything set up nice, my next adventure came with Nginx. I&rsquo;m so used now to setting up sites and web apps using nginx on Debian-based systems that I can do it in my sleep, but the difference in layout/defaults for Nginx on FreeBSD gave me pause for thought. Once I got into the swing of it, it made a lot of sense and felt a lot more suited to smaller setups, but the initial confusion was somewhat annoying. Not the system&rsquo;s fault in any way (RTFM and all that), but still a puzzler.</p><p>Then I decided to be an idiot. See, DO supplies a default <code>FreeBSD</code> account which is installed with your keys. This account has full root access using <code>sudo</code> and is meant to be used for access and maintenance of the server. But I&rsquo;m an odd fellow, so I really wanted to set my account up to better match my other machines. I installed <code>zsh</code> and decided to <code>chsh</code> my account to change my username and shell. All went well, I moved my home folder and then left the shell to load my new shell. Everything loaded fine, but suddenly my site stopped working. Ah, I realised too late that of course the site is just a symlink from a folder in my home folder, which has now moved. Whoops. I&rsquo;ll just move that b-</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>sporiff is not in the sudoers file
+</span></span></code></pre></div><p>If you change your username, make sure you also change your sudoers file. Fool.</p><p>Anyway, it was easy enough to get everything torn down and built back up. I&rsquo;ve now got the server all up-to-date and automated and I must say I&rsquo;m pretty happy with its performance so far. It hasn&rsquo;t got a big job, but it&rsquo;s a job I&rsquo;m glad I chose FreeBSD to do.</p></div><div class=post-footer><div class=info><span class=separator><a class=category href=/categories/blog/>blog</a></span>
+<span class=separator><a class=tag href=/tags/freebsd/>freebsd</a><a class=tag href=/tags/unix/>unix</a><a class=tag href=/tags/bsd/>bsd</a><a class=tag href=/tags/floss/>floss</a></span></div></div></div></div></div></main></div><footer class="footer footer--base"><div class=by_farbox><ul class=footer__list><li class=footer__item>&copy;
 Ciarán Ainsworth
-2022
-</li>
-</ul>
-</div>
-</footer>
-<script type=text/javascript src=/js/medium-zoom.min.71100d84fab0ad794b8399a66ac810700cc78d703f715dc10af4d7ba7b761362.js integrity="sha256-cRANhPqwrXlLg5mmasgQcAzHjXA/cV3BCvTXunt2E2I=" crossorigin=anonymous></script></body>
-</html>
+2022</li></ul></div></footer><script type=text/javascript src=/js/medium-zoom.min.80b0768059c89e2a2180578a3e0e18ede16635e5fedabcccfba6479f60c40bbb.js integrity="sha256-gLB2gFnIniohgFeKPg4Y7eFmNeX+2rzM+6ZHn2DEC7s=" crossorigin=anonymous></script></body></html>
