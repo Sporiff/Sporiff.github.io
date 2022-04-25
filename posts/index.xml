@@ -1,4 +1,63 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on</title><link>/posts/</link><description>Recent content in Posts on</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Mon, 16 Aug 2021 18:15:15 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Brave Browser</title><link>/posts/brave-browser/</link><pubDate>Mon, 16 Aug 2021 18:15:15 +0000</pubDate><guid>/posts/brave-browser/</guid><description>&lt;figure>&lt;img src="https://rootkey.fra1.cdn.digitaloceanspaces.com/static/images/Brave-logo.png"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on</title><link>/posts/</link><description>Recent content in Posts on</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Mon, 25 Apr 2022 22:57:32 +0200</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Automation Fun</title><link>/posts/automation-fun/</link><pubDate>Mon, 25 Apr 2022 22:57:32 +0200</pubDate><guid>/posts/automation-fun/</guid><description>&lt;p>Part of the fun of technical writing is figuring out how you can do less of it. Specifically when it comes to developer documentation. Writing out things like tables of variables, class references, etc. gets really tedious. It&amp;rsquo;s also fragile, and your work can quickly go out of date.&lt;/p>
+&lt;p>At work I currently have two challenges ahead of me:&lt;/p>
+&lt;ul>
+&lt;li>Documenting RESTful APIs.&lt;/li>
+&lt;li>Documenting SDKs for various mobile platforms and frameworks.&lt;/li>
+&lt;/ul>
+&lt;h2 id="restful-apis">RESTful APIs&lt;/h2>
+&lt;p>Now, RESTful APIs are pretty well understood in the technical communication world. We can use OpenAPI generators such as &lt;a href="https://redoc.ly">Redoc&lt;/a> and &lt;a href="https://swagger.io">Swagger&lt;/a> to create aesthetically pleasing documentation directly from endpoint code. Pretty neat stuff.&lt;/p>
+&lt;p>However, these tools aren&amp;rsquo;t without their limitations. First and foremost, they leave no room for prosaic documentation. They&amp;rsquo;re a fantastic reference for developers looking for a technical breakdown of how endpoints work, but they&amp;rsquo;re poor at giving context to less technical users. These users tend to prefer approachable documentation populated with clear examples and written explanations. Redoc and Swagger simply don&amp;rsquo;t do this.&lt;/p>
+&lt;p>The other glaring flaw in OpenAPI generators actually comes from OpenAPI itself. The standard &lt;a href="https://github.com/OAI/OpenAPI-Specification/issues/1740">still doesn&amp;rsquo;t support i18n&lt;/a>. In an international business or project, this isn&amp;rsquo;t really acceptable.&lt;/p>
+&lt;p>So we&amp;rsquo;re basically left with two options:&lt;/p>
+&lt;ol>
+&lt;li>Generate OpenAPI documentation for endpoints and maintain user documentation alongside it.&lt;/li>
+&lt;li>Stick with using written documentation.&lt;/li>
+&lt;/ol>
+&lt;p>As long as we can grab information from endpoints at build time, neither of these solutions are terrible, but it still feels like a poor stopgap solution. We&amp;rsquo;re still maintaining too much by hand, and developers aren&amp;rsquo;t always getting the benefit of up-to-date information that aligns perfectly with the API. What a kerfuffle.&lt;/p>
+&lt;h2 id="sdk-documentation">SDK documentation&lt;/h2>
+&lt;p>In the short time I&amp;rsquo;ve been doing this job, I&amp;rsquo;ve found SDK documentation to be the hardest thing to tackle. Quite frankly there are no good solutions for working with lots of different frameworks and languages. Once again it seems to fall to writers to maintain their documentation almost entirely separately from the code itself. This can lead to discrepancies between what the code can do and what we tell people it can do.&lt;/p>
+&lt;p>For many languages (Objective-C, C#, Java) we can use an array of generators to create reference documentation. &lt;a href="https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html">Javadoc&lt;/a>, &lt;a href="https://github.com/tomaz/appledoc">Appledoc&lt;/a>, and &lt;a href="https://www.doxygen.nl/index.html">Doxygen&lt;/a> can all create HTML documentation of class references and APIs for documentation. Doxygen in particular is a good choice because of the number of languages it supports.&lt;/p>
+&lt;p>But once again we hit the issue of the target audience. Some developers are perfectly content to just read class definitions and be done with it. But some want a more explanatory approach with contextualized examples. Also, none of these tools support i18n, again. This means that switching to these vs. a version that we maintain with our localization team cuts off a large audience. Ugh.&lt;/p>
+&lt;h2 id="whats-the-solution">What&amp;rsquo;s the solution?&lt;/h2>
+&lt;p>No idea, really. But I&amp;rsquo;ve been toying with the idea of using a static site generator such as &lt;a href="https://gohugo.io">Hugo&lt;/a> to keep everything together. Since we can access information from the &lt;code>data&lt;/code> directory of a Hugo site, we can potentially do some really neat stuff. For example, I can import an OpenAPI spec and with a very simple shortcode I can populate the parameters for any given endpoint.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>{{ $endpoint := (.Get &amp;#34;endpoint&amp;#34;) }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{{ $method := (.Get &amp;#34;method&amp;#34;) }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{{ $range := index .Site.Data.openapi.paths $endpoint $method }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">table&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">tr&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">th&lt;/span>&amp;gt;Parameter&amp;lt;/&lt;span style="color:#f92672">th&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">th&lt;/span>&amp;gt;In&amp;lt;/&lt;span style="color:#f92672">th&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">th&lt;/span>&amp;gt;Type&amp;lt;/&lt;span style="color:#f92672">th&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">th&lt;/span>&amp;gt;Description&amp;lt;/&lt;span style="color:#f92672">th&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/&lt;span style="color:#f92672">tr&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {{ range $range.parameters }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">tr&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">td&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {{ if .required }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">span&lt;/span>&amp;gt;&amp;lt;&lt;span style="color:#f92672">code&lt;/span>&amp;gt;{{ .name }}&amp;lt;/&lt;span style="color:#f92672">code&lt;/span>&amp;gt;&amp;lt;/&lt;span style="color:#f92672">span&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">div&lt;/span> &lt;span style="color:#a6e22e">class&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;required&amp;#34;&lt;/span>&amp;gt;required&amp;lt;/&lt;span style="color:#f92672">div&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {{ else }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">code&lt;/span>&amp;gt;{{ .name }}&amp;lt;/&lt;span style="color:#f92672">code&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {{ end }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/&lt;span style="color:#f92672">td&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">td&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {{ .in }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/&lt;span style="color:#f92672">td&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">td&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {{ .schema.type }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/&lt;span style="color:#f92672">td&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">td&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {{ .description | safeHTML }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/&lt;span style="color:#f92672">td&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {{ end }}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/&lt;span style="color:#f92672">tr&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/&lt;span style="color:#f92672">table&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Then it&amp;rsquo;s a simple matter of calling this in a markdown file.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>{{&amp;lt; &lt;span style="color:#f92672">data-table&lt;/span> &lt;span style="color:#a6e22e">endpoint&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;/report&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">method&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;get&amp;#34;&lt;/span> &amp;gt;}}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Since these are just Markdown files, it&amp;rsquo;s easy to write up good documentation alongside these. i18n is also a doddle for these instructions, but not so much for the API code. My thinking is that localizers could populate JSON files containing the name and description of a parameter in their language, then pass a language parameter in the shortcode invocation to trigger some additional logic. I&amp;rsquo;ve not written this up yet, but I see no reason it couldn&amp;rsquo;t work.&lt;/p>
+&lt;p>SDK docs would be more tricky, but not insurmountable. In theory the same logic applies only with XML (Doxygen&amp;rsquo;s output). XML is the devil, but it is at least a structured data format.&lt;/p>
+&lt;p>There&amp;rsquo;s lots of things to consider here. For example there needs to be steps in the build process to generate these files, the outputs need to plug in to the localization platform, etc. etc. But it does seem that there&amp;rsquo;s no oven ready solution for the type of thing I&amp;rsquo;m trying to do and Hugo just happens to make it easy to try out fun new things.&lt;/p></description></item><item><title>Brave Browser</title><link>/posts/brave-browser/</link><pubDate>Mon, 16 Aug 2021 18:15:15 +0000</pubDate><guid>/posts/brave-browser/</guid><description>&lt;figure>&lt;img src="https://rootkey.fra1.cdn.digitaloceanspaces.com/static/images/Brave-logo.png"
 alt="The Brave browser logo"/>
 &lt;/figure>
 &lt;p>Web browsers are fascinating beasts. They&amp;rsquo;re pretty much our window on modern computing, facilitating everything from simple communications to complex desktop applications. In general, they&amp;rsquo;re also pretty shit.&lt;/p>
